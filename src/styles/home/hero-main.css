@@ -1,0 +1,152 @@
+/* ==========================================
+   OPTIMIZED HERO BACKGROUND - MOBILE FIRST
+   Lightweight, Clean, Performance-focused
+   ========================================== */
+
+/* Hero Section */
+.enhanced-hero-section {
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 40px 0;
+    overflow: hidden;
+    background: var(--background-dark);
+}
+ 
+/* Background Layer */
+.hero-background {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    z-index: 0;
+    opacity: 0.6;
+}
+
+/* Gradient - Static on mobile */
+.gradient-mesh {
+    position: absolute;
+    width: 150%;
+    height: 150%;
+    top: -25%;
+    left: -25%;
+    background: 
+        radial-gradient(circle at 30% 20%, rgba(99, 102, 241, 0.25) 0%, transparent 40%),
+        radial-gradient(circle at 70% 80%, rgba(0, 212, 255, 0.2) 0%, transparent 40%),
+        radial-gradient(circle at 10% 90%, rgba(255, 215, 0, 0.1) 0%, transparent 30%);
+    filter: blur(40px);
+}
+
+/* Particles - Hidden on mobile */
+.particles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: none;
+}
+
+.particle {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background: rgba(99, 102, 241, 0.5);
+    border-radius: 50%;
+    pointer-events: none;
+    opacity: 0.4;
+}
+
+/* Grid Overlay - Hidden on mobile */
+.grid-overlay {
+    position: absolute;
+    inset: 0;
+    background-image: 
+        linear-gradient(rgba(99, 102, 241, 0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(99, 102, 241, 0.02) 1px, transparent 1px);
+    background-size: 50px 50px;
+    opacity: 0.3;
+    display: none;
+}
+
+/* Tablet & Above - Add animations */
+@media (min-width: 768px) {
+    .enhanced-hero-section {
+        padding: 50px 0;
+    }
+
+    .particles {
+        display: block;
+    }
+
+    .particle:nth-child(1) { left: 10%; top: 20%; animation: hero-float 20s infinite ease-in-out; }
+    .particle:nth-child(2) { left: 30%; top: 40%; animation: hero-float 22s infinite 3s ease-in-out; }
+    .particle:nth-child(3) { left: 50%; top: 60%; animation: hero-float 25s infinite 6s ease-in-out; }
+    .particle:nth-child(4) { left: 70%; top: 30%; animation: hero-float 18s infinite 9s ease-in-out; }
+    .particle:nth-child(5) { left: 20%; top: 80%; animation: hero-float 24s infinite 12s ease-in-out; }
+    .particle:nth-child(6) { left: 80%; top: 70%; animation: hero-float 21s infinite 15s ease-in-out; }
+    .particle:nth-child(7) { left: 60%; top: 10%; animation: hero-float 23s infinite 18s ease-in-out; }
+    .particle:nth-child(8) { left: 90%; top: 50%; animation: hero-float 20s infinite 21s ease-in-out; }
+
+    @keyframes hero-float {
+        0%, 100% { 
+            transform: translateY(0) translateX(0);
+            opacity: 0.3;
+        }
+        50% { 
+            transform: translateY(-20px) translateX(10px);
+            opacity: 0.6;
+        }
+    }
+
+    .grid-overlay {
+        display: block;
+    }
+}
+
+/* Desktop - Add gradient animation */
+@media (min-width: 1024px) {
+    .gradient-mesh {
+        animation: hero-gradient-shift 30s ease-in-out infinite;
+    }
+
+    @keyframes hero-gradient-shift {
+        0%, 100% { transform: translate(0, 0); }
+        50% { transform: translate(-20px, -20px); }
+    }
+
+    .grid-overlay {
+        animation: hero-grid-move 60s linear infinite;
+    }
+
+    @keyframes hero-grid-move {
+        0% { transform: translate(0, 0); }
+        100% { transform: translate(50px, 50px); }
+    }
+}
+
+/* Mobile Specific */
+@media (max-width: 767px) {
+    .enhanced-hero-section {
+        padding: 20px 0;
+        min-height: auto;
+    }
+
+    .gradient-mesh {
+        filter: blur(30px);
+    }
+}
+
+@media (max-width: 480px) {
+    .enhanced-hero-section {
+        padding: 16px 0;
+    }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    .gradient-mesh,
+    .particle,
+    .grid-overlay {
+        animation: none !important;
+    }
+}

@@ -1,0 +1,787 @@
+/* ========================================
+   GIVEAWAY PAGE - UTILITIES (ENHANCED)
+   File 3/3: Loading, Animations, Utilities
+   Better Polish & Smooth Interactions
+======================================== */
+
+/* ========================================
+   LOADING STATES
+======================================== */
+.gw-stat-card.loading,
+.gw-position-card.loading {
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+.gw-stat-skeleton,
+.gw-position-skeleton {
+    width: 100%;
+    height: 90px;
+    background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0.05),
+        rgba(255, 255, 255, 0.12),
+        rgba(255, 255, 255, 0.05)
+    );
+    background-size: 200% 100%;
+    animation: gw-skeleton-loading 1.5s ease-in-out infinite;
+    border-radius: 18px;
+}
+
+@keyframes gw-skeleton-loading {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+/* ========================================
+   ANIMATIONS
+======================================== */
+
+/* Fade In Up */
+@keyframes gw-fade-in-up {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Fade In */
+@keyframes gw-fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Scale In */
+@keyframes gw-scale-in {
+    from {
+        opacity: 0;
+        transform: scale(0.85);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Pulse */
+@keyframes gw-pulse {
+    0%, 100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.85;
+        transform: scale(1.05);
+    }
+}
+
+/* Shimmer */
+@keyframes gw-shimmer {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+/* Bounce */
+@keyframes gw-bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Rotate */
+@keyframes gw-rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Apply entrance animations */
+.gw-hero-content {
+    animation: gw-fade-in-up 0.9s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.gw-stat-card {
+    animation: gw-fade-in-up 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+    animation-fill-mode: both;
+}
+
+.gw-stat-card:nth-child(1) { animation-delay: 0.1s; }
+.gw-stat-card:nth-child(2) { animation-delay: 0.2s; }
+.gw-stat-card:nth-child(3) { animation-delay: 0.3s; }
+.gw-stat-card:nth-child(4) { animation-delay: 0.4s; }
+
+.gw-eligibility-card {
+    animation: gw-scale-in 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.gw-position-card {
+    animation: gw-fade-in-up 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.gw-task-card {
+    animation: gw-fade-in-up 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    animation-fill-mode: both;
+}
+
+.gw-task-card:nth-child(1) { animation-delay: 0.05s; }
+.gw-task-card:nth-child(2) { animation-delay: 0.1s; }
+.gw-task-card:nth-child(3) { animation-delay: 0.15s; }
+.gw-task-card:nth-child(4) { animation-delay: 0.2s; }
+.gw-task-card:nth-child(5) { animation-delay: 0.25s; }
+.gw-task-card:nth-child(6) { animation-delay: 0.3s; }
+
+/* ========================================
+   UTILITY CLASSES
+======================================== */
+
+/* Text Utilities */
+.gw-text-gradient {
+    background: linear-gradient(135deg, #4b5ae4, #6d7aff, #00D4FF);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.gw-text-success {
+    color: #00E678;
+}
+
+.gw-text-warning {
+    color: #FFC107;
+}
+
+.gw-text-primary {
+    color: #6d7aff;
+}
+
+.gw-text-secondary {
+    color: var(--text-secondary);
+}
+
+.gw-text-light {
+    color: var(--text-light);
+}
+
+/* Spacing Utilities */
+.gw-mt-xs { margin-top: 10px; }
+.gw-mt-sm { margin-top: 20px; }
+.gw-mt-md { margin-top: 30px; }
+.gw-mt-lg { margin-top: 40px; }
+.gw-mt-xl { margin-top: 60px; }
+
+.gw-mb-xs { margin-bottom: 10px; }
+.gw-mb-sm { margin-bottom: 20px; }
+.gw-mb-md { margin-bottom: 30px; }
+.gw-mb-lg { margin-bottom: 40px; }
+.gw-mb-xl { margin-bottom: 60px; }
+
+.gw-p-xs { padding: 10px; }
+.gw-p-sm { padding: 20px; }
+.gw-p-md { padding: 30px; }
+.gw-p-lg { padding: 40px; }
+.gw-p-xl { padding: 60px; }
+
+/* Flex Utilities */
+.gw-flex {
+    display: flex;
+}
+
+.gw-flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gw-flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gw-flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.gw-gap-xs { gap: 10px; }
+.gw-gap-sm { gap: 15px; }
+.gw-gap-md { gap: 20px; }
+.gw-gap-lg { gap: 30px; }
+
+/* Display Utilities */
+.gw-hidden {
+    display: none;
+}
+
+.gw-visible {
+    display: block;
+}
+
+/* Opacity Utilities */
+.gw-opacity-50 { opacity: 0.5; }
+.gw-opacity-70 { opacity: 0.7; }
+.gw-opacity-90 { opacity: 0.9; }
+
+/* Border Utilities */
+.gw-border-gradient {
+    border: 2px solid transparent;
+    background: linear-gradient(var(--background-dark), var(--background-dark)) padding-box,
+                linear-gradient(135deg, #4b5ae4, #6d7aff) border-box;
+}
+
+.gw-rounded-sm { border-radius: 8px; }
+.gw-rounded-md { border-radius: 12px; }
+.gw-rounded-lg { border-radius: 18px; }
+.gw-rounded-xl { border-radius: 24px; }
+.gw-rounded-full { border-radius: 9999px; }
+
+/* Shadow Utilities */
+.gw-shadow-sm {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.gw-shadow-md {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.gw-shadow-lg {
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.4);
+}
+
+.gw-shadow-xl {
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.gw-shadow-primary {
+    box-shadow: 0 10px 35px rgba(75, 90, 228, 0.4);
+}
+
+.gw-shadow-success {
+    box-shadow: 0 10px 35px rgba(0, 230, 120, 0.3);
+}
+
+/* Backdrop Utilities */
+.gw-glass {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.gw-glass-strong {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(30px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.gw-glass-primary {
+    background: rgba(75, 90, 228, 0.15);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(75, 90, 228, 0.3);
+}
+
+/* Interactive States */
+.gw-interactive {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+}
+
+.gw-interactive:hover {
+    transform: translateY(-5px);
+}
+
+.gw-interactive:active {
+    transform: translateY(-2px);
+}
+
+.gw-clickable {
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.gw-clickable:hover {
+    opacity: 0.8;
+}
+
+/* Dividers */
+.gw-divider {
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.25), transparent);
+    margin: 45px 0;
+}
+
+.gw-divider-thick {
+    height: 2px;
+    background: linear-gradient(90deg, transparent, rgba(75, 90, 228, 0.6), transparent);
+}
+
+.gw-divider-vertical {
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, rgba(255, 255, 255, 0.25), transparent);
+}
+
+/* Badge Styles */
+.gw-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.gw-badge-success {
+    background: linear-gradient(135deg, rgba(0, 230, 120, 0.25), rgba(0, 230, 120, 0.15));
+    border: 1.5px solid rgba(0, 230, 120, 0.5);
+    color: #00E678;
+}
+
+.gw-badge-warning {
+    background: linear-gradient(135deg, rgba(255, 193, 7, 0.25), rgba(255, 193, 7, 0.15));
+    border: 1.5px solid rgba(255, 193, 7, 0.5);
+    color: #FFC107;
+}
+
+.gw-badge-primary {
+    background: linear-gradient(135deg, rgba(75, 90, 228, 0.25), rgba(109, 122, 255, 0.15));
+    border: 1.5px solid rgba(75, 90, 228, 0.5);
+    color: #6d7aff;
+}
+
+.gw-badge-info {
+    background: linear-gradient(135deg, rgba(0, 212, 255, 0.25), rgba(0, 212, 255, 0.15));
+    border: 1.5px solid rgba(0, 212, 255, 0.5);
+    color: #00D4FF;
+}
+
+/* Icon Sizes */
+.gw-icon-sm {
+    width: 16px;
+    height: 16px;
+}
+
+.gw-icon-md {
+    width: 24px;
+    height: 24px;
+}
+
+.gw-icon-lg {
+    width: 32px;
+    height: 32px;
+}
+
+.gw-icon-xl {
+    width: 48px;
+    height: 48px;
+}
+
+.gw-icon-2xl {
+    width: 64px;
+    height: 64px;
+}
+
+/* ========================================
+   SCROLL BEHAVIOR
+======================================== */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+.gw-container::-webkit-scrollbar {
+    width: 10px;
+}
+
+.gw-container::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+}
+
+.gw-container::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #4b5ae4, #6d7aff);
+    border-radius: 12px;
+}
+
+.gw-container::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #6d7aff, #00D4FF);
+}
+
+/* ========================================
+   ACCESSIBILITY
+======================================== */
+
+/* Focus Styles */
+button:focus-visible,
+a:focus-visible,
+.gw-task-btn:focus-visible,
+.gw-entry-btn:focus-visible {
+    outline: 3px solid #6d7aff;
+    outline-offset: 4px;
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+    .gw-stat-card,
+    .gw-eligibility-card,
+    .gw-position-card,
+    .gw-task-card,
+    .gw-prize-card {
+        border-width: 2px;
+    }
+    
+    .gw-gradient-text,
+    .gw-text-gradient {
+        background: none;
+        -webkit-text-fill-color: var(--text-light);
+        color: var(--text-light);
+    }
+
+    .gw-stat-value,
+    .gw-rank-number,
+    .gw-points-value {
+        -webkit-text-fill-color: #6d7aff;
+        color: #6d7aff;
+    }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    .gw-orb,
+    .gw-spinner,
+    .gw-spinner-small,
+    .gw-badge-icon {
+        animation: none !important;
+    }
+    
+    .gw-hero-content,
+    .gw-stat-card,
+    .gw-eligibility-card,
+    .gw-position-card,
+    .gw-task-card {
+        animation: none !important;
+    }
+
+    .gw-countdown-item:hover,
+    .gw-stat-card:hover,
+    .gw-task-card:hover {
+        transform: none !important;
+    }
+}
+
+/* Screen Reader Only */
+.gw-sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+/* ========================================
+   PRINT STYLES
+======================================== */
+@media print {
+    .gw-orb,
+    .gw-grid,
+    .gw-hero-bg {
+        display: none;
+    }
+    
+    .gw-container {
+        max-width: 100%;
+        padding: 0;
+    }
+    
+    .gw-stat-card,
+    .gw-task-card,
+    .gw-prize-card {
+        break-inside: avoid;
+    }
+
+    .gw-cta-btn,
+    .gw-entry-btn,
+    .gw-task-btn {
+        display: none;
+    }
+}
+
+/* ========================================
+   VERY SMALL SCREENS (320px - 375px)
+======================================== */
+@media (max-width: 375px) {
+    .gw-hero-title {
+        font-size: 1.9rem;
+        letter-spacing: -0.5px;
+    }
+
+    .gw-gradient-text {
+        font-size: 2.2rem;
+    }
+    
+    .gw-countdown-item {
+        padding: 12px 14px;
+        min-width: 60px;
+    }
+    
+    .gw-countdown-value {
+        font-size: 1.6rem;
+    }
+    
+    .gw-countdown-separator {
+        font-size: 1.8rem;
+    }
+    
+    .gw-stat-value {
+        font-size: 1.8rem;
+    }
+    
+    .gw-eligibility-icon {
+        width: 75px;
+        height: 75px;
+    }
+    
+    .gw-eligibility-title {
+        font-size: 1.7rem;
+    }
+    
+    .gw-section-title {
+        font-size: 1.7rem;
+    }
+    
+    .gw-prize-amount {
+        font-size: 2.2rem;
+    }
+    
+    .gw-cta-btn,
+    .gw-entry-btn,
+    .gw-task-btn {
+        padding: 14px 24px;
+        font-size: 0.95rem;
+    }
+
+    .gw-task-card,
+    .gw-prize-card.top,
+    .gw-eligibility-card {
+        padding: 25px 18px;
+    }
+}
+
+/* ========================================
+   DARK THEME ENFORCEMENT
+======================================== */
+.gw-container,
+.gw-hero,
+.gw-stats,
+.gw-eligibility,
+.gw-position,
+.gw-tasks,
+.gw-prizes,
+.gw-rules {
+    background-color: transparent;
+    color: var(--text-light);
+}
+
+/* Ensure all cards maintain dark theme */
+.gw-stat-card,
+.gw-eligibility-card,
+.gw-position-card,
+.gw-task-card,
+.gw-prize-card,
+.gw-date-card,
+.gw-rule-item {
+    color: var(--text-light);
+}
+
+/* Ensure buttons maintain visibility */
+.gw-cta-btn,
+.gw-entry-btn,
+.gw-task-btn {
+    font-weight: 700;
+}
+
+.gw-cta-btn:hover,
+.gw-entry-btn:hover,
+.gw-task-btn:hover {
+    filter: brightness(1.1);
+}
+
+/* ========================================
+   TOAST NOTIFICATIONS
+======================================== */
+.gw-toast {
+    position: fixed;
+    bottom: 35px;
+    right: 35px;
+    padding: 18px 28px;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(30px);
+    border: 1.5px solid rgba(255, 255, 255, 0.25);
+    border-radius: 14px;
+    color: var(--text-light);
+    font-weight: 600;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    animation: gw-toast-in 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes gw-toast-in {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.gw-toast.success {
+    border-color: rgba(0, 230, 120, 0.5);
+    background: linear-gradient(135deg, rgba(0, 230, 120, 0.25), rgba(0, 230, 120, 0.15));
+}
+
+.gw-toast.error {
+    border-color: rgba(239, 68, 68, 0.5);
+    background: linear-gradient(135deg, rgba(239, 68, 68, 0.25), rgba(239, 68, 68, 0.15));
+}
+
+.gw-toast.warning {
+    border-color: rgba(255, 193, 7, 0.5);
+    background: linear-gradient(135deg, rgba(255, 193, 7, 0.25), rgba(255, 193, 7, 0.15));
+}
+
+/* ========================================
+   LOADING SPINNER
+======================================== */
+.gw-loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+}
+
+.gw-loading-spinner {
+    width: 60px;
+    height: 60px;
+    border: 4px solid rgba(255, 255, 255, 0.2);
+    border-top-color: #6d7aff;
+    border-radius: 50%;
+    animation: gw-spin 0.8s linear infinite;
+}
+
+/* ========================================
+   TRANSITIONS
+======================================== */
+.gw-transition-all {
+    transition: all 0.3s ease;
+}
+
+.gw-transition-fast {
+    transition: all 0.2s ease;
+}
+
+.gw-transition-slow {
+    transition: all 0.5s ease;
+}
+
+.gw-transition-smooth {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ========================================
+   GRADIENT BACKGROUNDS
+======================================== */
+.gw-bg-gradient-primary {
+    background: linear-gradient(135deg, rgba(75, 90, 228, 0.2), rgba(109, 122, 255, 0.1));
+}
+
+.gw-bg-gradient-success {
+    background: linear-gradient(135deg, rgba(0, 230, 120, 0.2), rgba(0, 230, 120, 0.1));
+}
+
+.gw-bg-gradient-warning {
+    background: linear-gradient(135deg, rgba(255, 193, 7, 0.2), rgba(255, 193, 7, 0.1));
+}
+
+/* ========================================
+   HOVER EFFECTS
+======================================== */
+.gw-hover-lift {
+    transition: all 0.3s ease;
+}
+
+.gw-hover-lift:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.gw-hover-glow {
+    transition: all 0.3s ease;
+}
+
+.gw-hover-glow:hover {
+    box-shadow: 0 0 30px rgba(75, 90, 228, 0.5);
+}
+
+.gw-hover-scale {
+    transition: all 0.3s ease;
+}
+
+.gw-hover-scale:hover {
+    transform: scale(1.05);
+}
+
+/* Mobile Adjustments for Toast */
+@media (max-width: 480px) {
+    .gw-toast {
+        bottom: 20px;
+        right: 20px;
+        left: 20px;
+        padding: 15px 20px;
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,772 @@
+/* SMART CONTRACT INFO - MOBILE FIRST */
+.mmv-contract-section {
+    position: relative;
+    padding: 60px 15px;
+    background: linear-gradient(180deg, 
+        var(--background-dark) 0%, 
+        rgba(10, 11, 15, 0.98) 100%
+    );
+    overflow: hidden;
+    font-family: var(--font-nectarine);
+    font-weight: 500;
+}
+
+.mmv-contract-bg-pattern {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+        radial-gradient(circle at 20% 50%, rgba(75, 90, 228, 0.05) 0%, transparent 50%),
+        radial-gradient(circle at 80% 50%, rgba(0, 212, 255, 0.05) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.mmv-contract-float-element {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(60px);
+    animation: mmv-contract-float 15s ease-in-out infinite;
+    pointer-events: none;
+}
+
+.mmv-float-1 {
+    width: 150px;
+    height: 150px;
+    background: rgba(75, 90, 228, 0.08);
+    top: 10%;
+    left: -10%;
+}
+
+.mmv-float-2 {
+    width: 120px;
+    height: 120px;
+    background: rgba(0, 212, 255, 0.06);
+    bottom: 20%;
+    right: -10%;
+    animation-delay: -7s;
+}
+
+.mmv-contract-container {
+    position: relative;
+    z-index: 1;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* Header - Mobile First */
+.mmv-contract-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.mmv-contract-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    font-family: "Poppins", serif;
+}
+
+.mmv-contract-title {
+    font-size: 32px;
+    font-weight: 400;
+    color: var(--text-light);
+    margin: 0 0 12px 0;
+    letter-spacing: 1px;
+}
+
+.mmv-contract-gradient {
+    background: linear-gradient(135deg, #4b5ae4 0%, #00D4FF 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.mmv-contract-subtitle {
+    font-family: "Poppins", serif;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+    margin: 0;
+    padding: 0 20px;
+    line-height: 1.6;
+}
+/* Main card - Mobile First */
+.mmv-contract-main-card {
+    position: relative;
+    background: linear-gradient(135deg, 
+        rgba(255, 255, 255, 0.04) 0%, 
+        rgba(255, 255, 255, 0.01) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    padding: 24px 16px;
+    margin-bottom: 32px;
+    overflow: hidden;
+}
+
+.mmv-contract-card-glow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, 
+        rgba(75, 90, 228, 0.08) 0%, 
+        transparent 60%);
+    pointer-events: none;
+}
+
+.mmv-contract-card-inner {
+    position: relative;
+    z-index: 1;
+}
+
+.mmv-contract-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.mmv-contract-status-wrapper {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    flex: 1;
+}
+
+.mmv-contract-shield-icon {
+    width: 36px;
+    height: 36px;
+    color: #4b5ae4;
+    flex-shrink: 0;
+}
+
+.mmv-contract-card-title {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--text-light);
+    margin: 0 0 4px 0;
+}
+
+.mmv-contract-status {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: "Poppins", serif;
+}
+
+.mmv-contract-status-dot {
+    width: 6px;
+    height: 6px;
+    background: #00ff87;
+    border-radius: 50%;
+    animation: mmv-pulse 2s ease-in-out infinite;
+}
+
+.mmv-contract-verified-badge {
+    width: 24px;
+    height: 24px;
+    color: #00ff87;
+    flex-shrink: 0;
+}
+
+/* Address box - Mobile First */
+.mmv-contract-address-container {
+    margin-bottom: 24px;
+}
+
+.mmv-contract-address-label {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: "Poppins", serif;
+}
+
+.mmv-contract-address-box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.mmv-contract-address-text {
+    flex: 1;
+    font-family: 'Courier New', monospace;
+    font-size: 11px;
+    color: #00D4FF;
+    letter-spacing: 0.3px;
+    word-break: break-all;
+    line-height: 1.5;
+}
+
+.mmv-contract-actions {
+    display: flex;
+    gap: 6px;
+    flex-shrink: 0;
+}
+
+.mmv-contract-action-btn {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    color: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.mmv-contract-action-btn:hover {
+    background: rgba(75, 90, 228, 0.2);
+    border-color: rgba(75, 90, 228, 0.4);
+    color: white;
+    transform: scale(1.05);
+}
+
+.mmv-success-icon {
+    color: #00ff87;
+}
+/* Features grid - Mobile First */
+.mmv-contract-features-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.mmv-contract-feature-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.mmv-contract-feature-icon {
+    font-size: 20px;
+    flex-shrink: 0;
+}
+
+.mmv-contract-feature-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    min-width: 0;
+}
+
+.mmv-contract-feature-label {
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.5);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-family: "Poppins", serif;
+}
+
+.mmv-contract-feature-value {
+    font-size: 13px;
+    color: var(--text-light);
+    font-weight: 400;
+}
+
+/* Buttons - Mobile First */
+.mmv-contract-buttons {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+}
+
+.mmv-contract-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 14px 15px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: var(--font-nectarine);
+    text-decoration: none;
+    border: none;
+}
+
+.mmv-btn-primary {
+    background: linear-gradient(135deg, #4b5ae4 0%, #3a45c4 100%);
+    color: white;
+}
+
+.mmv-btn-secondary {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--text-light);
+}
+
+/* Trust bar - Mobile First */
+.mmv-contract-trust-bar {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 20px;
+    background: linear-gradient(135deg, 
+        rgba(75, 90, 228, 0.05) 0%, 
+        rgba(0, 212, 255, 0.02) 100%);
+    border: 1px solid rgba(75, 90, 228, 0.1);
+    border-radius: 16px;
+    margin-bottom: 24px;
+}
+
+.mmv-contract-trust-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.mmv-contract-trust-icon {
+    width: 24px;
+    height: 24px;
+    color: #00ff87;
+    flex-shrink: 0;
+}
+
+.mmv-contract-trust-title {
+    font-size: 14px;
+    color: var(--text-light);
+    font-weight: 500;
+}
+
+.mmv-contract-trust-desc {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: "Poppins", serif;
+}
+
+.mmv-contract-trust-divider {
+    display: none;
+}
+
+.mmv-contract-info-banner {
+    display: flex;
+    gap: 12px;
+    padding: 16px;
+    background: rgba(0, 212, 255, 0.05);
+    border: 1px solid rgba(0, 212, 255, 0.1);
+    border-radius: 12px;
+    align-items: flex-start;
+}
+
+.mmv-contract-info-icon {
+    width: 20px;
+    height: 20px;
+    color: #00D4FF;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.mmv-contract-info-banner p {
+    font-family: "Poppins", serif;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Animations */
+@keyframes mmv-contract-float {
+    0%, 100% { transform: translate(0, 0); }
+    50% { transform: translate(20px, -20px); }
+}
+
+@keyframes mmv-pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+/* Tablet - 768px and up */
+@media (min-width: 768px) {
+    .mmv-contract-section {
+        padding: 80px 20px;
+    }
+    
+    .mmv-contract-container {
+        max-width: 720px;
+    }
+    
+    .mmv-contract-title {
+        font-size: 44px;
+    }
+    
+    .mmv-contract-main-card {
+        padding: 32px;
+    }
+    
+    .mmv-contract-features-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+    
+    .mmv-contract-buttons {
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+    }
+    
+    .mmv-contract-trust-bar {
+        grid-template-columns: 1fr auto 1fr auto 1fr;
+        align-items: center;
+    }
+    
+    .mmv-contract-trust-divider {
+        display: block;
+        width: 1px;
+        height: 40px;
+        background: linear-gradient(180deg, 
+            transparent 0%, 
+            rgba(255, 255, 255, 0.1) 50%, 
+            transparent 100%);
+    }
+}
+
+/* Desktop - 1024px and up */
+@media (min-width: 1024px) {
+    .mmv-contract-section {
+        padding: 100px 20px;
+    }
+    
+    .mmv-contract-container {
+        max-width: 900px;
+    }
+    
+    .mmv-contract-title {
+        font-size: 48px;
+    }
+    
+    .mmv-contract-main-card {
+        padding: 40px;
+    }
+    
+    .mmv-contract-features-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .mmv-float-1 {
+        width: 200px;
+        height: 200px;
+        left: 5%;
+    }
+    
+    .mmv-float-2 {
+        width: 150px;
+        height: 150px;
+        right: 10%;
+    }
+}
+
+/* Large Desktop - 1440px and up */
+@media (min-width: 1440px) {
+    .mmv-contract-container {
+        max-width: 1000px;
+    }
+    
+    .mmv-contract-title {
+        font-size: 52px;
+    }
+}
+
+/* Add these styles to your existing smart-contract-info.css file */
+
+/* Audit Partners Section within Contract Card */
+.mmv-audit-partners-section {
+    margin-top: 50px;
+    padding: 40px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.mmv-audit-partners-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 35px;
+}
+
+.mmv-audit-header-icon {
+    color: var(--primary-color-2);
+    animation: icon-pulse-glow 2s ease-in-out infinite;
+}
+
+@keyframes icon-pulse-glow {
+    0%, 100% {
+        filter: drop-shadow(0 0 8px rgba(75, 90, 228, 0.6));
+    }
+    50% {
+        filter: drop-shadow(0 0 15px rgba(75, 90, 228, 0.9));
+    }
+}
+
+.mmv-audit-partners-header h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-light);
+    margin: 0;
+}
+
+.mmv-audit-partners-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 24px;
+}
+
+.mmv-audit-partner-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 15px;
+    background: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.mmv-audit-partner-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: var(--partner-color, #4b5ae4);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.mmv-audit-partner-card:hover {
+    transform: translateX(8px);
+    border-color: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.mmv-audit-partner-card:hover::before {
+    opacity: 1;
+}
+
+.mmv-audit-partner-logo-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 14px;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+
+.mmv-audit-partner-card:hover .mmv-audit-partner-logo-wrapper {
+    background: rgba(255, 255, 255, 0.06);
+    transform: scale(1.05);
+}
+
+.mmv-audit-partner-logo-wrapper img {
+    width: 80px;
+    height: auto;
+    object-fit: contain;
+}
+
+.mmv-audit-partner-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.mmv-audit-partner-name {
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    color: var(--text-light);
+    display: block;
+}
+
+.mmv-audit-partner-status {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.875rem;
+    letter-spacing: 0.5px;
+    color: var(--partner-color, #00E678);
+    font-weight: 400;
+}
+
+.mmv-audit-partner-link-icon {
+    color: rgba(255, 255, 255, 0.4);
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+}
+
+.mmv-audit-partner-card:hover .mmv-audit-partner-link-icon {
+    color: var(--partner-color, #4b5ae4);
+    transform: translate(4px, -4px);
+}
+
+/* Update Trust Bar - changed middle item */
+.mmv-contract-trust-bar {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr auto 1fr;
+    gap: 20px;
+    align-items: center;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    margin-top: 30px;
+}
+
+/* Enhanced Contract Buttons */
+.mmv-contract-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.mmv-btn-primary {
+    background: linear-gradient(135deg, #4b5ae4 0%, #6d7aff 100%);
+    color: white;
+    border: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.mmv-btn-primary::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s ease;
+}
+
+.mmv-btn-primary:hover::before {
+    left: 100%;
+}
+
+.mmv-btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(75, 90, 228, 0.4);
+}
+
+.mmv-btn-secondary {
+    background: transparent;
+    color: var(--primary-color-2);
+    border: 2px solid rgba(75, 90, 228, 0.4);
+}
+
+.mmv-btn-secondary:hover {
+    background: rgba(75, 90, 228, 0.1);
+    border-color: var(--primary-color-2);
+    transform: translateY(-3px);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .mmv-audit-partners-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .mmv-audit-partners-section {
+        margin-top: 30px;
+        padding: 30px 0;
+    }
+
+    .mmv-audit-partners-header h3 {
+        font-size: 1.2rem;
+    }
+
+    .mmv-audit-partner-card {
+        padding: 20px;
+        gap: 15px;
+    }
+
+    .mmv-audit-partner-logo-wrapper {
+        width: 60px;
+        height: 60px;
+    }
+
+    .mmv-audit-partner-logo-wrapper img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .mmv-audit-partner-name {
+        font-size: 1rem;
+    }
+
+    .mmv-contract-trust-bar {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .mmv-contract-trust-divider {
+        width: 100%;
+        height: 1px;
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+    .mmv-contract-buttons {
+        flex-direction: column;
+    }
+
+    .mmv-contract-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .mmv-audit-partner-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .mmv-audit-partner-link-icon {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+}

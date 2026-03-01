@@ -1,0 +1,645 @@
+/* Enhanced Tokenomics Section */
+.tk-section {
+    position: relative;
+    padding: 100px 0 120px;
+    background: var(--background-dark);
+    overflow: hidden;
+}
+
+/* Background Elements */
+.tk-bg-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.tk-grid-pattern {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        linear-gradient(rgba(75, 90, 228, 0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(75, 90, 228, 0.02) 1px, transparent 1px);
+    background-size: 80px 80px;
+    animation: tk-grid-drift 30s linear infinite;
+}
+
+@keyframes tk-grid-drift {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(80px, 80px); }
+}
+
+.tk-glow-orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(120px);
+    animation: tk-orb-pulse 10s ease-in-out infinite;
+}
+
+.tk-orb-1 {
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(75, 90, 228, 0.08), transparent);
+    top: 20%;
+    right: -10%;
+    animation-delay: -2s;
+}
+
+.tk-orb-2 {
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(137, 75, 228, 0.06), transparent);
+    bottom: 10%;
+    left: -15%;
+    animation-delay: -5s;
+}
+
+@keyframes tk-orb-pulse {
+    0%, 100% { 
+        transform: translateY(0px) scale(1);
+        opacity: 0.6;
+    }
+    50% { 
+        transform: translateY(-40px) scale(1.1);
+        opacity: 1;
+    }
+}
+
+/* Content */
+.tk-content {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Header */
+.tk-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.tk-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(75, 90, 228, 0.1);
+    border: 1px solid rgba(75, 90, 228, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 50px;
+    padding: 10px 24px;
+    color: var(--primary-color-2);
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 24px;
+    animation: tk-badge-glow 3s ease-in-out infinite;
+}
+
+@keyframes tk-badge-glow {
+    0%, 100% { 
+        box-shadow: 0 0 0 rgba(75, 90, 228, 0.2);
+        transform: scale(1);
+    }
+    50% { 
+        box-shadow: 0 0 25px rgba(75, 90, 228, 0.3);
+        transform: scale(1.02);
+    }
+}
+
+.tk-title {
+    font-size: 3.4rem;
+    font-family: var(--font-nectarine);
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: var(--text-light);
+    margin-bottom: 20px;
+    background: linear-gradient(135deg, var(--text-light), var(--primary-color-2), var(--compliment-color-5));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1.1;
+}
+
+.tk-subtitle {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--text-light-2);
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+/* Token Info Grid */
+.tk-info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-bottom: 60px;
+}
+
+.tk-info-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: rgba(26, 27, 35, 0.6);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 16px;
+    padding: 24px;
+    transition: all 0.3s ease;
+    animation: tk-card-slide-up 0.8s ease-out both;
+    animation-delay: var(--animation-delay, 0s);
+}
+
+@keyframes tk-card-slide-up {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.tk-info-card:hover {
+    transform: translateY(-2px);
+    border-color: rgba(75, 90, 228, 0.2);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.tk-info-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background: rgba(75, 90, 228, 0.15);
+    border-radius: 12px;
+    color: var(--primary-color-2);
+    flex-shrink: 0;
+}
+
+.tk-info-content {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.tk-info-label {
+    font-size: 0.875rem;
+    color: var(--text-light-3);
+    font-weight: 500;
+}
+
+.tk-info-value {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--text-light);
+}
+
+/* Distribution Section */
+.tk-distribution {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.tk-distribution-title {
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--text-light);
+    margin-bottom: 40px;
+    font-family: var(--font-nectarine);
+}
+
+/* Chart Container */
+.tk-chart-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.tk-progress-ring {
+    position: relative;
+    width: 280px;
+    height: 280px;
+}
+
+.tk-ring-svg {
+    width: 100%;
+    height: 100%;
+    transform: rotate(-90deg);
+}
+
+.tk-ring-segment {
+    transition: all 0.6s ease;
+    stroke-linecap: round;
+    filter: drop-shadow(0 0 8px rgba(75, 90, 228, 0.3));
+}
+
+.tk-chart-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.tk-center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.tk-center-value {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--text-light);
+    font-family: "Poppins", sans-serif;
+}
+
+.tk-center-label {
+    font-size: 0.9rem;
+    color: var(--text-light-3);
+    font-weight: 600;
+}
+
+/* Allocations Grid */
+.tk-allocations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+    margin-bottom: 60px;
+}
+
+/* Allocation Cards */
+.tk-allocation-card {
+    position: relative;
+    background: rgba(26, 27, 35, 0.7);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    padding: 32px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    overflow: hidden;
+    animation: tk-allocation-appear 0.8s ease-out both;
+    animation-delay: var(--card-delay, 0s);
+}
+
+@keyframes tk-allocation-appear {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.tk-allocation-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(75, 90, 228, 0.04), rgba(137, 75, 228, 0.06));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: inherit;
+}
+
+.tk-allocation-card:hover::before,
+.tk-allocation-card.tk-hovered::before {
+    opacity: 1;
+}
+
+.tk-allocation-card:hover,
+.tk-allocation-card.tk-hovered {
+    transform: translateY(-8px);
+    border-color: rgba(75, 90, 228, 0.25);
+    box-shadow: 
+        0 20px 40px rgba(0, 0, 0, 0.3),
+        0 0 0 1px rgba(75, 90, 228, 0.15),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+/* Card Glow */
+.tk-card-glow {
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, transparent, rgba(75, 90, 228, 0.1), transparent);
+    border-radius: inherit;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+}
+
+.tk-allocation-card.tk-hovered .tk-card-glow {
+    opacity: 1;
+}
+
+/* Card Header */
+.tk-card-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.tk-card-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    background: rgba(75, 90, 228, 0.15);
+    border-radius: 16px;
+    color: var(--primary-color-2);
+    transition: all 0.3s ease;
+}
+
+.tk-allocation-card:hover .tk-card-icon,
+.tk-allocation-card.tk-hovered .tk-card-icon {
+    background: rgba(75, 90, 228, 0.25);
+    transform: scale(1.1);
+}
+
+.tk-card-title-section {
+    flex: 1;
+}
+
+.tk-card-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--text-light);
+    margin-bottom: 4px;
+}
+
+.tk-percentage-display {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.tk-percentage {
+    font-size: 1.8rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-color-2));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Progress Bar */
+.tk-progress-container {
+    width: 100%;
+    height: 12px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.tk-progress-bar {
+    height: 100%;
+    border-radius: 6px;
+    transition: width 1s ease-out;
+    position: relative;
+    box-shadow: 0 0 12px rgba(75, 90, 228, 0.4);
+}
+
+.tk-progress-bar::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    animation: tk-progress-shine 2s ease-in-out infinite;
+}
+
+@keyframes tk-progress-shine {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
+/* Description */
+.tk-card-description {
+    color: var(--text-light-2);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Benefits */
+.tk-benefits {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.tk-benefit-tag {
+    display: inline-flex;
+    align-items: center;
+    background: rgba(75, 90, 228, 0.08);
+    border: 1px solid rgba(75, 90, 228, 0.2);
+    border-radius: 20px;
+    padding: 6px 12px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--primary-color-2);
+}
+
+/* Token Amount */
+.tk-token-amount {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+    background: rgba(75, 90, 228, 0.05);
+    border: 1px solid rgba(75, 90, 228, 0.15);
+    border-radius: 12px;
+    margin-top: auto;
+}
+
+.tk-amount-value {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--text-light);
+}
+
+.tk-amount-label {
+    font-size: 0.9rem;
+    color: var(--text-light-3);
+    font-weight: 500;
+}
+
+/* Bottom Section */
+.tk-bottom-section {
+    margin-top: 60px;
+}
+
+.tk-trust-indicators {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+    padding: 40px;
+    background: rgba(26, 27, 35, 0.5);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+}
+
+.tk-trust-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 16px;
+    transition: all 0.3s ease;
+}
+
+.tk-trust-item:hover {
+    background: rgba(75, 90, 228, 0.08);
+    transform: translateY(-2px);
+}
+
+.tk-trust-item svg {
+    color: var(--primary-color-2);
+    flex-shrink: 0;
+}
+
+.tk-trust-content h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-light);
+    margin-bottom: 4px;
+}
+
+.tk-trust-content p {
+    font-size: 0.9rem;
+    color: var(--text-light-3);
+    line-height: 1.5;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .tk-section {
+        padding: 60px 0 80px;
+    }
+
+    .tk-title {
+        font-size: 2.4rem;
+        margin-bottom: 16px;
+    }
+
+    .tk-subtitle {
+        font-size: 1rem;
+        padding: 0 20px;
+    }
+
+    .tk-info-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        margin-bottom: 40px;
+    }
+
+    .tk-info-card {
+        padding: 20px;
+    }
+
+    .tk-progress-ring {
+        width: 240px;
+        height: 240px;
+    }
+
+    .tk-center-value {
+        font-size: 2rem;
+    }
+
+    .tk-allocations-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin-bottom: 40px;
+    }
+
+    .tk-allocation-card {
+        padding: 24px 20px;
+    }
+
+    .tk-card-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .tk-card-title-section {
+        width: 100%;
+        text-align: center;
+    }
+
+    .tk-trust-indicators {
+        grid-template-columns: 1fr;
+        padding: 32px 24px;
+        margin: 0 20px;
+    }
+
+    .tk-trust-item {
+        padding: 16px;
+    }
+
+    .tk-orb-1,
+    .tk-orb-2 {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .tk-content {
+        padding: 0 16px;
+    }
+
+    .tk-title {
+        font-size: 2rem;
+    }
+
+    .tk-progress-ring {
+        width: 200px;
+        height: 200px;
+    }
+
+    .tk-center-value {
+        font-size: 1.8rem;
+    }
+
+    .tk-allocation-card {
+        padding: 20px 16px;
+    }
+
+    .tk-card-title {
+        font-size: 1.2rem;
+    }
+
+    .tk-percentage {
+        font-size: 1.5rem;
+    }
+}

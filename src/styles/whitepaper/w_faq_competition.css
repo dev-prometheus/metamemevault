@@ -1,0 +1,616 @@
+/* MetaMemeVault Whitepaper - FAQ & Competition Sections CSS */
+
+/* ============================== */
+/* FAQ SECTION - Mobile First     */
+/* ============================== */
+
+.wp-faq {
+    background: var(--wp-bg-dark);
+    padding: var(--wp-spacing-xl) 0;
+}
+
+.wp-faq-intro {
+    text-align: center;
+    margin-bottom: var(--wp-spacing-lg);
+}
+
+.wp-faq-categories {
+    display: flex;
+    flex-direction: column;
+    gap: var(--wp-spacing-lg);
+    margin-top: var(--wp-spacing-lg);
+}
+
+/* Category Headers */
+.wp-faq-category {
+    background: var(--wp-bg-card);
+    border: 1px solid var(--wp-border);
+    border-radius: var(--wp-radius-lg);
+    padding: var(--wp-spacing-md);
+    transition: all 0.3s ease;
+}
+
+.wp-faq-category:hover {
+    border-color: var(--wp-primary);
+}
+
+.wp-faq-category-header {
+    display: flex;
+    align-items: center;
+    gap: var(--wp-spacing-sm);
+    margin-bottom: var(--wp-spacing-md);
+    padding-bottom: var(--wp-spacing-sm);
+    border-bottom: 2px solid var(--wp-border);
+}
+
+.wp-faq-category-header svg {
+    color: var(--wp-primary);
+}
+
+.wp-faq-category-header h3 {
+    color: var(--wp-text-primary);
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+/* FAQ Items */
+.wp-faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--wp-spacing-sm);
+}
+
+.wp-faq-item {
+    background: var(--wp-bg-dark);
+    border: 1px solid var(--wp-border);
+    border-radius: var(--wp-radius-md);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.wp-faq-item:hover {
+    border-color: var(--wp-primary);
+}
+
+.wp-faq-open {
+    border-color: var(--wp-primary);
+    background: linear-gradient(135deg, var(--wp-bg-dark), rgba(75, 90, 228, 0.05));
+}
+
+/* FAQ Question Button */
+.wp-faq-question {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--wp-spacing-sm);
+    padding: var(--wp-spacing-md);
+    background: transparent;
+    border: none;
+    color: var(--wp-text-primary);
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: left;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.wp-faq-question:hover {
+    color: var(--wp-primary-light);
+}
+
+.wp-faq-question span {
+    flex: 1;
+}
+
+/* FAQ Icon */
+.wp-faq-icon {
+    color: var(--wp-primary);
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+}
+
+.wp-faq-icon-rotated {
+    transform: rotate(180deg);
+}
+
+/* FAQ Answer */
+.wp-faq-answer {
+    padding: 0 var(--wp-spacing-md) var(--wp-spacing-md);
+    animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.wp-faq-answer p {
+    color: var(--wp-text-secondary);
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* FAQ Footer */
+.wp-faq-footer {
+    margin-top: var(--wp-spacing-2xl);
+    padding: var(--wp-spacing-lg);
+    background: linear-gradient(135deg, rgba(75, 90, 228, 0.1), rgba(101, 116, 255, 0.05));
+    border: 2px solid var(--wp-primary);
+    border-radius: var(--wp-radius-lg);
+    text-align: center;
+}
+
+.wp-faq-footer-icon {
+    width: 48px;
+    height: 48px;
+    color: var(--wp-primary);
+    margin: 0 auto var(--wp-spacing-md);
+}
+
+.wp-faq-footer-content h4 {
+    color: var(--wp-text-primary);
+    font-size: 1.5rem;
+    margin-bottom: var(--wp-spacing-sm);
+}
+
+.wp-faq-footer-content p {
+    color: var(--wp-text-secondary);
+    margin-bottom: var(--wp-spacing-md);
+}
+
+.wp-faq-footer-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: var(--wp-spacing-sm);
+    align-items: center;
+}
+
+.wp-faq-cta-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--wp-spacing-sm) var(--wp-spacing-lg);
+    background: var(--wp-primary);
+    color: white;
+    text-decoration: none;
+    border-radius: var(--wp-radius-md);
+    font-weight: 600;
+    transition: all 0.3s ease;
+    width: 100%;
+    max-width: 300px;
+}
+
+.wp-faq-cta-btn:hover {
+    background: var(--wp-primary-light);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(75, 90, 228, 0.3);
+}
+
+.wp-faq-cta-secondary {
+    background: transparent;
+    border: 2px solid var(--wp-primary);
+    color: var(--wp-primary-light);
+}
+
+.wp-faq-cta-secondary:hover {
+    background: var(--wp-primary);
+    color: white;
+}
+
+/* ============================== */
+/* COMPETITOR COMPARISON SECTION  */
+/* ============================== */
+
+.wp-competitor {
+    background: var(--wp-bg-dark-2);
+    padding: var(--wp-spacing-xl) 0;
+}
+
+.wp-competitor-intro {
+    text-align: center;
+    margin-bottom: var(--wp-spacing-lg);
+}
+
+/* Project Cards Grid */
+.wp-project-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--wp-spacing-md);
+    margin: var(--wp-spacing-lg) 0;
+}
+
+.wp-project-card {
+    background: var(--wp-bg-card);
+    border: 1px solid var(--wp-border);
+    border-radius: var(--wp-radius-lg);
+    padding: var(--wp-spacing-md);
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.wp-project-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: var(--project-color);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.wp-project-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--project-color);
+    box-shadow: 0 10px 30px rgba(75, 90, 228, 0.2);
+}
+
+.wp-project-card:hover::before {
+    opacity: 1;
+}
+
+.wp-project-highlight {
+    border-color: var(--wp-primary);
+    background: linear-gradient(135deg, var(--wp-bg-card), rgba(75, 90, 228, 0.1));
+}
+
+.wp-project-highlight::before {
+    opacity: 1;
+}
+
+.wp-project-logo {
+    font-size: 3rem;
+    margin-bottom: var(--wp-spacing-sm);
+}
+
+.wp-project-name {
+    color: var(--wp-text-primary);
+    font-size: 1.25rem;
+    margin-bottom: var(--wp-spacing-md);
+}
+
+.wp-project-details {
+    display: flex;
+    flex-direction: column;
+    gap: var(--wp-spacing-xs);
+    margin-bottom: var(--wp-spacing-md);
+}
+
+.wp-project-detail {
+    display: flex;
+    align-items: center;
+    gap: var(--wp-spacing-xs);
+    font-size: 0.875rem;
+    color: var(--wp-text-secondary);
+}
+
+.wp-project-detail svg {
+    color: var(--wp-primary);
+    flex-shrink: 0;
+}
+
+.wp-project-strength {
+    display: flex;
+    gap: var(--wp-spacing-xs);
+    padding: var(--wp-spacing-sm);
+    background: var(--wp-bg-dark);
+    border-radius: var(--wp-radius-sm);
+    align-items: flex-start;
+}
+
+.wp-project-strength svg {
+    color: var(--wp-success);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.wp-project-strength p {
+    color: var(--wp-text-secondary);
+    font-size: 0.875rem;
+    text-align: left;
+    margin: 0;
+}
+
+/* Comparison Table */
+.wp-comparison-table-wrapper {
+    margin-top: var(--wp-spacing-2xl);
+}
+
+.wp-comparison-subtitle {
+    text-align: center;
+    color: var(--wp-text-primary);
+    font-size: 1.75rem;
+    margin-bottom: var(--wp-spacing-lg);
+}
+
+.wp-comparison-table {
+    background: var(--wp-bg-card);
+    border: 1px solid var(--wp-border);
+    border-radius: var(--wp-radius-lg);
+    overflow: hidden;
+}
+
+/* Table Rows - Mobile First (Stacked) */
+.wp-comp-row {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid var(--wp-border);
+    padding: var(--wp-spacing-sm);
+}
+
+.wp-comp-row:last-child {
+    border-bottom: none;
+}
+
+.wp-comp-header {
+    background: var(--wp-bg-dark);
+    font-weight: 700;
+    color: var(--wp-primary-light);
+    display: none;
+    /* Hide on mobile, show on desktop */
+}
+
+.wp-comp-cell {
+    display: flex;
+    align-items: center;
+    gap: var(--wp-spacing-xs);
+    padding: var(--wp-spacing-xs) 0;
+    font-size: 0.875rem;
+    color: var(--wp-text-secondary);
+}
+
+.wp-comp-feature {
+    font-weight: 700;
+    color: var(--wp-text-primary);
+    font-size: 1rem;
+    margin-bottom: var(--wp-spacing-xs);
+}
+
+.wp-comp-mmv {
+    color: var(--wp-primary-light);
+    font-weight: 600;
+}
+
+.wp-comp-mmv span {
+    color: var(--wp-primary-light);
+}
+
+/* Comparison Icons */
+.wp-comp-icon-yes {
+    color: var(--wp-success);
+}
+
+.wp-comp-icon-no {
+    color: var(--wp-danger);
+}
+
+.wp-comp-icon-partial {
+    color: var(--wp-secondary);
+}
+
+/* Mobile Labels */
+.wp-comp-cell::before {
+    content: attr(data-label);
+    font-weight: 600;
+    color: var(--wp-text-tertiary);
+    margin-right: var(--wp-spacing-sm);
+    min-width: 80px;
+}
+
+.wp-comp-feature::before {
+    content: none;
+}
+
+/* Differentiators */
+.wp-differentiators {
+    margin-top: var(--wp-spacing-2xl);
+}
+
+.wp-differentiators h3 {
+    text-align: center;
+    color: var(--wp-text-primary);
+    font-size: 1.75rem;
+    margin-bottom: var(--wp-spacing-lg);
+}
+
+.wp-diff-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--wp-spacing-md);
+}
+
+.wp-diff-card {
+    background: var(--wp-bg-card);
+    border: 1px solid var(--wp-border);
+    border-radius: var(--wp-radius-md);
+    padding: var(--wp-spacing-md);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.wp-diff-card:hover {
+    border-color: var(--wp-primary);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(75, 90, 228, 0.1);
+}
+
+.wp-diff-icon {
+    font-size: 2.5rem;
+    margin-bottom: var(--wp-spacing-sm);
+}
+
+.wp-diff-card h4 {
+    color: var(--wp-text-primary);
+    margin-bottom: var(--wp-spacing-sm);
+}
+
+.wp-diff-card p {
+    color: var(--wp-text-secondary);
+    font-size: 0.95rem;
+}
+
+/* Competitor Conclusion */
+.wp-competitor-conclusion {
+    margin-top: var(--wp-spacing-2xl);
+}
+
+.wp-conclusion-box {
+    background: linear-gradient(135deg, rgba(75, 90, 228, 0.1), rgba(101, 116, 255, 0.05));
+    border: 2px solid var(--wp-primary);
+    border-radius: var(--wp-radius-lg);
+    padding: var(--wp-spacing-lg);
+    text-align: center;
+}
+
+.wp-conclusion-icon {
+    width: 56px;
+    height: 56px;
+    color: var(--wp-primary);
+    margin: 0 auto var(--wp-spacing-md);
+}
+
+.wp-conclusion-box h3 {
+    color: var(--wp-primary-light);
+    font-size: 1.75rem;
+    margin-bottom: var(--wp-spacing-md);
+}
+
+.wp-conclusion-box p {
+    color: var(--wp-text-secondary);
+    font-size: 1.125rem;
+    line-height: 1.7;
+    margin-bottom: var(--wp-spacing-sm);
+}
+
+/* ============================== */
+/* TABLET RESPONSIVE (768px+)    */
+/* ============================== */
+
+@media (min-width: 768px) {
+
+    /* FAQ */
+    .wp-faq-footer-buttons {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .wp-faq-cta-btn {
+        width: auto;
+    }
+
+    /* Competitor */
+    .wp-project-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .wp-diff-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Comparison Table - Show as actual table */
+    .wp-comp-header {
+        display: grid;
+        grid-template-columns: 2fr repeat(4, 1fr);
+    }
+
+    .wp-comp-row {
+        display: grid;
+        grid-template-columns: 2fr repeat(4, 1fr);
+        flex-direction: row;
+        align-items: center;
+        padding: var(--wp-spacing-sm);
+    }
+
+    .wp-comp-cell {
+        padding: var(--wp-spacing-sm);
+    }
+
+    .wp-comp-cell::before {
+        content: none;
+    }
+
+    .wp-comp-feature {
+        margin-bottom: 0;
+    }
+
+    .wp-project-details {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+/* ============================== */
+/* DESKTOP RESPONSIVE (1024px+)  */
+/* ============================== */
+
+@media (min-width: 1024px) {
+
+    /* FAQ */
+    .wp-faq-question {
+        font-size: 1.125rem;
+    }
+
+    /* Competitor */
+    .wp-project-cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .wp-diff-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .wp-comparison-subtitle {
+        font-size: 2rem;
+    }
+
+    .wp-comp-cell {
+        font-size: 0.95rem;
+    }
+}
+
+/* ============================== */
+/* PRINT STYLES                   */
+/* ============================== */
+
+@media print {
+
+    .wp-faq-footer-buttons,
+    .wp-faq-icon {
+        display: none;
+    }
+
+    .wp-faq-answer {
+        display: block !important;
+    }
+
+    .wp-project-card,
+    .wp-diff-card {
+        break-inside: avoid;
+    }
+}
+
+/* ============================== */
+/* DARK MODE ENHANCEMENTS         */
+/* ============================== */
+
+@media (prefers-color-scheme: dark) {
+    .wp-faq-answer p {
+        color: var(--wp-text-secondary);
+    }
+
+    .wp-comparison-table {
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    }
+}

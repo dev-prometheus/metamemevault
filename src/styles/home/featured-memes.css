@@ -1,0 +1,708 @@
+/* Enhanced Featured Memes Section */
+.featured-memes-enhanced {
+    position: relative;
+    padding: 80px 0 100px;
+    background: var(--background-dark);
+    overflow: hidden;
+}
+
+/* Background Elements */
+.fm-bg-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.fm-grid-pattern {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        linear-gradient(rgba(75, 90, 228, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(75, 90, 228, 0.04) 1px, transparent 1px);
+    background-size: 60px 60px;
+    animation: fm-grid-shift 25s linear infinite;
+}
+
+@keyframes fm-grid-shift {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(60px, 60px); }
+}
+
+.fm-glow-orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(100px);
+    animation: fm-orb-float 8s ease-in-out infinite;
+}
+
+.fm-orb-1 {
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(75, 90, 228, 0.12), transparent);
+    top: 15%;
+    right: -5%;
+    animation-delay: -1s;
+}
+
+.fm-orb-2 {
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(0, 212, 255, 0.08), transparent);
+    bottom: 10%;
+    left: -10%;
+    animation-delay: -3s;
+}
+
+@keyframes fm-orb-float {
+    0%, 100% { 
+        transform: translateY(0px) scale(1);
+        opacity: 0.7;
+    }
+    50% { 
+        transform: translateY(-30px) scale(1.1);
+        opacity: 1;
+    }
+}
+
+.fm-floating-particles::before,
+.fm-floating-particles::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: var(--primary-color-2);
+    border-radius: 50%;
+    animation: fm-particle-float 15s linear infinite;
+}
+
+.fm-floating-particles::before {
+    top: 20%;
+    left: 20%;
+    animation-delay: 0s;
+}
+
+.fm-floating-particles::after {
+    top: 60%;
+    right: 30%;
+    animation-delay: -7s;
+}
+
+@keyframes fm-particle-float {
+    0% { transform: translateY(0px) translateX(0px) scale(0.5); opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { transform: translateY(-100px) translateX(50px) scale(1); opacity: 0; }
+}
+
+/* Content Wrapper */
+.fm-content-wrapper {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Header Section */
+.fm-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.fm-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(75, 90, 228, 0.12);
+    border: 1px solid rgba(75, 90, 228, 0.25);
+    backdrop-filter: blur(10px);
+    border-radius: 50px;
+    padding: 10px 24px;
+    color: var(--primary-color-2);
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 24px;
+    animation: fm-badge-pulse 3s ease-in-out infinite;
+}
+
+@keyframes fm-badge-pulse {
+    0%, 100% { 
+        box-shadow: 0 0 0 rgba(75, 90, 228, 0.3);
+        transform: scale(1);
+    }
+    50% { 
+        box-shadow: 0 0 20px rgba(75, 90, 228, 0.4);
+        transform: scale(1.02);
+    }
+}
+
+.fm-title {
+    font-size: 3.2rem;
+    font-family: var(--font-nectarine);
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: var(--text-light);
+    margin-bottom: 20px;
+    background: linear-gradient(135deg, var(--text-light), var(--primary-color-2), var(--compliment-color-3));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1.1;
+}
+
+.fm-subtitle {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--text-light-2);
+    max-width: 700px;
+    margin: 0 auto 40px;
+    line-height: 1.7;
+}
+
+/* Stats Bar */
+.fm-stats-bar {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 40px;
+    padding: 24px 40px;
+    background: rgba(26, 27, 35, 0.6);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fm-stat {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.fm-stat-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: rgba(75, 90, 228, 0.15);
+    border-radius: 50%;
+    color: var(--primary-color-2);
+}
+
+.fm-stat-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.fm-stat-value {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--text-light);
+    line-height: 1;
+    font-family: "Poppins", sans-serif;
+}
+
+.fm-stat-label {
+    font-size: 0.85rem;
+    color: var(--text-light-3);
+    font-weight: 500;
+}
+
+/* Memes Grid */
+.fm-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 28px;
+    margin-bottom: 80px;
+}
+
+/* Featured Meme Cards */
+.fm-card {
+    position: relative;
+    background: rgba(26, 27, 35, 0.8);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 24px;
+    padding: 32px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    overflow: hidden;
+    animation: fm-card-entrance 0.8s ease-out both;
+    animation-delay: var(--animation-delay, 0s);
+}
+
+@keyframes fm-card-entrance {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fm-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(75, 90, 228, 0.03), rgba(0, 212, 255, 0.05));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: inherit;
+}
+
+.fm-card:hover::before,
+.fm-card.fm-hovered::before {
+    opacity: 1;
+}
+
+.fm-card:hover,
+.fm-card.fm-hovered {
+    transform: translateY(-12px);
+    border-color: rgba(75, 90, 228, 0.25);
+    box-shadow: 
+        0 25px 50px rgba(0, 0, 0, 0.3),
+        0 0 0 1px rgba(75, 90, 228, 0.15),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+/* Card Glow Effect */
+.fm-card-glow {
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
+    background: linear-gradient(45deg, transparent, rgba(75, 90, 228, 0.1), transparent);
+    border-radius: inherit;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+}
+
+.fm-card.fm-hovered .fm-card-glow {
+    opacity: 1;
+}
+
+/* Card Badges */
+.fm-badges {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 8px;
+    z-index: 3;
+}
+
+.fm-badge-hot {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    background: rgba(255, 69, 58, 0.15);
+    border: 1px solid rgba(255, 69, 58, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 4px 10px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #FF453A;
+    animation: fm-hot-pulse 2s ease-in-out infinite;
+}
+
+@keyframes fm-hot-pulse {
+    0%, 100% { transform: scale(1); opacity: 0.9; }
+    50% { transform: scale(1.05); opacity: 1; }
+}
+
+.fm-rank-badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(75, 90, 228, 0.15);
+    border: 1px solid rgba(75, 90, 228, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 4px 10px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--primary-color-2);
+}
+
+/* Card Header */
+.fm-card-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.fm-icon-wrapper {
+    position: relative;
+    width: 64px;
+    height: 64px;
+    flex-shrink: 0;
+}
+
+.fm-icon {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.fm-card:hover .fm-icon,
+.fm-card.fm-hovered .fm-icon {
+    transform: scale(1.1);
+}
+
+.fm-icon-ring {
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    background: linear-gradient(45deg, var(--primary-color), var(--compliment-color-3)) border-box;
+    mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.fm-card:hover .fm-icon-ring,
+.fm-card.fm-hovered .fm-icon-ring {
+    opacity: 1;
+}
+
+.fm-token-info {
+    flex: 1;
+}
+
+.fm-token-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-light);
+    margin-bottom: 4px;
+}
+
+.fm-token-symbol {
+    font-size: 0.9rem;
+    color: var(--primary-color-2);
+    font-weight: 600;
+}
+
+.fm-price-change {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 14px;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.fm-price-change.positive {
+    background: rgba(0, 255, 136, 0.1);
+    color: #00FF88;
+}
+
+.fm-price-change.negative {
+    background: rgba(255, 69, 58, 0.1);
+    color: #FF453A;
+}
+
+/* Description */
+.fm-description {
+    color: var(--text-light-2);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Highlights */
+.fm-highlights {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+.fm-highlight-tag {
+    display: inline-flex;
+    align-items: center;
+    background: rgba(75, 90, 228, 0.08);
+    border: 1px solid rgba(75, 90, 228, 0.2);
+    border-radius: 20px;
+    padding: 4px 12px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--primary-color-2);
+}
+
+/* Market Data */
+.fm-market-data {
+    padding: 20px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    margin-bottom: 24px;
+}
+
+.fm-data-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.fm-data-row:last-child {
+    margin-bottom: 0;
+}
+
+.fm-data-label {
+    font-size: 0.9rem;
+    color: var(--text-light-3);
+    font-weight: 500;
+}
+
+.fm-data-value {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-light);
+}
+
+/* CTA Button */
+.fm-cta-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    padding: 14px 24px;
+    background: linear-gradient(135deg, rgba(75, 90, 228, 0.15), rgba(0, 212, 255, 0.15));
+    border: 1px solid rgba(75, 90, 228, 0.3);
+    border-radius: 16px;
+    color: var(--primary-color-2);
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.fm-cta-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transition: left 0.5s ease;
+}
+
+.fm-cta-btn:hover::before {
+    left: 100%;
+}
+
+.fm-cta-btn:hover {
+    background: linear-gradient(135deg, rgba(75, 90, 228, 0.25), rgba(0, 212, 255, 0.25));
+    border-color: var(--primary-color-2);
+    color: var(--text-light);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(75, 90, 228, 0.2);
+}
+
+/* Bottom Section */
+.fm-bottom-section {
+    margin-top: 60px;
+}
+
+.fm-info-card {
+    background: rgba(26, 27, 35, 0.6);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 24px;
+    padding: 40px;
+    text-align: center;
+}
+
+.fm-info-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 20px;
+    color: var(--primary-color-2);
+}
+
+.fm-info-header h3 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--text-light);
+    font-family: var(--font-nectarine);
+}
+
+.fm-info-text {
+    color: var(--text-light-2);
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fm-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 24px;
+    margin-top: 40px;
+}
+
+.fm-feature {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    text-align: left;
+}
+
+.fm-feature-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background: rgba(75, 90, 228, 0.15);
+    border-radius: 12px;
+    color: var(--primary-color-2);
+    flex-shrink: 0;
+}
+
+.fm-feature-content h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-light);
+    margin-bottom: 8px;
+}
+
+.fm-feature-content p {
+    font-size: 0.95rem;
+    color: var(--text-light-3);
+    line-height: 1.5;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+    .featured-memes-enhanced {
+        padding: 60px 0 80px;
+    }
+
+    .fm-title {
+        font-size: 2.4rem;
+        margin-bottom: 16px;
+    }
+
+    .fm-subtitle {
+        font-size: 1rem;
+        padding: 0 20px;
+    }
+
+    .fm-stats-bar {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+        margin-bottom: 40px;
+    }
+
+    .fm-stat {
+        justify-content: center;
+    }
+
+    .fm-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        margin-bottom: 60px;
+    }
+
+    .fm-card {
+        padding: 28px 24px;
+    }
+
+    .fm-card-header {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .fm-token-info {
+        text-align: center;
+        width: 100%;
+    }
+
+    .fm-price-change {
+        margin: 0 auto;
+    }
+
+    .fm-highlights {
+        justify-content: center;
+    }
+
+    .fm-info-card {
+        padding: 32px 24px;
+        margin: 0 20px;
+    }
+
+    .fm-features {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .fm-feature {
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fm-orb-1,
+    .fm-orb-2 {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .fm-content-wrapper {
+        padding: 0 16px;
+    }
+
+    .fm-title {
+        font-size: 2rem;
+    }
+
+    .fm-card {
+        padding: 24px 20px;
+    }
+
+    .fm-token-name {
+        font-size: 1.3rem;
+    }
+
+    .fm-stat-value {
+        font-size: 1.5rem;
+    }
+}

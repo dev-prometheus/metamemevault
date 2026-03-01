@@ -1,0 +1,768 @@
+/* Enhanced Roadmap Section */
+.rd-section {
+    position: relative;
+    padding: 100px 0 120px;
+    background: var(--background-dark);
+    overflow: hidden;
+}
+
+/* Background Elements */
+.rd-bg-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.rd-grid-pattern {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        linear-gradient(rgba(75, 90, 228, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(75, 90, 228, 0.03) 1px, transparent 1px);
+    background-size: 100px 100px;
+    animation: rd-grid-flow 40s linear infinite;
+}
+
+@keyframes rd-grid-flow {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    100% { transform: translate(100px, 100px) rotate(1deg); }
+}
+
+.rd-glow-orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(140px);
+    animation: rd-orb-drift 12s ease-in-out infinite;
+}
+
+.rd-orb-1 {
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(75, 90, 228, 0.06), transparent);
+    top: 5%;
+    right: -15%;
+    animation-delay: -1s;
+}
+
+.rd-orb-2 {
+    width: 450px;
+    height: 450px;
+    background: radial-gradient(circle, rgba(0, 212, 255, 0.04), transparent);
+    bottom: 5%;
+    left: -20%;
+    animation-delay: -6s;
+}
+
+@keyframes rd-orb-drift {
+    0%, 100% { 
+        transform: translateY(0px) translateX(0px) scale(1);
+        opacity: 0.6;
+    }
+    33% { 
+        transform: translateY(-50px) translateX(30px) scale(1.1);
+        opacity: 0.8;
+    }
+    66% { 
+        transform: translateY(20px) translateX(-20px) scale(0.9);
+        opacity: 1;
+    }
+}
+
+/* Content */
+.rd-content {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Header */
+.rd-header {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.rd-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(75, 90, 228, 0.1);
+    border: 1px solid rgba(75, 90, 228, 0.25);
+    backdrop-filter: blur(10px);
+    border-radius: 50px;
+    padding: 10px 24px;
+    color: var(--primary-color-2);
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 24px;
+    animation: rd-badge-shine 4s ease-in-out infinite;
+}
+
+@keyframes rd-badge-shine {
+    0%, 100% { 
+        box-shadow: 0 0 0 rgba(75, 90, 228, 0.2);
+        transform: scale(1);
+    }
+    50% { 
+        box-shadow: 0 0 30px rgba(75, 90, 228, 0.4);
+        transform: scale(1.02);
+    }
+}
+
+.rd-title {
+    font-size: 3.6rem;
+    font-family: var(--font-nectarine);
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: var(--text-light);
+    margin-bottom: 20px;
+    background: linear-gradient(135deg, var(--text-light), var(--primary-color-2), var(--compliment-color-3));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1.1;
+}
+
+.rd-subtitle {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--text-light-2);
+    max-width: 700px;
+    margin: 0 auto 40px;
+    line-height: 1.7;
+}
+
+/* Progress Overview */
+.rd-progress-overview {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 24px 40px;
+    background: rgba(26, 27, 35, 0.6);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.rd-overview-stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.rd-stat-value {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--primary-color-2);
+    font-family: "Poppins", sans-serif;
+}
+
+.rd-stat-label {
+    font-size: 0.85rem;
+    color: var(--text-light-3);
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Timeline */
+.rd-timeline {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.rd-timeline-line {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.rd-timeline-progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: linear-gradient(180deg, var(--primary-color), var(--primary-color-2));
+    border-radius: 2px;
+    transition: width 2s ease-out;
+    box-shadow: 0 0 20px rgba(75, 90, 228, 0.5);
+}
+
+/* Phase Cards */
+.rd-phase-card {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    animation-delay: var(--animation-delay, 0s);
+    z-index: 2;
+}
+
+.rd-phase-card.rd-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.rd-phase-card:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.rd-phase-card:nth-child(even) .rd-card-content {
+    text-align: right;
+}
+
+.rd-phase-card:nth-child(even) .rd-items-list {
+    align-items: flex-end;
+}
+
+.rd-phase-card:nth-child(even) .rd-achievements {
+    justify-content: flex-end;
+}
+
+/* Timeline Dot */
+.rd-timeline-dot {
+    position: absolute;
+    left: 50%;
+    top: 30px;
+    transform: translateX(-50%);
+    z-index: 3;
+}
+
+.rd-dot-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 4px solid var(--background-dark);
+    transition: all 0.3s ease;
+}
+
+.rd-dot-inner.completed {
+    background: linear-gradient(135deg, #00FF88, #00D46A);
+    color: var(--background-dark);
+    box-shadow: 0 0 25px rgba(0, 255, 136, 0.4);
+}
+
+.rd-dot-inner.in-progress {
+    background: linear-gradient(135deg, #FFD700, #FFA500);
+    color: var(--background-dark);
+    box-shadow: 0 0 25px rgba(255, 215, 0, 0.4);
+    animation: rd-pulse 2s infinite;
+}
+
+.rd-dot-inner.upcoming {
+    background: rgba(75, 90, 228, 0.15);
+    border-color: rgba(75, 90, 228, 0.3);
+    color: var(--primary-color-2);
+    box-shadow: 0 0 25px rgba(75, 90, 228, 0.2);
+}
+
+@keyframes rd-pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+/* Card Content */
+.rd-card-content {
+    position: relative;
+    flex: 1;
+    max-width: 480px;
+    background: rgba(26, 27, 35, 0.8);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 24px;
+    padding: 32px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+}
+
+.rd-phase-card:hover .rd-card-content,
+.rd-phase-card.rd-hovered .rd-card-content {
+    transform: translateY(-5px);
+    border-color: rgba(75, 90, 228, 0.25);
+    box-shadow: 
+        0 20px 40px rgba(0, 0, 0, 0.3),
+        0 0 0 1px rgba(75, 90, 228, 0.15),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.rd-card-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(75, 90, 228, 0.03), rgba(0, 212, 255, 0.02));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: inherit;
+}
+
+.rd-phase-card:hover .rd-card-content::before,
+.rd-phase-card.rd-hovered .rd-card-content::before {
+    opacity: 1;
+}
+
+/* Card Glow */
+.rd-card-glow {
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, transparent, rgba(75, 90, 228, 0.1), transparent);
+    border-radius: inherit;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+}
+
+.rd-phase-card.rd-hovered .rd-card-glow {
+    opacity: 1;
+}
+
+/* Card Header */
+.rd-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.rd-phase-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.rd-phase-quarter {
+    font-size: 0.9rem;
+    color: var(--primary-color-2);
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.rd-phase-title {
+    font-size: 1.6rem;
+   font-weight: 500;
+    color: var(--text-light);
+    margin: 0;
+    font-family: var(--font-nectarine);
+}
+
+.rd-status-badge {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    backdrop-filter: blur(10px);
+}
+
+.rd-status-icon.completed {
+    color: #00FF88;
+}
+
+.rd-status-icon.in-progress {
+    color: #FFD700;
+}
+
+.rd-status-icon.upcoming {
+    color: var(--text-light-3);
+}
+
+.rd-status-badge:has(.completed) {
+    background: rgba(0, 255, 136, 0.1);
+    border: 1px solid rgba(0, 255, 136, 0.2);
+    color: #00FF88;
+}
+
+.rd-status-badge:has(.in-progress) {
+    background: rgba(255, 215, 0, 0.1);
+    border: 1px solid rgba(255, 215, 0, 0.2);
+    color: #FFD700;
+}
+
+.rd-status-badge:has(.upcoming) {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--text-light-3);
+}
+
+/* Progress Section */
+.rd-progress-section {
+    margin-bottom: 20px;
+}
+
+.rd-progress-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.rd-progress-label {
+    font-size: 0.9rem;
+    color: var(--text-light-3);
+    font-weight: 500;
+}
+
+.rd-progress-value {
+    font-size: 0.9rem;
+    color: var(--primary-color-2);
+    font-weight: 700;
+}
+
+.rd-progress-bar {
+    width: 100%;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+}
+
+.rd-progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--primary-color), var(--primary-color-2));
+    border-radius: 4px;
+    transition: width 2s ease-out;
+    position: relative;
+    box-shadow: 0 0 10px rgba(75, 90, 228, 0.4);
+}
+
+.rd-progress-fill::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    animation: rd-progress-shine 2s ease-in-out infinite;
+}
+
+@keyframes rd-progress-shine {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
+/* Description */
+.rd-phase-description {
+    color: var(--text-light-2);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 16px;
+    font-weight: 500;
+}
+
+/* Milestone */
+.rd-milestone {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 16px;
+    background: rgba(255, 215, 0, 0.08);
+    border: 1px solid rgba(255, 215, 0, 0.2);
+    border-radius: 12px;
+    margin-bottom: 20px;
+    color: #FFD700;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+/* Items List */
+.rd-items-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.rd-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 0.95rem;
+    color: var(--text-light-2);
+    line-height: 1.5;
+}
+
+.rd-item-icon {
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.rd-item-icon.completed {
+    color: #00FF88;
+}
+
+.rd-item-icon.in-progress {
+    color: #FFD700;
+}
+
+.rd-item-icon.upcoming {
+    color: var(--text-light-3);
+}
+
+/* Achievements */
+.rd-achievements {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 16px;
+}
+
+.rd-achievement-tag {
+    display: inline-flex;
+    align-items: center;
+    background: rgba(75, 90, 228, 0.08);
+    border: 1px solid rgba(75, 90, 228, 0.2);
+    border-radius: 20px;
+    padding: 6px 12px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--primary-color-2);
+}
+
+/* Bottom Section */
+.rd-bottom-section {
+    margin-top: 60px;
+}
+
+.rd-cta-card {
+    background: rgba(26, 27, 35, 0.6);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 24px;
+    padding: 40px;
+    text-align: center;
+}
+
+.rd-cta-content h3 {
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--text-light);
+    margin-bottom: 16px;
+    font-family: var(--font-nectarine);
+}
+
+.rd-cta-content p {
+    color: var(--text-light-2);
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-bottom: 32px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rd-next-milestone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 20px 32px;
+    background: rgba(75, 90, 228, 0.05);
+    border: 1px solid rgba(75, 90, 228, 0.15);
+    border-radius: 16px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.rd-milestone-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background: rgba(75, 90, 228, 0.15);
+    border-radius: 50%;
+    color: var(--primary-color-2);
+    flex-shrink: 0;
+}
+
+.rd-milestone-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+}
+
+.rd-milestone-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-light);
+}
+
+.rd-milestone-desc {
+    font-size: 0.9rem;
+    color: var(--text-light-3);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .rd-section {
+        padding: 60px 0 80px;
+    }
+
+    .rd-title {
+        font-size: 2.6rem;
+        margin-bottom: 16px;
+    }
+
+    .rd-subtitle {
+        font-size: 1rem;
+        padding: 0 20px;
+    }
+
+    .rd-progress-overview {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+        margin-bottom: 60px;
+    }
+
+    .rd-timeline-line {
+        left: 40px;
+        transform: none;
+    }
+
+    .rd-timeline-dot {
+        left: 40px;
+        transform: translateX(-50%);
+    }
+
+    .rd-dot-inner {
+        width: 60px;
+        height: 60px;
+    }
+
+    .rd-phase-card,
+    .rd-phase-card:nth-child(even) {
+        flex-direction: column;
+        padding-left: 100px;
+        gap: 20px;
+    }
+
+    .rd-phase-card:nth-child(even) .rd-card-content,
+    .rd-card-content {
+        text-align: left;
+        max-width: none;
+    }
+
+    .rd-phase-card:nth-child(even) .rd-items-list,
+    .rd-items-list {
+        align-items: flex-start;
+    }
+
+    .rd-phase-card:nth-child(even) .rd-achievements,
+    .rd-achievements {
+        justify-content: flex-start;
+    }
+
+    .rd-card-content {
+        padding: 24px 20px;
+    }
+
+    .rd-card-header {
+        flex-direction: column;
+        gap: 12px;
+        align-items: flex-start;
+    }
+
+    .rd-phase-title {
+        font-size: 1.4rem;
+    }
+
+    .rd-cta-card {
+        padding: 32px 24px;
+        margin: 0 20px;
+    }
+
+    .rd-cta-content h3 {
+        font-size: 1.6rem;
+    }
+
+    .rd-next-milestone {
+        flex-direction: column;
+        text-align: center;
+        padding: 24px;
+    }
+
+    .rd-milestone-info {
+        align-items: center;
+    }
+
+    .rd-orb-1,
+    .rd-orb-2 {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .rd-content {
+        padding: 0 16px;
+    }
+
+    .rd-title {
+        font-size: 2.2rem;
+    }
+
+    .rd-phase-card {
+        padding-left: 80px;
+    }
+
+    .rd-timeline-line {
+        left: 30px;
+    }
+
+    .rd-timeline-dot {
+        left: 30px;
+    }
+
+    .rd-dot-inner {
+        width: 50px;
+        height: 50px;
+    }
+
+    .rd-card-content {
+        padding: 20px 16px;
+    }
+
+    .rd-phase-title {
+        font-size: 1.2rem;
+    }
+
+    .rd-stat-value {
+        font-size: 1.6rem;
+    }
+}

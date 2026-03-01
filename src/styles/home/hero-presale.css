@@ -1,0 +1,552 @@
+/* ==========================================
+   OPTIMIZED PRESALE FORM - MOBILE FIRST
+   Clean, Accessible, User-friendly
+   ========================================== */
+
+/* Presale Card */
+.mmv-presale-form-card {
+    background: rgba(20, 21, 33, 0.85);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 16px;
+    padding: 16px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}  
+
+.mmv-presale-form-card::before {
+    content: '';
+    position: absolute;
+    inset: -1px;
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.3), rgba(0, 212, 255, 0.2));
+    border-radius: 16px;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+/* Price Display */
+.mmv-price-display {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 16px;
+    padding: 12px;
+    background: rgba(99, 102, 241, 0.05);
+    border-radius: 10px;
+    border: 1px solid rgba(99, 102, 241, 0.15);
+}
+
+.mmv-price-item {
+    text-align: center;
+}
+
+.mmv-price-item.mmv-current .mmv-price-value {
+    color: #00D4FF;
+}
+
+.mmv-price-item.mmv-next .mmv-price-value {
+    color: #FFD700;
+}
+
+.mmv-price-label {
+    display: block;
+    font-family: "Poppins", sans-serif;
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.5);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+}
+
+.mmv-price-value {
+    font-family: var(--font-nectarine);
+    font-size: 16px;
+}
+
+.mmv-price-divider {
+    width: 100%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Countdown Timer */
+.mmv-countdown-timer {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.mmv-countdown-label {
+    font-family: var(--font-nectarine);
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.5);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 12px;
+}
+
+.mmv-countdown-boxes {
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+}
+
+.mmv-time-box {
+    background: rgba(99, 102, 241, 0.08);
+    border: 1px solid rgba(99, 102, 241, 0.15);
+    border-radius: 8px;
+    padding: 8px 6px;
+    min-width: calc(25% - 5px);
+    transition: transform 0.2s ease;
+}
+
+.mmv-time-box:hover {
+    transform: translateY(-2px);
+}
+
+.mmv-time-value {
+    display: block;
+    font-family: var(--font-nectarine);
+    font-size: 18px;
+    color: #00D4FF;
+}
+
+.mmv-time-label {
+    font-family: "Poppins", sans-serif;
+    font-size: 9px;
+    color: rgba(255, 255, 255, 0.4);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: 2px;
+}
+
+/* Progress Bar - Hidden by default */
+.mmv-progress-section {
+    margin-bottom: 16px;
+}
+
+.mmv-progress-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.mmv-progress-bar {
+    height: 8px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 50px;
+    overflow: hidden;
+    position: relative;
+}
+
+.mmv-progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #6366f1, #00D4FF);
+    border-radius: 50px;
+    transition: width 0.5s ease;
+}
+
+.mmv-tokens-left {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.4);
+    margin-top: 6px;
+}
+
+/* User Stats */
+.mmv-user-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 16px;
+    padding: 12px;
+    background: rgba(99, 102, 241, 0.05);
+    border-radius: 10px;
+}
+
+.mmv-stat {
+    text-align: center;
+}
+
+.mmv-stat-label {
+    font-family: "Poppins", sans-serif;
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.5);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+    display: block;
+}
+
+.mmv-stat-value {
+    font-family: var(--font-nectarine);
+    font-size: 18px;
+    color: #FFD700;
+}
+
+/* Payment Methods */
+.mmv-payment-methods {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
+    margin-bottom: 16px;
+}
+
+.mmv-payment-btn {
+    padding: 10px 6px;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 11px;
+    min-height: 55px;
+}
+
+.mmv-payment-btn:hover {
+    background: rgba(99, 102, 241, 0.08);
+    border-color: rgba(99, 102, 241, 0.3);
+}
+
+.mmv-payment-btn.mmv-active {
+    background: rgba(99, 102, 241, 0.12);
+    border-color: #6366f1;
+    color: #00D4FF;
+}
+
+.mmv-payment-icon {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+}
+
+/* Balance Display */
+.mmv-balance-display {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 12px;
+    padding: 6px;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 6px;
+}
+
+/* Input Fields */
+.mmv-form-inputs {
+    margin-bottom: 16px;
+}
+
+.mmv-input-group {
+    margin-bottom: 12px;
+}
+
+.mmv-input-group label {
+    display: block;
+    font-family: "Poppins", sans-serif;
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.5);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+}
+
+.mmv-input-wrapper {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+    padding: 2px;
+    transition: all 0.2s ease;
+}
+
+.mmv-input-wrapper:focus-within {
+    border-color: #6366f1;
+    background: rgba(99, 102, 241, 0.03);
+}
+
+.mmv-input-wrapper input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    padding: 10px;
+    color: var(--text-light);
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    outline: none;
+    min-width: 0;
+}
+
+.mmv-input-wrapper input::placeholder {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.mmv-max-btn {
+    padding: 6px 12px;
+    background: rgba(99, 102, 241, 0.15);
+    border: none;
+    border-radius: 6px;
+    color: #00D4FF;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-transform: uppercase;
+    margin-right: 6px;
+}
+
+.mmv-max-btn:hover {
+    background: rgba(99, 102, 241, 0.25);
+}
+
+.mmv-currency-badge {
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+}
+
+.mmv-currency-badge img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.mmv-mmv-icon {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+/* Bonus Info */
+.mmv-bonus-info {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 6px;
+    padding: 5px 10px;
+    background: rgba(16, 185, 129, 0.08);
+    border-left: 2px solid #10b981;
+    border-radius: 0 6px 6px 0;
+    font-family: "Poppins", sans-serif;
+    font-size: 11px;
+    color: #10b981;
+}
+
+.mmv-bonus-info svg {
+    width: 12px;
+    height: 12px;
+}
+
+/* Total Display */
+.mmv-total-display {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: rgba(255, 215, 0, 0.03);
+    border: 1px solid rgba(255, 215, 0, 0.15);
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.mmv-total-display span {
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.mmv-total-value {
+    font-family: var(--font-nectarine);
+    font-size: 18px;
+    color: #FFD700;
+}
+
+/* Buy Button */
+.mmv-buy-button {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #6366f1, #00D4FF);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-family: var(--font-nectarine);
+    font-size: 15px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.2s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.mmv-buy-button:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(99, 102, 241, 0.3);
+}
+
+.mmv-buy-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.mmv-buy-button .mmv-spin {
+    animation: mmv-spin 1s linear infinite;
+}
+
+@keyframes mmv-spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Referral Button */
+.mmv-referral-button {
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+    border: 1px dashed rgba(99, 102, 241, 0.3);
+    border-radius: 8px;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: all 0.2s ease;
+    margin-top: 12px;
+}
+
+.mmv-referral-button:hover {
+    background: rgba(99, 102, 241, 0.05);
+    border-color: rgba(99, 102, 241, 0.5);
+}
+
+.mmv-referral-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 80%;
+}
+
+/* Help Links */
+.mmv-help-links {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.mmv-help-link {
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.4);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.mmv-help-link:hover {
+    color: #00D4FF;
+}
+
+/* Tablet & Above */
+@media (min-width: 768px) {
+    .mmv-presale-form-card {
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    .mmv-price-display {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 14px;
+    }
+
+    .mmv-price-divider {
+        width: 1px;
+        height: 30px;
+    }
+
+    .mmv-price-label {
+        font-size: 11px;
+    }
+
+    .mmv-price-value {
+        font-size: 18px;
+    }
+
+    .mmv-countdown-boxes {
+        gap: 8px;
+    }
+
+    .mmv-time-box {
+        padding: 10px 12px;
+        min-width: 60px;
+    }
+
+    .mmv-time-value {
+        font-size: 22px;
+    }
+
+    .mmv-time-label {
+        font-size: 10px;
+    }
+
+    .mmv-payment-methods {
+        gap: 8px;
+    }
+
+    .mmv-payment-btn {
+        padding: 12px 8px;
+        font-size: 12px;
+        min-height: 60px;
+    }
+
+    .mmv-payment-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .mmv-buy-button {
+        padding: 16px;
+        font-size: 16px;
+    }
+}
+
+/* Accessibility */
+.mmv-buy-button:focus,
+.mmv-payment-btn:focus,
+.mmv-referral-button:focus,
+.mmv-max-btn:focus {
+    outline: 2px solid #6366f1;
+    outline-offset: 2px;
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    .mmv-buy-button .mmv-spin,
+    .mmv-time-box:hover,
+    .mmv-payment-btn:hover,
+    .mmv-buy-button:hover {
+        animation: none !important;
+        transition: none !important;
+        transform: none !important;
+    }
+}

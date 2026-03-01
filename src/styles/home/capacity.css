@@ -1,0 +1,207 @@
+/* Add these styles to your existing CSS or create a new file */
+/* Purchase Capacity Badge Styles */
+
+.mmv-capacity-badge {
+    margin-bottom: 16px;
+    transition: all 0.3s ease;
+}
+
+.mmv-capacity-badge.subtle {
+    opacity: 0.8;
+}
+
+/* Progress Bar Container */
+.mmv-capacity-progress {
+    margin-bottom: 8px;
+}
+
+.mmv-capacity-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.mmv-capacity-percent {
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.mmv-capacity-percent.normal {
+    color: #4ade80;
+}
+
+.mmv-capacity-percent.warning {
+    color: #fbbf24;
+}
+
+.mmv-capacity-percent.critical {
+    color: #ef4444;
+}
+
+/* Progress Bar */
+.mmv-capacity-bar {
+    width: 100%;
+    height: 6px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 3px;
+    overflow: hidden;
+    position: relative;
+}
+
+.mmv-capacity-fill {
+    height: 100%;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.mmv-capacity-fill.normal {
+    background: linear-gradient(90deg, #4ade80, #22c55e);
+}
+
+.mmv-capacity-fill.warning {
+    background: linear-gradient(90deg, #fbbf24, #f59e0b);
+}
+
+.mmv-capacity-fill.critical {
+    background: linear-gradient(90deg, #ef4444, #dc2626);
+    box-shadow: 0 0 10px rgba(239, 68, 68, 0.5);
+}
+
+/* Warning/Error Messages */
+.mmv-capacity-alert {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin-top: 12px;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    transition: all 0.3s ease;
+}
+
+.mmv-capacity-alert.warning {
+    background: rgba(251, 191, 36, 0.1);
+    border: 1px solid rgba(251, 191, 36, 0.2);
+}
+
+.mmv-capacity-alert.critical {
+    background: rgba(239, 68, 68, 0.1);
+    border: 1px solid rgba(239, 68, 68, 0.2);
+}
+
+.mmv-capacity-alert.error {
+    background: rgba(239, 68, 68, 0.1);
+    border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+.mmv-capacity-alert svg {
+    margin-top: 2px;
+    flex-shrink: 0;
+}
+
+.mmv-capacity-alert-content {
+    flex: 1;
+}
+
+.mmv-capacity-alert-title {
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.mmv-capacity-alert-title.warning {
+    color: #fbbf24;
+}
+
+.mmv-capacity-alert-title.critical,
+.mmv-capacity-alert-title.error {
+    color: #ef4444;
+}
+
+.mmv-capacity-alert-text {
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.4;
+}
+
+/* Limit Reached State */
+.mmv-limit-reached {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 16px;
+    background: rgba(239, 68, 68, 0.1);
+    border: 1px solid rgba(239, 68, 68, 0.3);
+    border-radius: 12px;
+    margin-bottom: 16px;
+    animation: pulseError 2s ease-in-out;
+}
+
+@keyframes pulseError {
+    0%, 100% { 
+        border-color: rgba(239, 68, 68, 0.3);
+        box-shadow: none;
+    }
+    50% { 
+        border-color: rgba(239, 68, 68, 0.5);
+        box-shadow: 0 0 20px rgba(239, 68, 68, 0.2);
+    }
+}
+
+.mmv-limit-reached-content {
+    flex: 1;
+}
+
+.mmv-limit-reached-title {
+    font-size: 0.9rem;
+    color: #ef4444;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.mmv-limit-reached-text {
+    font-size: 0.85rem;
+    color: rgba(239, 68, 68, 0.8);
+}
+
+/* Button disabled state when limit reached */
+.mmv-buy-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.mmv-buy-button:disabled:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .mmv-capacity-alert {
+        font-size: 0.8rem;
+    }
+    
+    .mmv-limit-reached {
+        padding: 10px 12px;
+    }
+}
+
+/* Dark mode compatibility */
+@media (prefers-color-scheme: dark) {
+    .mmv-capacity-bar {
+        background: rgba(255, 255, 255, 0.05);
+    }
+}
+
+/* Animation for when approaching limit */
+@keyframes warningPulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.8; }
+}
+
+.mmv-capacity-badge.approaching-limit {
+    animation: warningPulse 2s ease-in-out infinite;
+}

@@ -1,0 +1,1057 @@
+/* CSS for Additional Sections: Team, Partnerships, Technical */
+
+/* Team Section */
+.wp-team {
+    background: var(--wp-bg-dark-2);
+    padding: var(--wp-spacing-xl) 0;
+}
+
+.wp-team-philosophy {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--wp-spacing-md);
+    margin: var(--wp-spacing-lg) 0;
+}
+
+.wp-philosophy-card {
+    background: var(--wp-bg-card);
+    border: 1px solid var(--wp-border);
+    border-radius: var(--wp-radius-lg);
+    padding: var(--wp-spacing-md);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.wp-philosophy-card:hover {
+    border-color: var(--wp-primary);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(75, 90, 228, 0.1);
+}
+
+.wp-philosophy-icon {
+    width: 48px;
+    height: 48px;
+    color: var(--wp-primary);
+    margin: 0 auto var(--wp-spacing-sm);
+}
+
+.wp-philosophy-card h3 {
+    color: var(--wp-text-primary);
+    font-size: 1.25rem;
+    margin-bottom: var(--wp-spacing-sm);
+}
+
+.wp-philosophy-card p {
+    color: var(--wp-text-secondary);
+    font-size: 0.95rem;
+}
+
+/* Team Structure */
+.wp-team-structure {
+    margin-top: var(--wp-spacing-2xl);
+}
+
+.wp-structure-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--wp-spacing-md);
+    margin-top: var(--wp-spacing-md);
+}
+
+.wp-structure-card {
+    background: linear-gradient(135deg, var(--wp-bg-card), rgba(75, 90, 228, 0.02));
+    border: 1px solid var(--wp-border);
+    border-radius: var(--wp-radius-md);
+    padding: var(--wp-spacing-md);
+    transition: all 0.3s ease;
+}
+
+.wp-structure-card:hover {
+    border-color: var(--wp-primary);
+    background: linear-gradient(135deg, var(--wp-bg-card), rgba(75, 90, 228, 0.05));
+}
+
+.wp-structure-header {
+    display: flex;
+    align-items: center;
+    gap: var(--wp-spacing-sm);
+    margin-bottom: var(--wp-spacing-sm);
+}
+
+.wp-structure-icon {
+    width: 32px;
+    height: 32px;
+    color: var(--wp-primary);
+}
+
+.wp-structure-card h4 {
+    color: var(--wp-primary-light);
+}
+
+.wp-team-message {
+    text-align: center;
+    margin-top: var(--wp-spacing-2xl);
+    padding: var(--wp-spacing-lg);
+    background: var(--wp-bg-card);
+    border-radius: var(--wp-radius-lg);
+    border: 2px solid var(--wp-primary);
+}
+
+.wp-message-highlight {
+    font-size: 1.25rem;
+    color: var(--wp-primary-light);
+    font-style: italic;
+    margin-bottom: var(--wp-spacing-sm);
+}
+
+.wp-message-sub {
+    color: var(--wp-text-tertiary);
+    font-size: 0.875rem;
+}
+
+/* Partnerships Section */
+.wp-partnerships {
+    background: var(--wp-bg-dark);
+    padding: var(--wp-spacing-xl) 0;
+}
+
+.wp-partner-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--wp-spacing-md);
+    margin: var(--wp-spacing-md) 0;
+}
+
+.wp-partner-card {
+    background: var(--wp-bg-card);
+    border: 1px solid var(--wp-border);
+    border-radius: var(--wp-radius-md);
+    padding: var(--wp-spacing-md);
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.wp-partner-card:hover {
+    border-color: var(--wp-success);
+    transform: translateX(5px);
+}
+
+.wp-partner-type {
+    display: inline-block;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--wp-primary);
+    margin-bottom: var(--wp-spacing-xs);
+}
+
+.wp-partner-card h4 {
+    color: var(--wp-text-primary);
+    margin-bottom: var(--wp-spacing-sm);
+}
+
+.wp-partner-card p {
+    color: var(--wp-text-secondary);
+    font-size: 0.95rem;
+    margin-bottom: var(--wp-spacing-md);
+}
+
+.wp-partner-status {
+    display: flex;
+    align-items: center;
+    gap: var(--wp-spacing-xs);
+    padding: var(--wp-spacing-xs) var(--wp-spacing-sm);
+    background: var(--wp-bg-dark);
+    border-radius: 20px;
+    width: fit-content;
+}
+
+.wp-status-icon {
+    width: 16px;
+    height: 16px;
+    color: var(--wp-success);
+}
+
+.wp-partner-status span {
+    font-size: 0.875rem;
+    color: var(--wp-text-secondary);
+}
+
+/* Future Partnerships */
+.wp-partnerships-future {
+    margin-top: var(--wp-spacing-2xl);
+}
+
+.wp-future-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--wp-spacing-md);
+    margin-top: var(--wp-spacing-md);
+}
+
+.wp-future-card {
+    background: var(--wp-bg-card);
+    border: 1px solid var(--wp-border);
+    border-radius: var(--wp-radius-md);
+    padding: var(--wp-spacing-md);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.wp-future-card:hover {
+    border-color: var(--wp-primary);
+    background: var(--wp-bg-card-hover);
+}
+
+.wp-future-icon {
+    width: 40px;
+    height: 40px;
+    color: var(--wp-primary);
+    margin: 0 auto var(--wp-spacing-sm);
+}
+
+.wp-future-card h4 {
+    color: var(--wp-text-primary);
+    margin-bottom: var(--wp-spacing-sm);
+}
+
+/* Partner CTA */
+.wp-partner-cta {
+    text-align: center;
+    margin-top: var(--wp-spacing-2xl);
+    padding: var(--wp-spacing-lg);
+    background: linear-gradient(135deg, rgba(75, 90, 228, 0.05), rgba(101, 116, 255, 0.02));
+    border-radius: var(--wp-radius-lg);
+    border: 1px solid var(--wp-border);
+}
+
+.wp-partner-message {
+    font-size: 1.125rem;
+    color: var(--wp-text-secondary);
+    margin-bottom: var(--wp-spacing-md);
+}
+
+.wp-partner-button {
+    display: inline-flex;
+    align-items: center;
+    padding: var(--wp-spacing-sm) var(--wp-spacing-lg);
+    background: var(--wp-primary);
+    color: white;
+    text-decoration: none;
+    border-radius: var(--wp-radius-md);
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.wp-partner-button:hover {
+    background: var(--wp-primary-light);
+    transform: translateY(-2px);
+}
+
+/* Technical Section */
+.wp-technical {
+    background: var(--wp-bg-dark-2);
+    padding: var(--wp-spacing-xl) 0;
+}
+
+.wp-tech-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--wp-spacing-md);
+    margin-top: var(--wp-spacing-md);
+}
+
+.wp-tech-card {
+    background: var(--wp-bg-card);
+    border: 1px solid var(--wp-border);
+    border-radius: var(--wp-radius-md);
+    padding: var(--wp-spacing-md);
+    transition: all 0.3s ease;
+}
+
+.wp-tech-card:hover {
+    border-color: var(--wp-primary);
+    box-shadow: 0 5px 20px rgba(75, 90, 228, 0.1);
+}
+
+.wp-tech-icon {
+    width: 40px;
+    height: 40px;
+    color: var(--wp-primary);
+    margin-bottom: var(--wp-spacing-sm);
+}
+
+.wp-tech-details {
+    background: var(--wp-bg-dark);
+    padding: var(--wp-spacing-sm);
+    border-radius: var(--wp-radius-sm);
+    margin: var(--wp-spacing-sm) 0;
+}
+
+.wp-tech-details p {
+    margin: var(--wp-spacing-xs) 0;
+    font-size: 0.875rem;
+    color: var(--wp-text-secondary);
+}
+
+.wp-tech-details strong {
+    color: var(--wp-primary-light);
+}
+
+.wp-tech-desc {
+    color: var(--wp-text-secondary);
+    font-size: 0.95rem;
+    margin-top: var(--wp-spacing-sm);
+}
+
+/* Tech Flow */
+.wp-tech-flow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--wp-spacing-xs);
+    margin: var(--wp-spacing-md) 0;
+}
+
+.wp-flow-item {
+    padding: var(--wp-spacing-xs) var(--wp-spacing-sm);
+    background: var(--wp-bg-dark);
+    border-radius: var(--wp-radius-sm);
+    font-size: 0.875rem;
+    color: var(--wp-text-primary);
+    text-align: center;
+    width: 100%;
+    max-width: 200px;
+}
+
+.wp-flow-arrow {
+    color: var(--wp-primary);
+    font-size: 1.25rem;
+}
+
+/* Tech List */
+.wp-tech-list {
+    list-style: none;
+    margin-top: var(--wp-spacing-sm);
+}
+
+.wp-tech-list li {
+    padding: var(--wp-spacing-xs) 0;
+    padding-left: var(--wp-spacing-md);
+    position: relative;
+    font-size: 0.9rem;
+    color: var(--wp-text-secondary);
+}
+
+.wp-tech-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--wp-success);
+}
+
+/* Rewards Explanation */
+.wp-rewards-explanation {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--wp-spacing-md);
+    margin: var(--wp-spacing-md) 0;
+}
+
+.wp-reward-step {
+    display: flex;
+    gap: var(--wp-spacing-md);
+    align-items: flex-start;
+}
+
+.wp-step-num {
+    width: 32px;
+    height: 32px;
+    background: var(--wp-primary);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.wp-step-content h4 {
+    color: var(--wp-text-primary);
+    margin-bottom: var(--wp-spacing-xs);
+}
+
+.wp-step-content p {
+    color: var(--wp-text-secondary);
+    font-size: 0.95rem;
+}
+
+/* Gas Optimization */
+.wp-gas-box {
+    display: flex;
+    gap: var(--wp-spacing-md);
+    padding: var(--wp-spacing-lg);
+    background: linear-gradient(135deg, rgba(0, 255, 136, 0.05), rgba(75, 90, 228, 0.02));
+    border: 2px solid var(--wp-success);
+    border-radius: var(--wp-radius-lg);
+    margin: var(--wp-spacing-md) 0;
+}
+
+.wp-gas-icon {
+    width: 48px;
+    height: 48px;
+    color: var(--wp-success);
+    flex-shrink: 0;
+}
+
+.wp-gas-content {
+    flex: 1;
+}
+
+.wp-gas-stats {
+    display: flex;
+    flex-direction: column;
+    gap: var(--wp-spacing-xs);
+    margin-top: var(--wp-spacing-sm);
+}
+
+.wp-gas-stat {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--wp-spacing-xs);
+    background: var(--wp-bg-dark);
+    border-radius: var(--wp-radius-sm);
+}
+
+.wp-gas-label {
+    color: var(--wp-text-tertiary);
+    font-size: 0.875rem;
+}
+
+.wp-gas-value {
+    color: var(--wp-success);
+    font-weight: 600;
+}
+
+/* Tech Summary */
+.wp-tech-summary {
+    margin-top: var(--wp-spacing-2xl);
+    text-align: center;
+}
+
+.wp-tech-tldr {
+    font-size: 1.125rem;
+    color: var(--wp-text-secondary);
+    padding: var(--wp-spacing-md);
+    background: var(--wp-bg-card);
+    border-radius: var(--wp-radius-md);
+    border-left: 4px solid var(--wp-primary);
+}
+
+/* Responsive - Tablet */
+@media (min-width: 768px) {
+    .wp-team-philosophy {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .wp-structure-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .wp-partner-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .wp-future-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .wp-tech-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .wp-rewards-explanation {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .wp-gas-stats {
+        flex-direction: row;
+        gap: var(--wp-spacing-md);
+    }
+}
+
+/* Responsive - Desktop */
+@media (min-width: 1024px) {
+    .wp-structure-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .wp-rewards-explanation {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* ============================== */
+/* PDF Export Styles              */
+/* ============================== */
+
+/* PDF Export Button Container */
+.wp-pdf-export {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* PDF Button Styles */
+.wp-pdf-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 20px;
+    background: var(--wp-primary, #4b5ae4);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(75, 90, 228, 0.3);
+    backdrop-filter: blur(10px);
+    position: relative;
+    overflow: hidden;
+}
+
+.wp-pdf-button:hover:not(:disabled) {
+    background: var(--wp-primary-light, #6574ff);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 30px rgba(75, 90, 228, 0.4);
+}
+
+.wp-pdf-button:active:not(:disabled) {
+    transform: translateY(0);
+}
+
+.wp-pdf-button:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+/* Alternative Print Button */
+.wp-pdf-alt {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 0.85rem;
+    padding: 10px 16px;
+}
+
+.wp-pdf-alt:hover:not(:disabled) {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: var(--wp-primary);
+}
+
+/* Spinner Animation */
+.wp-pdf-spinner {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Generating State */
+.wp-pdf-generating {
+    background: linear-gradient(90deg, var(--wp-primary), var(--wp-primary-light));
+    background-size: 200% 100%;
+    animation: shimmer 2s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Progress Overlay */
+.wp-pdf-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(10, 11, 15, 0.95);
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Progress Container */
+.wp-pdf-progress-container {
+    width: 90%;
+    max-width: 400px;
+    background: var(--wp-bg-card, #1a1c24);
+    border: 1px solid var(--wp-border, rgba(255, 255, 255, 0.1));
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+/* Progress Bar */
+.wp-pdf-progress-bar {
+    height: 6px;
+    background: linear-gradient(90deg, var(--wp-primary), var(--wp-primary-light));
+    border-radius: 3px;
+    transition: width 0.3s ease;
+    box-shadow: 0 2px 10px rgba(75, 90, 228, 0.5);
+    position: relative;
+    overflow: hidden;
+}
+
+.wp-pdf-progress-bar::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    animation: progressShine 1.5s ease-in-out infinite;
+}
+
+@keyframes progressShine {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(100%);
+    }
+}
+
+/* Progress Text */
+.wp-pdf-progress-text {
+    text-align: center;
+    color: var(--wp-text-secondary, #b8bcc8);
+    margin-top: 20px;
+    font-size: 0.95rem;
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        opacity: 0.8;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+/* Mobile Responsive */
+@media (max-width: 640px) {
+    .wp-pdf-export {
+        bottom: 10px;
+        right: 10px;
+        left: 10px;
+    }
+
+    .wp-pdf-button {
+        width: 100%;
+        justify-content: center;
+        font-size: 0.85rem;
+        padding: 10px 16px;
+    }
+
+    .wp-pdf-button span {
+        display: none;
+    }
+
+    .wp-pdf-button:has(span:only-child) span {
+        display: block;
+    }
+
+    .wp-pdf-generating span {
+        display: block;
+    }
+}
+
+/* Tablet Responsive */
+@media (min-width: 641px) and (max-width: 1024px) {
+    .wp-pdf-export {
+        bottom: 15px;
+        right: 15px;
+    }
+}
+
+/* Hide from actual printing */
+@media print {
+
+    .wp-pdf-export,
+    .wp-pdf-overlay {
+        display: none !important;
+    }
+}
+
+/* Special styles for html2canvas compatibility */
+.whitepaper-page {
+    /* Ensure backgrounds are captured */
+    background-attachment: scroll !important;
+}
+
+/* Fix for charts in PDF */
+.recharts-wrapper {
+    /* Ensure charts are visible in PDF */
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+/* Smooth scrolling for better capture */
+html.pdf-generating {
+    scroll-behavior: auto !important;
+}
+
+/* Loading state for the page during PDF generation */
+.whitepaper-page.pdf-capturing {
+
+    /* Disable animations during capture */
+    * {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+
+/* MetaMemeVault Whitepaper - MISSING Team Section Styles */
+/* Add these to w_team.css file */
+
+/* ============================== */
+/* CORE TEAM SECTION              */
+/* ============================== */
+
+.wp-team-intro {
+    text-align: center;
+    margin-bottom: var(--wp-spacing-lg);
+}
+
+.wp-core-team {
+    margin: var(--wp-spacing-2xl) 0;
+}
+
+.wp-core-team h3 {
+    text-align: center;
+    color: var(--wp-text-primary);
+    font-size: 1.75rem;
+    margin-bottom: var(--wp-spacing-lg);
+}
+
+/* Team Grid */
+.wp-team-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--wp-spacing-lg);
+    margin-top: var(--wp-spacing-md);
+}
+
+/* Team Member Card */
+.wp-team-member {
+    background: var(--wp-bg-card);
+    border: 1px solid var(--wp-border);
+    border-radius: var(--wp-radius-lg);
+    padding: var(--wp-spacing-lg);
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.wp-team-member:hover {
+    border-color: var(--wp-primary);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(75, 90, 228, 0.2);
+}
+
+/* Member Avatar */
+.wp-member-avatar {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto var(--wp-spacing-md);
+    background: linear-gradient(135deg, var(--wp-primary), var(--wp-primary-light));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.wp-member-avatar::after {
+    content: '';
+    position: absolute;
+    inset: -3px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--wp-primary), var(--wp-primary-light));
+    z-index: -1;
+    opacity: 0.3;
+    filter: blur(10px);
+}
+
+.wp-avatar-icon {
+    width: 40px;
+    height: 40px;
+    color: white;
+}
+
+/* Member Title */
+.wp-team-member h4 {
+    color: var(--wp-text-primary);
+    font-size: 1.25rem;
+    margin-bottom: var(--wp-spacing-xs);
+}
+
+/* Member Badge */
+.wp-member-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    background: rgba(75, 90, 228, 0.2);
+    color: var(--wp-primary-light);
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: var(--wp-spacing-md);
+}
+
+/* Member Credentials List */
+.wp-member-credentials {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.wp-member-credentials li {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--wp-spacing-xs);
+    padding: var(--wp-spacing-xs) 0;
+    color: var(--wp-text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.wp-member-credentials li svg {
+    color: var(--wp-success);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+/* ============================== */
+/* SECURITY PARTNERS SECTION      */
+/* ============================== */
+
+.wp-security-partners {
+    margin-top: var(--wp-spacing-2xl);
+}
+
+.wp-security-partners h3 {
+    text-align: center;
+    color: var(--wp-text-primary);
+    font-size: 1.75rem;
+    margin-bottom: var(--wp-spacing-lg);
+}
+
+.wp-partners-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--wp-spacing-lg);
+    margin-top: var(--wp-spacing-md);
+}
+
+/* Partner Card - Enhanced */
+.wp-partners-grid .wp-partner-card {
+    background: var(--wp-bg-card);
+    border: 1px solid var(--wp-border);
+    border-radius: var(--wp-radius-lg);
+    padding: var(--wp-spacing-lg);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.wp-partners-grid .wp-partner-card:hover {
+    border-color: var(--wp-primary);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(75, 90, 228, 0.2);
+}
+
+/* Partner Logo Wrapper */
+.wp-partner-logo-wrapper {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto var(--wp-spacing-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--wp-bg-dark);
+    border-radius: var(--wp-radius-md);
+    padding: var(--wp-spacing-sm);
+    transition: all 0.3s ease;
+}
+
+.wp-partners-grid .wp-partner-card:hover .wp-partner-logo-wrapper {
+    background: linear-gradient(135deg, rgba(75, 90, 228, 0.1), rgba(101, 116, 255, 0.05));
+}
+
+.wp-partner-logo {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    filter: grayscale(0.3);
+    transition: filter 0.3s ease;
+}
+
+.wp-partners-grid .wp-partner-card:hover .wp-partner-logo {
+    filter: grayscale(0);
+}
+
+/* Partner Status Badge */
+.wp-partners-grid .wp-partner-status {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--wp-spacing-xs);
+    padding: var(--wp-spacing-xs) var(--wp-spacing-sm);
+    background: rgba(0, 255, 136, 0.1);
+    border: 1px solid var(--wp-success);
+    border-radius: 20px;
+    margin: var(--wp-spacing-sm) 0;
+}
+
+.wp-partners-grid .wp-partner-status svg {
+    color: var(--wp-success);
+}
+
+.wp-partners-grid .wp-partner-status span {
+    color: var(--wp-success);
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+/* Partner Card Title */
+.wp-partners-grid .wp-partner-card h4 {
+    color: var(--wp-text-primary);
+    font-size: 1.5rem;
+    margin-bottom: var(--wp-spacing-sm);
+}
+
+.wp-partners-grid .wp-partner-card p {
+    color: var(--wp-text-secondary);
+    font-size: 0.95rem;
+    margin-bottom: var(--wp-spacing-md);
+}
+
+/* Partner Link */
+.wp-partner-link {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--wp-spacing-xs);
+    color: var(--wp-primary-light);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+.wp-partner-link:hover {
+    color: var(--wp-primary);
+    transform: translateX(5px);
+}
+
+/* ============================== */
+/* RESPONSIVE STYLES              */
+/* ============================== */
+
+/* Tablet */
+@media (min-width: 768px) {
+    .wp-team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .wp-partners-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .wp-member-avatar {
+        width: 100px;
+        height: 100px;
+    }
+
+    .wp-avatar-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .wp-partner-logo-wrapper {
+        width: 140px;
+        height: 70px;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .wp-team-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .wp-partners-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .wp-core-team h3,
+    .wp-security-partners h3 {
+        font-size: 2rem;
+    }
+}
+
+/* Print */
+@media print {
+
+    .wp-team-member,
+    .wp-partners-grid .wp-partner-card {
+        break-inside: avoid;
+    }
+
+    .wp-partner-link {
+        color: var(--wp-primary);
+    }
+}

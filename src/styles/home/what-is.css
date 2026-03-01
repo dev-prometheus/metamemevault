@@ -1,0 +1,603 @@
+/* ============================================
+   WHAT IS MMV SECTION - MOBILE FIRST
+   ============================================ */
+
+.mmv-what-section {
+    position: relative;
+    padding: 60px 0;
+    background: linear-gradient(180deg, 
+        var(--background-dark) 0%, 
+        rgba(10, 11, 15, 0.98) 50%, 
+        var(--background-dark) 100%
+    );
+    overflow: hidden;
+    font-family: var(--font-nectarine);
+    font-weight: 500;
+}
+
+/* Background effects */
+.mmv-what-bg-gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(ellipse at center, 
+        rgba(75, 90, 228, 0.08) 0%, 
+        transparent 70%
+    );
+    pointer-events: none;
+}
+
+/* Floating particles */
+.mmv-what-particle {
+    position: absolute;
+    border-radius: 50%;
+    background: linear-gradient(135deg, 
+        rgba(75, 90, 228, 0.3) 0%, 
+        rgba(0, 212, 255, 0.3) 100%
+    );
+    filter: blur(40px);
+    animation: mmv-what-float 20s ease-in-out infinite;
+}
+
+.mmv-particle-1 {
+    width: 100px;
+    height: 100px;
+    top: 10%;
+    left: 5%;
+}
+
+.mmv-particle-2 {
+    width: 150px;
+    height: 150px;
+    bottom: 20%;
+    right: 5%;
+    animation-delay: -7s;
+}
+
+.mmv-particle-3 {
+    width: 80px;
+    height: 80px;
+    top: 50%;
+    left: 80%;
+    animation-delay: -14s;
+}
+
+/* Container */
+.mmv-what-container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+    position: relative;
+    z-index: 1;
+}
+
+.mmv-what-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+/* Header - Mobile */
+.mmv-what-header {
+    margin-bottom: 32px;
+    animation: mmv-what-fadeInUp 0.8s ease-out;
+}
+
+.mmv-what-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 16px;
+    background: linear-gradient(135deg, 
+        rgba(75, 90, 228, 0.15) 0%, 
+        rgba(0, 212, 255, 0.1) 100%
+    );
+    border: 1px solid rgba(75, 90, 228, 0.2);
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+
+.mmv-what-badge span {
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.mmv-what-title {
+    font-size: 36px;
+    font-weight: 400;
+    color: var(--text-light);
+    line-height: 1.2;
+    margin: 0;
+}
+
+.mmv-what-gradient {
+    background: linear-gradient(135deg, #4b5ae4 0%, #00D4FF 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Description - Mobile */
+.mmv-what-description {
+    margin-bottom: 32px;
+    animation: mmv-what-fadeInUp 0.8s ease-out 0.1s both;
+}
+
+.mmv-what-lead {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--text-light);
+    margin-bottom: 16px;
+}
+
+.mmv-what-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.mmv-what-highlight {
+    color: #00D4FF;
+    font-weight: 600;
+}
+/* Highlight Box - Mobile */
+.mmv-what-highlight-box {
+    position: relative;
+    background: linear-gradient(135deg, 
+        rgba(75, 90, 228, 0.1) 0%, 
+        rgba(0, 212, 255, 0.05) 100%
+    );
+    border: 1px solid rgba(75, 90, 228, 0.2);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 32px;
+    overflow: hidden;
+    animation: mmv-what-fadeInUp 0.8s ease-out 0.2s both;
+}
+
+.mmv-what-highlight-glow {
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, 
+        rgba(75, 90, 228, 0.1) 0%, 
+        transparent 50%
+    );
+    animation: mmv-what-rotate 20s linear infinite;
+    pointer-events: none;
+}
+
+.mmv-what-highlight-icon {
+    width: 24px;
+    height: 24px;
+    color: #4b5ae4;
+    margin-bottom: 12px;
+}
+
+.mmv-what-highlight-content h3 {
+    font-size: 18px;
+    color: var(--text-light);
+    margin-bottom: 8px;
+}
+
+.mmv-what-highlight-content p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.6;
+}
+
+.mmv-what-bonus {
+    color: #00ff87;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+/* Features Grid - Mobile */
+.mmv-what-features {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-bottom: 40px;
+    animation: mmv-what-fadeInUp 0.8s ease-out 0.3s both;
+}
+
+.mmv-what-feature {
+    display: flex;
+    gap: 16px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.mmv-what-feature:hover {
+    transform: translateY(-3px);
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(75, 90, 228, 0.3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.mmv-what-feature-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, 
+        rgba(75, 90, 228, 0.2) 0%, 
+        rgba(0, 212, 255, 0.15) 100%
+    );
+    border-radius: 12px;
+    flex-shrink: 0;
+}
+
+.mmv-what-feature-icon img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+.mmv-what-feature-content h4 {
+    font-size: 16px;
+    color: var(--text-light);
+    margin-bottom: 4px;
+}
+
+.mmv-what-feature-content p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 1.5;
+}
+/* CTA Buttons - Mobile */
+.mmv-what-cta-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    animation: mmv-what-fadeInUp 0.8s ease-out 0.4s both;
+}
+
+.mmv-what-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 16px 24px;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-family: var(--font-nectarine);
+    letter-spacing: 0.5px;
+}
+
+.mmv-btn-primary {
+    background: linear-gradient(135deg, #4b5ae4 0%, #3a45c4 100%);
+    color: white;
+    border: none;
+}
+
+.mmv-btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(75, 90, 228, 0.4);
+}
+
+.mmv-btn-secondary {
+    background: transparent;
+    border: 2px solid rgba(75, 90, 228, 0.5);
+    color: var(--text-light);
+    backdrop-filter: blur(10px);
+}
+
+.mmv-btn-secondary:hover {
+    background: rgba(75, 90, 228, 0.1);
+    border-color: #4b5ae4;
+    transform: translateY(-2px);
+}
+
+/* Visual Section - Mobile */
+.mmv-what-visual {
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+}
+
+.mmv-what-visual-container {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mmv-what-visual-glow {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, 
+        rgba(75, 90, 228, 0.15) 0%, 
+        transparent 70%
+    );
+    filter: blur(60px);
+    animation: mmv-what-pulse 4s ease-in-out infinite;
+}
+
+.mmv-what-center-logo {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-image: url("../../assets/logos/mmv-logo-01.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+
+.mmv-what-logo-pulse {
+    position: absolute;
+    inset: -20px;
+    background: radial-gradient(circle, 
+        rgba(75, 90, 228, 0.3) 0%, 
+        transparent 70%
+    );
+    animation: mmv-what-pulse 3s ease-in-out infinite;
+}
+
+/* Orbiting Coins - Mobile */
+.mmv-what-coins-orbit {
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    animation: mmv-what-rotate 30s linear infinite;
+}
+
+.mmv-what-coin {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+}
+
+.mmv-coin-0 {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.mmv-coin-1 {
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.mmv-coin-2 {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.mmv-coin-3 {
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.mmv-what-coin-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+    padding: 8px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    animation: mmv-what-rotate-reverse 30s linear infinite;
+}
+
+.mmv-what-coin-inner img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.mmv-what-coin-glow {
+    position: absolute;
+    inset: -5px;
+    background: radial-gradient(circle, 
+        rgba(255, 255, 255, 0.2) 0%, 
+        transparent 70%
+    );
+    border-radius: 50%;
+    opacity: 0.5;
+}
+/* Animations */
+@keyframes mmv-what-fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes mmv-what-float {
+    0%, 100% {
+        transform: translate(0, 0);
+    }
+    33% {
+        transform: translate(30px, -30px);
+    }
+    66% {
+        transform: translate(-20px, 20px);
+    }
+}
+
+@keyframes mmv-what-pulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 0.5;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 0.8;
+    }
+}
+
+@keyframes mmv-what-rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes mmv-what-rotate-reverse {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+/* Tablet - 768px and up */
+@media (min-width: 768px) {
+    .mmv-what-section {
+        padding: 80px 0;
+    }
+    
+    .mmv-what-container {
+        max-width: 720px;
+    }
+    
+    .mmv-what-title {
+        font-size: 44px;
+    }
+    
+    .mmv-what-features {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+    
+    .mmv-what-cta-group {
+        flex-direction: row;
+        gap: 16px;
+    }
+    
+    .mmv-what-btn {
+        padding: 14px 32px;
+    }
+    
+    .mmv-particle-1 {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .mmv-particle-2 {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .mmv-what-visual-container {
+        height: 450px;
+    }
+    
+    .mmv-what-coins-orbit {
+        width: 320px;
+        height: 320px;
+    }
+}
+
+/* Desktop - 1024px and up */
+@media (min-width: 1024px) {
+    .mmv-what-section {
+        padding: 100px 0;
+    }
+    
+    .mmv-what-container {
+        max-width: 1200px;
+    }
+    
+    .mmv-what-wrapper {
+        grid-template-columns: 1.2fr 1fr;
+        gap: 80px;
+    }
+    
+    .mmv-what-title {
+        font-size: 48px;
+    }
+    
+    .mmv-what-lead {
+        font-size: 18px;
+    }
+    
+    .mmv-what-text {
+        font-size: 16px;
+    }
+    
+    .mmv-what-highlight-box {
+        padding: 32px;
+    }
+    
+    .mmv-what-visual {
+        min-height: 500px;
+    }
+    
+    .mmv-what-visual-container {
+        height: 500px;
+    }
+    
+    .mmv-what-center-logo {
+        width: 180px;
+        height: 180px;
+    }
+    
+    .mmv-what-coins-orbit {
+        width: 380px;
+        height: 380px;
+    }
+    
+    .mmv-what-coin {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+/* Large Desktop - 1440px and up */
+@media (min-width: 1440px) {
+    .mmv-what-title {
+        font-size: 52px;
+    }
+    
+    .mmv-what-visual-container {
+        height: 550px;
+    }
+    
+    .mmv-what-coins-orbit {
+        width: 420px;
+        height: 420px;
+    }
+    
+    .mmv-what-coin {
+        width: 80px;
+        height: 80px;
+    }
+}

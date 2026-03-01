@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+  font-family: "Nectarine-Regular";
+  src: url("../assets/fonts/nectarine-nectarine-regular-400.woff2") format("woff2"),
+    url("../assets/fonts/nectarine-nectarine-regular-400.woff") format("woff"),
+    url("../assets/fonts/nectarine-nectarine-regular-400.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --primary-color: #4b5ae4;
+  --primary-color-2: #6d7aff;
+  --primary-color-3: #6f7be9;
+  --primary-color-dark: #2d3689;
+  --compliment-color: #89802d;
+  --compliment-color-2: #b6aa3c;
+  --compliment-color-3: #4BA7E4;
+  --compliment-color-4: #E4D54B;
+  --compliment-color-5: #894BE4;
+  --tertiary-color: #ffa500;
+  --background-dark: #0a0b0f;
+  --bg-dark: #15161c;
+  --bg-card: rgb(38, 38, 46);
+  --text-light: #ffffff;
+  --text-light-2: #e0e0e0;
+  --text-light-3: #a0a0a0;
+  --text-secondary: #b0b0b0;
+  --card-background: #1a1b23;
+  --gradient-primary: linear-gradient(90deg, var(--primary-color), var(--primary-color-2));
+  --font-nectarine: "Nectarine-Regular", sans-serif;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Prevent text overflow */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Homepage Content Loading States */
+.homepage-content {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.homepage-content.loading {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.homepage-content.loaded {
+  opacity: 1;
+  pointer-events: all;
+  animation: fadeInContent 0.6s ease-out;
+}
+
+@keyframes fadeInContent {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Prevent layout shifts during loading */
+.homepage-content.loading * {
+  visibility: hidden;
+}
+
+.homepage-content.loaded * {
+  visibility: visible;
+}
+
+/* Ensure page loader is above everything */
+.page-loader {
+  position: fixed !important;
+  z-index: 10000 !important;
+}
+
+html {
+  background-color: #0a0b0f !important;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+button {
+  font-family: "Poppins", serif;
+}
+
+input {
+  font-family: "Poppins", serif;
+}
+
+body {
+  width: 100%;
+  background-color: var(--background-dark);
+  color: var(--text-light);
+  font-family: "Poppins", serif;
+  overflow-x: hidden;
+  position: relative;
+}
+
+
+.homepage-content.loading body {
+  overflow: hidden;
+}
+
+/* Optional: Add skeleton loading for critical sections */
+.skeleton-loader {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: skeletonLoading 1.5s infinite;
+  border-radius: 4px;
+}
+
+@keyframes skeletonLoading {
+  0% {
+    background-position: 200% 0;
+  }
+
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* Dark mode skeleton */
+.dark .skeleton-loader {
+  background: linear-gradient(90deg, #374151 25%, #4b5563 50%, #374151 75%);
+  background-size: 200% 100%;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Add to the top of your global.css mobile section */
+
+@media (max-width: 375px) {
+
+  h1,
+  h2,
+  h3 {
+    word-break: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+  }
+
+  body {
+    font-size: 14px;
+  }
+}

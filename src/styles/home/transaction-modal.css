@@ -1,0 +1,646 @@
+/* ==========================================
+   MMV TRANSACTION MODAL - PORTAL VERSION
+   styles/home/transaction-modal.css
+   Optimized for React Portal implementation
+   ========================================== */
+
+/* Modal root container - Portal renders here */
+#mmv-modal-root {
+    position: relative;
+    z-index: 9999;
+}
+
+/* Body class when modal is open */
+body.mmv-modal-open {
+    overflow: hidden !important;
+    position: fixed !important;
+    width: 100% !important;
+    touch-action: none;
+    /* Prevent mobile scroll */
+}
+
+/* Modal Overlay - Full viewport coverage */
+.mmv-tx-modal-overlay {
+    position: fixed;
+    inset: 0;
+    /* Shorthand for top: 0, right: 0, bottom: 0, left: 0 */
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    /* Prevent scroll chaining */
+    z-index: 10000;
+    /* Ensure it's above everything */
+    animation: mmv-tx-overlay-fade-in 0.2s ease-out;
+}
+
+@keyframes mmv-tx-overlay-fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Modal Container */
+.mmv-tx-modal {
+    background: rgba(20, 21, 33, 0.95);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    width: 90%;
+    max-width: 480px;
+    max-height: 85vh;
+    /* Leave some space at top and bottom */
+    overflow: hidden;
+    box-shadow:
+        0 25px 50px rgba(0, 0, 0, 0.5),
+        0 0 0 1px rgba(99, 102, 241, 0.1);
+    /* Subtle border glow */
+    animation: mmv-tx-modal-slide-up 0.3s ease-out;
+    position: relative;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Gradient border effect */
+.mmv-tx-modal::before {
+    content: '';
+    position: absolute;
+    inset: -1px;
+    background: linear-gradient(135deg,
+            rgba(99, 102, 241, 0.3),
+            rgba(0, 212, 255, 0.2));
+    border-radius: 20px;
+    opacity: 0.6;
+    z-index: -1;
+    pointer-events: none;
+}
+
+@keyframes mmv-tx-modal-slide-up {
+    from {
+        opacity: 0;
+        transform: translateY(30px) scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Modal Content Wrapper */
+.mmv-tx-modal-content {
+    position: relative;
+    padding: 32px 24px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Close Button */
+.mmv-tx-modal-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    width: 40px;
+    height: 40px;
+    z-index: 2;
+}
+
+.mmv-tx-modal-close:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.9);
+    transform: rotate(90deg);
+}
+
+.mmv-tx-modal-close:focus {
+    outline: 2px solid #6366f1;
+    outline-offset: 2px;
+}
+
+/* Modal Body - Scrollable if needed */
+.mmv-tx-modal-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 0;
+    flex: 1;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+}
+
+/* Custom scrollbar for modal body */
+.mmv-tx-modal-body::-webkit-scrollbar {
+    width: 6px;
+}
+
+.mmv-tx-modal-body::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 3px;
+}
+
+.mmv-tx-modal-body::-webkit-scrollbar-thumb {
+    background: rgba(99, 102, 241, 0.3);
+    border-radius: 3px;
+}
+
+.mmv-tx-modal-body::-webkit-scrollbar-thumb:hover {
+    background: rgba(99, 102, 241, 0.5);
+}
+
+/* Modal Icon States */
+.mmv-tx-modal-icon {
+    margin-bottom: 28px;
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+    /* Prevent icon from shrinking */
+}
+
+.mmv-tx-modal-icon.mmv-tx-processing {
+    background: rgba(99, 102, 241, 0.15);
+    border: 2px solid rgba(99, 102, 241, 0.3);
+    color: #6366f1;
+}
+
+.mmv-tx-modal-icon.mmv-tx-success {
+    background: rgba(34, 197, 94, 0.15);
+    border: 2px solid rgba(34, 197, 94, 0.3);
+    color: #22c55e;
+    animation: mmv-tx-success-pulse 2s infinite;
+}
+
+.mmv-tx-modal-icon.mmv-tx-error {
+    background: rgba(239, 68, 68, 0.15);
+    border: 2px solid rgba(239, 68, 68, 0.3);
+    color: #ef4444;
+    animation: mmv-tx-error-shake 0.5s ease-in-out;
+}
+
+/* Loading spinner animation */
+.mmv-tx-spin {
+    animation: mmv-tx-spin 1.5s linear infinite;
+}
+
+@keyframes mmv-tx-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes mmv-tx-success-pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.4);
+    }
+
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 0 0 10px rgba(34, 197, 94, 0);
+    }
+}
+
+@keyframes mmv-tx-error-shake {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: translateX(-5px);
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: translateX(5px);
+    }
+}
+
+/* Modal Title */
+.mmv-tx-modal-title {
+    font-family: var(--font-nectarine, "Nectarine", sans-serif);
+    font-size: 1.75rem;
+    font-weight: 400;
+    color: #ffffff;
+    margin-bottom: 16px;
+    line-height: 1.3;
+}
+
+/* Modal Message */
+.mmv-tx-modal-message {
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 28px;
+    line-height: 1.6;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.95rem;
+    max-width: 320px;
+}
+
+/* Error Message Box */
+.mmv-tx-modal-error {
+    background: rgba(239, 68, 68, 0.1);
+    border: 1px solid rgba(239, 68, 68, 0.3);
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 28px;
+    color: #ef4444;
+    font-size: 0.9rem;
+    max-height: 140px;
+    overflow-y: auto;
+    width: 100%;
+    text-align: left;
+    font-family: "Poppins", sans-serif;
+    line-height: 1.5;
+    word-break: break-word;
+}
+
+/* Action Buttons */
+.mmv-tx-modal-button {
+    padding: 14px 32px;
+    border-radius: 12px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+    font-size: 1rem;
+    font-family: var(--font-nectarine, "Nectarine", sans-serif);
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    min-width: 120px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Button shine effect */
+.mmv-tx-modal-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg,
+            transparent,
+            rgba(255, 255, 255, 0.1),
+            transparent);
+    transition: left 0.5s ease;
+}
+
+.mmv-tx-modal-button:hover::before {
+    left: 100%;
+}
+
+.mmv-tx-modal-button.mmv-tx-success-btn {
+    background: linear-gradient(135deg, #22c55e, #16a34a);
+    color: white;
+    box-shadow: 0 4px 15px rgba(34, 197, 94, 0.3);
+}
+
+.mmv-tx-modal-button.mmv-tx-success-btn:hover {
+    background: linear-gradient(135deg, #16a34a, #15803d);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(34, 197, 94, 0.4);
+}
+
+.mmv-tx-modal-button.mmv-tx-error-btn {
+    background: linear-gradient(135deg, #ef4444, #dc2626);
+    color: white;
+    box-shadow: 0 4px 15px rgba(239, 68, 68, 0.3);
+}
+
+.mmv-tx-modal-button.mmv-tx-error-btn:hover {
+    background: linear-gradient(135deg, #dc2626, #b91c1c);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(239, 68, 68, 0.4);
+}
+
+.mmv-tx-modal-button:active {
+    transform: translateY(0);
+}
+
+.mmv-tx-modal-button:focus {
+    outline: 2px solid #6366f1;
+    outline-offset: 2px;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+    .mmv-tx-modal-overlay {
+        padding: 16px;
+    }
+
+    .mmv-tx-modal {
+        width: 95%;
+        max-height: 90vh;
+    }
+
+    .mmv-tx-modal-content {
+        padding: 24px 20px;
+    }
+
+    .mmv-tx-modal-icon {
+        width: 72px;
+        height: 72px;
+        margin-bottom: 24px;
+    }
+
+    .mmv-tx-modal-icon svg {
+        width: 48px;
+        height: 48px;
+    }
+
+    .mmv-tx-modal-title {
+        font-size: 1.5rem;
+    }
+
+    .mmv-tx-modal-message {
+        font-size: 0.9rem;
+        margin-bottom: 24px;
+    }
+
+    .mmv-tx-modal-button {
+        padding: 12px 24px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+    .mmv-tx-modal-overlay {
+        padding: 12px;
+    }
+
+    .mmv-tx-modal {
+        width: 100%;
+        max-width: calc(100% - 24px);
+        border-radius: 16px;
+    }
+
+    .mmv-tx-modal-content {
+        padding: 20px 16px;
+    }
+
+    .mmv-tx-modal-close {
+        width: 36px;
+        height: 36px;
+        top: 16px;
+        right: 16px;
+    }
+}
+
+/* Large Screens */
+@media (min-width: 1200px) {
+    .mmv-tx-modal {
+        max-width: 520px;
+    }
+
+    .mmv-tx-modal-content {
+        padding: 40px 32px;
+    }
+
+    .mmv-tx-modal-title {
+        font-size: 2rem;
+    }
+
+    .mmv-tx-modal-message {
+        font-size: 1rem;
+        max-width: 360px;
+    }
+
+    .mmv-tx-modal-icon {
+        width: 96px;
+        height: 96px;
+        margin-bottom: 32px;
+    }
+
+    .mmv-tx-modal-button {
+        padding: 16px 40px;
+        font-size: 1.1rem;
+        min-width: 140px;
+    }
+}
+
+/* iOS Safari Fixes */
+@supports (-webkit-touch-callout: none) {
+    .mmv-tx-modal-overlay {
+        /* iOS specific fixes */
+        position: fixed;
+        -webkit-transform: translateZ(0);
+        -webkit-backface-visibility: hidden;
+    }
+
+    .mmv-tx-modal {
+        -webkit-transform: translateZ(0);
+        -webkit-backface-visibility: hidden;
+    }
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+
+    .mmv-tx-modal-overlay,
+    .mmv-tx-modal,
+    .mmv-tx-modal-icon,
+    .mmv-tx-modal-button,
+    .mmv-tx-modal-close {
+        animation: none !important;
+        transition: none !important;
+    }
+
+    .mmv-tx-spin {
+        animation: mmv-tx-spin 3s linear infinite !important;
+    }
+
+    .mmv-tx-modal-button:hover {
+        transform: none !important;
+    }
+}
+
+/* High Contrast Mode Support */
+@media (prefers-contrast: high) {
+    .mmv-tx-modal {
+        border: 2px solid white;
+    }
+
+    .mmv-tx-modal-close {
+        border: 2px solid white;
+    }
+
+    .mmv-tx-modal-button {
+        border: 2px solid currentColor;
+    }
+}
+
+/* Add these new styles to your existing transaction-modal.css */
+
+/* Step Indicator */
+.mmv-step-indicator {
+    width: 100%;
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.mmv-step-text {
+    display: block;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--primary-color, #6366f1);
+    text-align: center;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.mmv-step-progress-bar {
+    width: 100%;
+    height: 6px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.mmv-step-progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #6366f1, #00D4FF);
+    border-radius: 10px;
+    transition: width 0.5s ease;
+    position: relative;
+    box-shadow: 0 0 10px rgba(99, 102, 241, 0.5);
+}
+
+.mmv-step-progress-fill::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    animation: mmv-progress-shimmer 1.5s infinite;
+}
+
+@keyframes mmv-progress-shimmer {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+/* Approving Status Icon */
+.mmv-tx-modal-icon.mmv-tx-approving {
+    background: rgba(139, 92, 246, 0.15);
+    border: 2px solid rgba(139, 92, 246, 0.3);
+    color: #8b5cf6;
+}
+
+.mmv-tx-pulse {
+    animation: mmv-tx-pulse 2s ease-in-out infinite;
+}
+
+@keyframes mmv-tx-pulse {
+
+    0%,
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0.7;
+        transform: scale(1.05);
+    }
+}
+
+/* Submessage styling */
+.mmv-tx-modal-submessage {
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 12px;
+    font-size: 0.85rem;
+    font-family: "Poppins", sans-serif;
+    line-height: 1.5;
+    max-width: 320px;
+    font-style: italic;
+}
+
+/* Mobile adjustments for step indicator */
+@media (max-width: 768px) {
+    .mmv-step-indicator {
+        margin-bottom: 20px;
+        padding-bottom: 12px;
+    }
+
+    .mmv-step-text {
+        font-size: 0.8rem;
+        margin-bottom: 10px;
+    }
+
+    .mmv-step-progress-bar {
+        height: 5px;
+    }
+
+    .mmv-tx-modal-submessage {
+        font-size: 0.8rem;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .mmv-step-text {
+        font-size: 0.75rem;
+    }
+
+    .mmv-step-progress-bar {
+        height: 4px;
+    }
+
+    .mmv-tx-modal-submessage {
+        font-size: 0.75rem;
+    }
+}
