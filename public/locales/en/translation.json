@@ -1,0 +1,221 @@
+{
+  "nav": {
+    "audit": "Audit",
+    "memetreasury": "MemeTreasury",
+    "how_to_buy": "How to Buy",
+    "referral": "Referral",
+    "whitepaper": "Whitepaper",
+    "contact": "Contact",
+    "roadmap": "Roadmap",
+    "tokenomics": "Tokenomics"
+  },
+  "wallet": {
+    "connect": "Connect Wallet",
+    "connecting": "Connecting",
+    "connect_to_get_link": "Connect wallet to get referral link"
+  },
+  "hero": {
+    "presale_live": "Presale Stage {{stage}} is Live",
+    "progress_complete": "{{progress}}% Complete",
+    "audited": "Audited",
+    "secure": "Secure",
+    "holders": "{{count}}+ Holders",
+    "total_raised": "Total Raised",
+    "current_price": "Current Price",
+    "stage_bonus": "Stage Bonus",
+    "earn_rewards": "Earn rewards in:",
+    "whitepaper_btn": "Whitepaper",
+    "join_community": "Join Community"
+  },
+  "presale": {
+    "current_price": "Current Price",
+    "next_stage": "Next Stage",
+    "stage_ends": "Stage {{stage}} Ends In:",
+    "extended_round": "(Round {{round}})",
+    "days": "Days",
+    "hours": "Hours",
+    "mins": "Mins",
+    "secs": "Secs",
+    "progress": "Progress",
+    "complete": "Complete",
+    "tokens_left": "{{tokens}} MMV left in this stage",
+    "your_mmv": "Your $MMV",
+    "your_bonus": "Your Bonus",
+    "you_pay": "You Pay",
+    "you_receive": "You Receive",
+    "bonus_info": "+{{amount}} Bonus ({{percent}}%)",
+    "total_mmv": "Total $MMV:",
+    "max": "MAX",
+    "buy_now": "Buy $MMV Now",
+    "processing": "Processing...",
+    "wallet_limit": "Wallet Limit Reached",
+    "balance": "Balance:",
+    "referral_generating": "Generating link...",
+    "help_links": {
+      "how_to_buy": "How to buy?",
+      "referral": "Referral",
+      "need_help": "Need help?"
+    }
+  },
+  "how_to_buy": {
+    "badge": "Quick & Easy",
+    "title": "How to Buy $MMV",
+    "subtitle": "Get your $MMV tokens in under 5 minutes. Simple process, multiple payment options, instant rewards. No complex steps or hidden fees.",
+    "stats": {
+      "steps": "Simple Steps",
+      "minutes": "Minutes",
+      "available": "Available"
+    },
+    "step_1": {
+      "title": "Connect Your Wallet",
+      "description": "Use MetaMask, Trust Wallet, or any Web3 wallet. New to crypto? No problem—we'll guide you through setting up your first wallet.",
+      "time": "2 mins",
+      "tip_1": "MetaMask recommended",
+      "tip_2": "Mobile wallets supported",
+      "tip_3": "Beginner friendly"
+    },
+    "step_2": {
+      "title": "Fund Your Purchase",
+      "description": "Pay with ETH, USDT, or credit card. Multiple payment options available to make buying $MMV as simple as possible.",
+      "time": "1 min",
+      "tip_1": "Credit card accepted",
+      "tip_2": "Crypto payments",
+      "tip_3": "Instant processing"
+    },
+    "step_3": {
+      "title": "Buy & Earn Rewards",
+      "description": "Choose your $MMV amount, complete purchase, and start earning meme rewards immediately. Your tokens will appear in your wallet.",
+      "time": "30 secs",
+      "tip_1": "Instant rewards",
+      "tip_2": "Secure transaction",
+      "tip_3": "Bonus tiers available"
+    },
+    "payment_methods": {
+      "title": "Supported Payment Methods",
+      "credit_card": "Credit Card",
+      "ethereum": "Ethereum",
+      "usdt": "USDT",
+      "web3_wallets": "Web3 Wallets"
+    },
+    "cta": {
+      "title": "Ready to Get Started?",
+      "description": "Join thousands of investors already earning meme rewards with $MMV. The process is simple, secure, and takes less than 5 minutes.",
+      "complete_guide": "Complete Guide",
+      "start_buying": "Start Buying Now",
+      "secure": "Secure & Verified",
+      "instant": "Instant Processing",
+      "support": "24/7 Support"
+    }
+  },
+  "transaction_modal": {
+    "approving_title": "Approving USDT",
+    "approving_message": "Please confirm the approval transaction in your wallet to allow the presale contract to use your USDT.",
+    "approving_submessage": "This is a one-time approval. After this, your purchase will process automatically.",
+    "processing_title_multi": "Processing Purchase",
+    "processing_title_single": "Transaction Processing",
+    "processing_message_multi": "Your USDT has been approved! Now processing your $MMV token purchase...",
+    "processing_message_single": "Please don't reload the page while the $MMV token purchase is in progress...",
+    "success_title": "Purchase Successful!",
+    "success_message": "Your $MMV tokens have been successfully purchased. You can now lock them in the MemeTreasury to start earning rewards!",
+    "error_title": "Transaction Failed",
+    "error_message": "Something went wrong while processing your transaction",
+    "step_label": "Step {{current}} of {{total}}",
+    "close_button": "Close"
+  },
+  "what_is": {
+    "badge": "MEME-TO-EARN PROTOCOL",
+    "title": "What is",
+    "title_gradient": "MetaMemeVault?",
+    "lead": "MetaMemeVault ($MMV) lets you earn top memecoins by locking your tokens. Buy $MMV in presale, lock them in our MemeTreasury, and earn rewards in NEIRO, SHIB, PEPE, and BONK.",
+    "description": "Our MemeTreasury vault distributes NEIRO, SHIB, PEPE, and BONK to users who lock their $MMV. No staking pools. No complicated DeFi. Just buy, lock, and earn.",
+    "highlight_title": "Presale Alpha",
+    "highlight_text": "Early buyers get up to 200% bonus on their bags. Lower stages = bigger rewards. DYOR, NFA.",
+    "feature_1_title": "Farm Top Memecoins",
+    "feature_1_desc": "Passive income in blue-chip memes",
+    "feature_2_title": "Choose Your Strategy",
+    "feature_2_desc": "Lock what you want, earn what you need",
+    "read_docs": "Read Docs",
+    "buy_mmv": "Buy $MMV"
+  },
+  "faq": {
+    "badge": "Knowledge Base",
+    "title_1": "Frequently Asked",
+    "title_2": "Questions",
+    "subtitle": "Everything you need to know about $MMV and the MemeTreasury ecosystem",
+    "q1": {
+      "question": "What makes $MMV different from other meme tokens?",
+      "answer": "$MMV isn't just another meme token—it's a Meme-to-Earn powerhouse. Lock your $MMV in our MemeTreasury and earn blue-chip memecoins like NEIRO, SHIB, PEPE, and BONK. We're building the first cross-chain memecoin ecosystem where holders actually earn real rewards, not just promises.",
+      "highlight": "Meme-to-Earn Platform",
+      "stats": "4+ Top Memecoins"
+    },
+    "q2": {
+      "question": "How can I get my hands on $MMV?",
+      "answer": "Super easy! Connect your wallet (MetaMask for desktop legends or Best Wallet for mobile warriors) and buy with ETH, USDT, or even credit card. Our presale is live RIGHT NOW with bonuses up to 200% for early birds. Don't sleep on this—presale prices won't last forever.",
+      "highlight": "Multiple Payment Options",
+      "stats": "Up to 200% Bonus"
+    },
+    "q3": {
+      "question": "Break down the MemeTreasury for me",
+      "answer": "Think of MemeTreasury as your personal meme mining rig. Lock your $MMV tokens and choose which memecoin rewards you want—NEIRO for the degen plays, SHIB for the OGs, PEPE for the culture, or BONK for that Solana action. Your rewards keep stacking 24/7, claimable 3 days post-presale. It's passive income meets meme magic.",
+      "highlight": "24/7 Passive Earnings",
+      "stats": "4 Reward Options"
+    },
+    "q4": {
+      "question": "What's the deal with early investor bonuses?",
+      "answer": "Early birds feast here! The sooner you ape in, the bigger your bonus. We're talking up to 200% extra $MMV tokens based on your purchase amount and timing. Stage 1 investors get the biggest slice—these bonuses decrease each stage, so FOMO is real and justified.",
+      "highlight": "Stage 1 = Max Rewards",
+      "stats": "200% Bonus Potential"
+    },
+    "q5": {
+      "question": "When moon? When can I claim rewards?",
+      "answer": "Your memecoin rewards (NEIRO, SHIB, PEPE, BONK) unlock 3 days after presale ends—giving us time to set up liquidity and ensure smooth sailing. Your $MMV tokens? Those bad boys are yours immediately at launch. Get ready for the feast.",
+      "highlight": "T+3 Days Post-Presale",
+      "stats": "Instant $MMV at Launch"
+    },
+    "q6": {
+      "question": "Can $MMV actually pay for gas fees?",
+      "answer": "Game-changer alert! We're implementing $MMV as an alternative gas token. Imagine claiming rewards and interacting with MemeTreasury without burning ETH on gas. This isn't just convenience—it's a complete shift in how meme tokens operate. Your $MMV works harder than your ex.",
+      "highlight": "Gas-Free Interactions",
+      "stats": "Save 100% on ETH Gas"
+    },
+    "q7": {
+      "question": "What other memecoins are coming?",
+      "answer": "We're just getting started! The roadmap includes integrating Solana heavy-hitters like CATWIFHAT, Base chain gems, and even the legendary $TRUMP. Plus, our community votes on new additions. We're building the United Nations of memecoins, and $MMV is your passport.",
+      "highlight": "Multi-Chain Expansion",
+      "stats": "10+ Memecoins Planned"
+    },
+    "q8": {
+      "question": "Where's $MMV heading after presale?",
+      "answer": "Straight to the major leagues! We're launching on top-tier DEXes with deep liquidity pools. CEX listings are in negotiation (think the big boys). Marketing budget is locked and loaded for a massive launch campaign. This isn't a pump—it's a sustained rocket mission to establish $MMV as THE memecoin index.",
+      "highlight": "Tier-1 Exchange Listings",
+      "stats": "5+ DEX/CEX Targets"
+    },
+    "cta": {
+      "title": "Still have questions?",
+      "description": "Our community managers are standing by 24/7 to help you succeed",
+      "support_button": "Get Support",
+      "telegram_button": "Join Telegram"
+    },
+    "badges": {
+      "audited": "Audited",
+      "secure": "Secure Smart Contracts",
+      "community": "Community Driven"
+    }
+  },
+  "common": {
+    "buy_now": "Buy Now",
+    "learn_more": "Learn More",
+    "get_started": "Get Started",
+    "quick_links": "Quick Links",
+    "loading": "Loading...",
+    "home": "Home",
+    "audit": "Audit",
+    "whitepaper": "Whitepaper",
+    "faq": "FAQs",
+    "contact": "Contact Us",
+    "privacy": "Privacy Policy",
+    "terms": "Terms & Conditions",
+    "cookies": "Cookies Policy",
+    "help": "Need Help?"
+  }
+}

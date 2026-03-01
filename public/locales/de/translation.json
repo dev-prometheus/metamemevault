@@ -1,0 +1,221 @@
+{
+  "nav": {
+    "audit": "Audit",
+    "memetreasury": "MemeSchatzkammer",
+    "how_to_buy": "Kaufanleitung",
+    "referral": "Empfehlungsprogramm",
+    "whitepaper": "Whitepaper",
+    "contact": "Kontakt",
+    "roadmap": "Roadmap",
+    "tokenomics": "Tokenomics"
+  },
+  "wallet": {
+    "connect": "Wallet verbinden",
+    "connecting": "Verbinde",
+    "connect_to_get_link": "Wallet verbinden, um Empfehlungslink zu erhalten"
+  },
+  "hero": {
+    "presale_live": "Vorverkauf Phase {{stage}} läuft",
+    "progress_complete": "{{progress}}% Abgeschlossen",
+    "audited": "Geprüft",
+    "secure": "Sicher",
+    "holders": "{{count}}+ Halter",
+    "total_raised": "Insgesamt gesammelt",
+    "current_price": "Aktueller Preis",
+    "stage_bonus": "Phasenbonus",
+    "earn_rewards": "Verdiene Belohnungen in:",
+    "whitepaper_btn": "Whitepaper",
+    "join_community": "Community beitreten"
+  },
+  "presale": {
+    "current_price": "Aktueller Preis",
+    "next_stage": "Nächste Phase",
+    "stage_ends": "Phase {{stage}} endet in:",
+    "extended_round": "(Runde {{round}})",
+    "days": "Tage",
+    "hours": "Stunden",
+    "mins": "Min",
+    "secs": "Sek",
+    "progress": "Fortschritt",
+    "complete": "Abgeschlossen",
+    "tokens_left": "{{tokens}} MMV in dieser Phase übrig",
+    "your_mmv": "Deine $MMV",
+    "your_bonus": "Dein Bonus",
+    "you_pay": "Du zahlst",
+    "you_receive": "Du erhältst",
+    "bonus_info": "+{{amount}} Bonus ({{percent}}%)",
+    "total_mmv": "Gesamt $MMV:",
+    "max": "MAX",
+    "buy_now": "$MMV jetzt kaufen",
+    "processing": "Wird verarbeitet...",
+    "wallet_limit": "Wallet-Limit erreicht",
+    "balance": "Guthaben:",
+    "referral_generating": "Link wird erstellt...",
+    "help_links": {
+      "how_to_buy": "Wie kaufen?",
+      "referral": "Empfehlung",
+      "need_help": "Hilfe benötigt?"
+    }
+  },
+  "how_to_buy": {
+    "badge": "Schnell & Einfach",
+    "title": "Wie man $MMV kauft",
+    "subtitle": "Erhalten Sie Ihre $MMV-Token in unter 5 Minuten. Einfacher Prozess, mehrere Zahlungsoptionen, sofortige Belohnungen. Keine komplexen Schritte oder versteckten Gebühren.",
+    "stats": {
+      "steps": "Einfache Schritte",
+      "minutes": "Minuten",
+      "available": "Verfügbar"
+    },
+    "step_1": {
+      "title": "Wallet verbinden",
+      "description": "Verwenden Sie MetaMask, Trust Wallet oder jede Web3-Wallet. Neu in Krypto? Kein Problem - wir führen Sie durch die Einrichtung Ihrer ersten Wallet.",
+      "time": "2 Min",
+      "tip_1": "MetaMask empfohlen",
+      "tip_2": "Mobile Wallets unterstützt",
+      "tip_3": "Anfängerfreundlich"
+    },
+    "step_2": {
+      "title": "Kauf finanzieren",
+      "description": "Zahlen Sie mit ETH, USDT oder Kreditkarte. Mehrere Zahlungsoptionen verfügbar, um den Kauf von $MMV so einfach wie möglich zu machen.",
+      "time": "1 Min",
+      "tip_1": "Kreditkarte akzeptiert",
+      "tip_2": "Krypto-Zahlungen",
+      "tip_3": "Sofortverarbeitung"
+    },
+    "step_3": {
+      "title": "Kaufen & Belohnungen verdienen",
+      "description": "Wählen Sie Ihre $MMV-Menge, schließen Sie den Kauf ab und beginnen Sie sofort mit dem Verdienen von Meme-Belohnungen. Ihre Token erscheinen in Ihrer Wallet.",
+      "time": "30 Sek",
+      "tip_1": "Sofortige Belohnungen",
+      "tip_2": "Sichere Transaktion",
+      "tip_3": "Bonusstufen verfügbar"
+    },
+    "payment_methods": {
+      "title": "Unterstützte Zahlungsmethoden",
+      "credit_card": "Kreditkarte",
+      "ethereum": "Ethereum",
+      "usdt": "USDT",
+      "web3_wallets": "Web3 Wallets"
+    },
+    "cta": {
+      "title": "Bereit anzufangen?",
+      "description": "Schließen Sie sich Tausenden von Investoren an, die bereits Meme-Belohnungen mit $MMV verdienen. Der Prozess ist einfach, sicher und dauert weniger als 5 Minuten.",
+      "complete_guide": "Vollständiger Leitfaden",
+      "start_buying": "Jetzt kaufen beginnen",
+      "secure": "Sicher & Verifiziert",
+      "instant": "Sofortverarbeitung",
+      "support": "24/7 Support"
+    }
+  },
+  "transaction_modal": {
+    "approving_title": "USDT wird genehmigt",
+    "approving_message": "Bitte bestätigen Sie die Genehmigungstransaktion in Ihrer Wallet, damit der Vorverkaufsvertrag Ihre USDT verwenden kann.",
+    "approving_submessage": "Dies ist eine einmalige Genehmigung. Danach wird Ihr Kauf automatisch verarbeitet.",
+    "processing_title_multi": "Kauf wird verarbeitet",
+    "processing_title_single": "Transaktion wird verarbeitet",
+    "processing_message_multi": "Ihre USDT wurden genehmigt! Ihr $MMV-Token-Kauf wird jetzt verarbeitet...",
+    "processing_message_single": "Bitte laden Sie die Seite nicht neu, während der $MMV-Token-Kauf läuft...",
+    "success_title": "Kauf erfolgreich!",
+    "success_message": "Ihre $MMV-Token wurden erfolgreich gekauft. Sie können sie jetzt in der MemeSchatzkammer sperren, um mit dem Verdienen von Belohnungen zu beginnen!",
+    "error_title": "Transaktion fehlgeschlagen",
+    "error_message": "Beim Verarbeiten Ihrer Transaktion ist etwas schiefgelaufen",
+    "step_label": "Schritt {{current}} von {{total}}",
+    "close_button": "Schließen"
+  },
+  "what_is": {
+    "badge": "MEME-ZUM-VERDIENEN-PROTOKOLL",
+    "title": "Was ist",
+    "title_gradient": "MetaMemeVault?",
+    "lead": "MetaMemeVault ($MMV) ermöglicht es Ihnen, Top-Memecoins zu verdienen, indem Sie Ihre Token sperren. Kaufen Sie $MMV im Vorverkauf, sperren Sie sie in unserer MemeSchatzkammer und verdienen Sie Belohnungen in NEIRO, SHIB, PEPE und BONK.",
+    "description": "Unsere MemeSchatzkammer verteilt NEIRO, SHIB, PEPE und BONK an Benutzer, die ihre $MMV sperren. Keine Staking-Pools. Kein kompliziertes DeFi. Einfach kaufen, sperren und verdienen.",
+    "highlight_title": "Vorverkaufsvorteil",
+    "highlight_text": "Frühkäufer erhalten bis zu 200% Bonus. Niedrigere Phasen = größere Belohnungen. DYOR, NFA.",
+    "feature_1_title": "Top-Memecoins farmen",
+    "feature_1_desc": "Passives Einkommen in Blue-Chip-Memes",
+    "feature_2_title": "Wählen Sie Ihre Strategie",
+    "feature_2_desc": "Sperren Sie, was Sie wollen, verdienen Sie, was Sie brauchen",
+    "read_docs": "Docs lesen",
+    "buy_mmv": "$MMV kaufen"
+  },
+  "faq": {
+    "badge": "Wissensdatenbank",
+    "title_1": "Häufig gestellte",
+    "title_2": "Fragen",
+    "subtitle": "Alles, was Sie über $MMV und das MemeSchatzkammer-Ökosystem wissen müssen",
+    "q1": {
+      "question": "Was macht $MMV anders als andere Meme-Token?",
+      "answer": "$MMV ist nicht nur ein weiterer Meme-Token - es ist ein Meme-zum-Verdienen-Kraftpaket. Sperren Sie Ihre $MMV in unserer MemeSchatzkammer und verdienen Sie Blue-Chip-Memecoins wie NEIRO, SHIB, PEPE und BONK. Wir bauen das erste kettenübergreifende Memecoin-Ökosystem, in dem Halter tatsächlich echte Belohnungen verdienen, nicht nur Versprechen.",
+      "highlight": "Meme-zum-Verdienen-Plattform",
+      "stats": "4+ Top-Memecoins"
+    },
+    "q2": {
+      "question": "Wie kann ich $MMV bekommen?",
+      "answer": "Super einfach! Verbinden Sie Ihre Wallet (MetaMask für Desktop-Legenden oder Best Wallet für Mobile-Krieger) und kaufen Sie mit ETH, USDT oder sogar Kreditkarte. Unser Vorverkauf läuft JETZT mit Boni von bis zu 200% für Frühaufsteher. Schlafen Sie nicht ein - Vorverkaufspreise dauern nicht ewig.",
+      "highlight": "Mehrere Zahlungsoptionen",
+      "stats": "Bis zu 200% Bonus"
+    },
+    "q3": {
+      "question": "Erklären Sie mir die MemeSchatzkammer",
+      "answer": "Denken Sie an die MemeSchatzkammer als Ihre persönliche Meme-Mining-Anlage. Sperren Sie Ihre $MMV-Token und wählen Sie, welche Memecoin-Belohnungen Sie möchten - NEIRO für Degen-Plays, SHIB für OGs, PEPE für die Kultur oder BONK für Solana-Action. Ihre Belohnungen sammeln sich 24/7 an, anspruchsberechtigt 3 Tage nach dem Vorverkauf. Es ist passives Einkommen trifft Meme-Magie.",
+      "highlight": "24/7 passives Einkommen",
+      "stats": "4 Belohnungsoptionen"
+    },
+    "q4": {
+      "question": "Was hat es mit den Frühanleger-Boni auf sich?",
+      "answer": "Frühaufsteher feiern hier! Je früher Sie einsteigen, desto größer Ihr Bonus. Wir sprechen von bis zu 200% zusätzlichen $MMV-Token basierend auf Ihrem Kaufbetrag und Timing. Phase-1-Investoren erhalten den größten Anteil - diese Boni nehmen mit jeder Phase ab, daher ist FOMO real und gerechtfertigt.",
+      "highlight": "Phase 1 = Maximale Belohnungen",
+      "stats": "200% Bonuspotenzial"
+    },
+    "q5": {
+      "question": "Wann Mond? Wann kann ich Belohnungen beanspruchen?",
+      "answer": "Ihre Memecoin-Belohnungen (NEIRO, SHIB, PEPE, BONK) werden 3 Tage nach Ende des Vorverkaufs freigeschaltet - damit wir Zeit haben, Liquidität einzurichten und reibungsloses Segeln zu gewährleisten. Ihre $MMV-Token? Diese Bad Boys gehören Ihnen sofort beim Launch. Bereiten Sie sich auf das Festmahl vor.",
+      "highlight": "T+3 Tage nach Vorverkauf",
+      "stats": "Sofortiges $MMV beim Launch"
+    },
+    "q6": {
+      "question": "Kann $MMV wirklich für Gas-Gebühren bezahlen?",
+      "answer": "Game-Changer-Alarm! Wir implementieren $MMV als alternativen Gas-Token. Stellen Sie sich vor, Belohnungen zu beanspruchen und mit der MemeSchatzkammer zu interagieren, ohne ETH für Gas zu verbrennen. Das ist nicht nur Bequemlichkeit - es ist eine vollständige Verschiebung in der Funktionsweise von Meme-Token. Ihr $MMV arbeitet härter als Ihr Ex.",
+      "highlight": "Gasfreie Interaktionen",
+      "stats": "100% ETH-Gas sparen"
+    },
+    "q7": {
+      "question": "Welche anderen Memecoins kommen?",
+      "answer": "Wir fangen gerade erst an! Die Roadmap umfasst die Integration von Solana-Schwergewichten wie CATWIFHAT, Base-Chain-Juwelen und sogar dem legendären $TRUMP. Außerdem stimmt unsere Community über neue Ergänzungen ab. Wir bauen die Vereinten Nationen der Memecoins, und $MMV ist Ihr Pass.",
+      "highlight": "Multi-Chain-Erweiterung",
+      "stats": "10+ Memecoins geplant"
+    },
+    "q8": {
+      "question": "Wohin geht $MMV nach dem Vorverkauf?",
+      "answer": "Direkt in die Major Leagues! Wir starten auf erstklassigen DEXes mit tiefen Liquiditätspools. CEX-Listings werden verhandelt (denken Sie an die großen Jungs). Marketingbudget ist gesperrt und geladen für eine massive Launch-Kampagne. Dies ist kein Pump - es ist eine nachhaltige Raketenmission, um $MMV als DEN Memecoin-Index zu etablieren.",
+      "highlight": "Tier-1-Exchange-Listings",
+      "stats": "5+ DEX/CEX-Ziele"
+    },
+    "cta": {
+      "title": "Haben Sie noch Fragen?",
+      "description": "Unsere Community-Manager stehen rund um die Uhr bereit, um Ihnen zum Erfolg zu verhelfen",
+      "support_button": "Support erhalten",
+      "telegram_button": "Telegram beitreten"
+    },
+    "badges": {
+      "audited": "Geprüft",
+      "secure": "Sichere Smart Contracts",
+      "community": "Community-getrieben"
+    }
+  },
+  "common": {
+    "buy_now": "Jetzt kaufen",
+    "learn_more": "Mehr erfahren",
+    "get_started": "Loslegen",
+    "quick_links": "Schnelllinks",
+    "loading": "Lädt...",
+    "home": "Startseite",
+    "audit": "Audit",
+    "whitepaper": "Whitepaper",
+    "faq": "FAQ",
+    "contact": "Kontaktieren Sie uns",
+    "privacy": "Datenschutzrichtlinie",
+    "terms": "Geschäftsbedingungen",
+    "cookies": "Cookie-Richtlinie",
+    "help": "Hilfe benötigt?"
+  }
+}

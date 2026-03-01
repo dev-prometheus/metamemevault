@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+# Disallow admin or sensitive routes (if any in future)
+# Disallow: /admin
+
+# Sitemaps
+Sitemap: https://www.metamemevault.com/sitemap.xml
+
+# AI Search Engines (ChatGPT, Gemini, Perplexity, Claude)
+# llms.txt for AI-powered search discovery
+Allow: /llms.txt
+
+# Crawl-delay for being polite to search engines
+Crawl-delay: 1

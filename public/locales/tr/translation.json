@@ -1,0 +1,221 @@
+{
+  "nav": {
+    "audit": "Denetim",
+    "memetreasury": "MemeHazine",
+    "how_to_buy": "Nasıl Alınır",
+    "referral": "Referans Programı",
+    "whitepaper": "Teknik Döküman",
+    "contact": "İletişim",
+    "roadmap": "Yol Haritası",
+    "tokenomics": "Tokenomics"
+  },
+  "wallet": {
+    "connect": "Cüzdan Bağla",
+    "connecting": "Bağlanıyor",
+    "connect_to_get_link": "Referans linki almak için cüzdanı bağlayın"
+  },
+  "hero": {
+    "presale_live": "Ön Satış Aşama {{stage}} Devam Ediyor",
+    "progress_complete": "{{progress}}% Tamamlandı",
+    "audited": "Denetlendi",
+    "secure": "Güvenli",
+    "holders": "{{count}}+ Sahip",
+    "total_raised": "Toplam Toplanan",
+    "current_price": "Mevcut Fiyat",
+    "stage_bonus": "Aşama Bonusu",
+    "earn_rewards": "Ödül kazan:",
+    "whitepaper_btn": "Teknik Döküman",
+    "join_community": "Topluluğa Katıl"
+  },
+  "presale": {
+    "current_price": "Mevcut Fiyat",
+    "next_stage": "Sonraki Aşama",
+    "stage_ends": "Aşama {{stage}} Bitiş Süresi:",
+    "extended_round": "({{round}}. Tur)",
+    "days": "Gün",
+    "hours": "Saat",
+    "mins": "Dakika",
+    "secs": "Saniye",
+    "progress": "İlerleme",
+    "complete": "Tamamlandı",
+    "tokens_left": "Bu aşamada {{tokens}} MMV kaldı",
+    "your_mmv": "Sizin $MMV",
+    "your_bonus": "Sizin Bonus",
+    "you_pay": "Ödediğiniz",
+    "you_receive": "Alacağınız",
+    "bonus_info": "+{{amount}} Bonus ({{percent}}%)",
+    "total_mmv": "Toplam $MMV:",
+    "max": "MAKS",
+    "buy_now": "Şimdi $MMV Satın Al",
+    "processing": "İşleniyor...",
+    "wallet_limit": "Cüzdan Limitine Ulaşıldı",
+    "balance": "Bakiye:",
+    "referral_generating": "Link oluşturuluyor...",
+    "help_links": {
+      "how_to_buy": "Nasıl alınır?",
+      "referral": "Referans",
+      "need_help": "Yardıma mı ihtiyacınız var?"
+    }
+  },
+  "how_to_buy": {
+    "badge": "Hızlı ve Kolay",
+    "title": "$MMV Nasıl Alınır",
+    "subtitle": "$MMV tokenlerinizi 5 dakikadan kısa sürede alın. Basit süreç, çoklu ödeme seçenekleri, anında ödüller. Karmaşık adımlar veya gizli ücretler yok.",
+    "stats": {
+      "steps": "Basit Adım",
+      "minutes": "Dakika",
+      "available": "Mevcut"
+    },
+    "step_1": {
+      "title": "Cüzdanınızı Bağlayın",
+      "description": "MetaMask, Trust Wallet veya herhangi bir Web3 cüzdan kullanın. Kripto'da yeni misiniz? Sorun değil - ilk cüzdanınızı kurmada size rehberlik edeceğiz.",
+      "time": "2 dakika",
+      "tip_1": "MetaMask önerilir",
+      "tip_2": "Mobil cüzdanlar desteklenir",
+      "tip_3": "Yeni başlayanlar için uygun"
+    },
+    "step_2": {
+      "title": "Satın Alımınızı Fonlayın",
+      "description": "ETH, USDT veya kredi kartı ile ödeme yapın. $MMV satın almayı mümkün olduğunca basit hale getirmek için çoklu ödeme seçenekleri mevcuttur.",
+      "time": "1 dakika",
+      "tip_1": "Kredi kartı kabul edilir",
+      "tip_2": "Kripto ödemeleri",
+      "tip_3": "Anında işlem"
+    },
+    "step_3": {
+      "title": "Satın Alın ve Ödül Kazanın",
+      "description": "$MMV miktarınızı seçin, satın alımı tamamlayın ve hemen meme ödülleri kazanmaya başlayın. Tokenleriniz cüzdanınızda görünecektir.",
+      "time": "30 saniye",
+      "tip_1": "Anında ödüller",
+      "tip_2": "Güvenli işlem",
+      "tip_3": "Bonus seviyeleri mevcut"
+    },
+    "payment_methods": {
+      "title": "Desteklenen Ödeme Yöntemleri",
+      "credit_card": "Kredi Kartı",
+      "ethereum": "Ethereum",
+      "usdt": "USDT",
+      "web3_wallets": "Web3 Cüzdanlar"
+    },
+    "cta": {
+      "title": "Başlamaya Hazır mısınız?",
+      "description": "$MMV ile meme ödülleri kazanan binlerce yatırımcıya katılın. Süreç basit, güvenli ve 5 dakikadan az sürer.",
+      "complete_guide": "Tam Rehber",
+      "start_buying": "Şimdi Almaya Başla",
+      "secure": "Güvenli ve Doğrulanmış",
+      "instant": "Anında İşlem",
+      "support": "7/24 Destek"
+    }
+  },
+  "transaction_modal": {
+    "approving_title": "USDT Onaylanıyor",
+    "approving_message": "Ön satış sözleşmesinin USDT'nizi kullanmasına izin vermek için lütfen cüzdanınızda onay işlemini onaylayın.",
+    "approving_submessage": "Bu tek seferlik bir onaylamadır. Bundan sonra satın alımınız otomatik olarak işlenecektir.",
+    "processing_title_multi": "Satın Alma İşleniyor",
+    "processing_title_single": "İşlem İşleniyor",
+    "processing_message_multi": "USDT'niz onaylandı! Şimdi $MMV token satın alımınız işleniyor...",
+    "processing_message_single": "$MMV token alımı devam ederken lütfen sayfayı yenilemeyin...",
+    "success_title": "Satın Alma Başarılı!",
+    "success_message": "$MMV tokenleriniz başarıyla satın alındı. Artık ödül kazanmaya başlamak için onları MemeHazine'de kilitleyebilirsiniz!",
+    "error_title": "İşlem Başarısız",
+    "error_message": "İşleminizi işlerken bir sorun oluştu",
+    "step_label": "Adım {{current}} / {{total}}",
+    "close_button": "Kapat"
+  },
+  "what_is": {
+    "badge": "MEME-KAZAN PROTOKOLÜ",
+    "title": "Nedir",
+    "title_gradient": "MetaMemeVault?",
+    "lead": "MetaMemeVault ($MMV), tokenlerinizi kilitleyerek en iyi meme coinleri kazanmanızı sağlar. Ön satışta $MMV satın alın, MemeHazine'de kilitleyin ve NEIRO, SHIB, PEPE ve BONK ödülleri kazanın.",
+    "description": "MemeHazine kasamız, $MMV'lerini kilitleyen kullanıcılara NEIRO, SHIB, PEPE ve BONK dağıtır. Staking havuzları yok. Karmaşık DeFi yok. Sadece satın al, kilitle ve kazan.",
+    "highlight_title": "Ön Satış Avantajı",
+    "highlight_text": "Erken alıcılar %200'e kadar bonus alır. Düşük aşamalar = daha büyük ödüller. DYOR, NFA.",
+    "feature_1_title": "En İyi Meme Coinleri Çiftçiliği",
+    "feature_1_desc": "Mavi çipli memelerde pasif gelir",
+    "feature_2_title": "Stratejinizi Seçin",
+    "feature_2_desc": "İstediğinizi kilitleyin, ihtiyacınız olanı kazanın",
+    "read_docs": "Dökümanları Oku",
+    "buy_mmv": "$MMV Satın Al"
+  },
+  "faq": {
+    "badge": "Bilgi Bankası",
+    "title_1": "Sıkça Sorulan",
+    "title_2": "Sorular",
+    "subtitle": "$MMV ve MemeHazine ekosistemi hakkında bilmeniz gereken her şey",
+    "q1": {
+      "question": "$MMV'yi diğer meme tokenlerinden ayıran nedir?",
+      "answer": "$MMV sadece başka bir meme token değil - bu bir Meme-Kazan güç merkezidir. $MMV'nizi MemeHazine'de kilitleyin ve NEIRO, SHIB, PEPE ve BONK gibi mavi çipli meme coinleri kazanın. Sahiplerin sadece vaatler değil gerçek ödüller kazandığı ilk çapraz zincir meme coin ekosistemini inşa ediyoruz.",
+      "highlight": "Meme-Kazan Platformu",
+      "stats": "4+ En İyi Meme Coin"
+    },
+    "q2": {
+      "question": "$MMV'yi nasıl edinebilirim?",
+      "answer": "Çok kolay! Cüzdanınızı bağlayın (masaüstü efsaneleri için MetaMask veya mobil savaşçılar için Best Wallet) ve ETH, USDT veya kredi kartı ile satın alın. Ön satışımız ŞU ANDA erken kuşlar için %200'e kadar bonuslarla devam ediyor. Uyumayın - ön satış fiyatları sonsuza kadar sürmez.",
+      "highlight": "Çoklu Ödeme Seçenekleri",
+      "stats": "%200'e Kadar Bonus"
+    },
+    "q3": {
+      "question": "MemeHazine'yi açıklar mısınız",
+      "answer": "MemeHazine'yi kişisel meme madenciliği platformunuz olarak düşünün. $MMV tokenlerinizi kilitleyin ve istediğiniz meme coin ödüllerini seçin - degen oyunları için NEIRO, OG'ler için SHIB, kültür için PEPE veya Solana aksiyonu için BONK. Ödülleriniz 7/24 birikir, ön satış sonrası 3 gün talep edilebilir. Bu pasif gelir meme sihriyle buluşuyor.",
+      "highlight": "7/24 Pasif Kazanç",
+      "stats": "4 Ödül Seçeneği"
+    },
+    "q4": {
+      "question": "Erken yatırımcı bonusları nedir?",
+      "answer": "Erken kuşlar burada ziyafet çeker! Ne kadar erken katılırsanız, bonusunuz o kadar büyük. Satın alma tutarınıza ve zamanlamanıza göre %200'e kadar ekstra $MMV tokeni kazanıyoruz. Aşama 1 yatırımcıları en büyük payı alır - bu bonuslar her aşamada azalır, bu yüzden FOMO gerçek ve haklı.",
+      "highlight": "Aşama 1 = Maksimum Ödül",
+      "stats": "%200 Bonus Potansiyeli"
+    },
+    "q5": {
+      "question": "Ne zaman ay? Ödülleri ne zaman alabilirim?",
+      "answer": "Meme coin ödülleriniz (NEIRO, SHIB, PEPE, BONK) ön satış bittikten 3 gün sonra kilidi açılır - bize likidite kurmak ve sorunsuz seyir sağlamak için zaman verir. $MMV tokenleriniz? O kötü çocuklar lansmanda hemen sizin. Ziyafet için hazırlanın.",
+      "highlight": "Ön Satış Sonrası T+3 Gün",
+      "stats": "Lansmanda Anında $MMV"
+    },
+    "q6": {
+      "question": "$MMV gerçekten gaz ücretlerini ödeyebilir mi?",
+      "answer": "Oyun değiştirici uyarısı! $MMV'yi alternatif gaz tokeni olarak uyguluyoruz. ETH'yi gazda yakmadan ödül talep etmeyi ve MemeHazine ile etkileşim kurmayı hayal edin. Bu sadece kolaylık değil - meme tokenlerinin nasıl çalıştığının tam bir değişimi. $MMV'niz eski sevgilinizden daha çok çalışıyor.",
+      "highlight": "Gazsız Etkileşimler",
+      "stats": "ETH Gazında %100 Tasarruf"
+    },
+    "q7": {
+      "question": "Başka hangi meme coinler geliyor?",
+      "answer": "Daha yeni başlıyoruz! Yol haritası, CATWIFHAT gibi Solana ağır sikletlerini, Base zincir mücevherlerini ve hatta efsanevi $TRUMP'ı entegre etmeyi içeriyor. Ayrıca topluluğumuz yeni eklemeler için oy veriyor. Meme coinlerin Birleşmiş Milletleri'ni inşa ediyoruz ve $MMV sizin pasaportunuz.",
+      "highlight": "Çoklu Zincir Genişlemesi",
+      "stats": "10+ Meme Coin Planlandı"
+    },
+    "q8": {
+      "question": "Ön satıştan sonra $MMV nereye gidiyor?",
+      "answer": "Doğrudan büyük liglere! Derin likidite havuzları olan birinci sınıf DEX'lerde başlatıyoruz. CEX listelemeleri müzakere ediliyor (büyük oyuncuları düşünün). Pazarlama bütçesi kilitli ve büyük bir lansman kampanyası için yüklü. Bu bir pump değil - $MMV'yi meme coin endeksi olarak kurmak için sürdürülebilir bir roket misyonu.",
+      "highlight": "Tier-1 Borsa Listelemeleri",
+      "stats": "5+ DEX/CEX Hedefi"
+    },
+    "cta": {
+      "title": "Hala sorularınız mı var?",
+      "description": "Topluluk yöneticilerimiz başarılı olmanıza yardımcı olmak için 7/24 beklemede",
+      "support_button": "Destek Al",
+      "telegram_button": "Telegram'a Katıl"
+    },
+    "badges": {
+      "audited": "Denetlendi",
+      "secure": "Güvenli Akıllı Sözleşmeler",
+      "community": "Topluluk Odaklı"
+    }
+  },
+  "common": {
+    "buy_now": "Şimdi Satın Al",
+    "learn_more": "Daha Fazla Öğren",
+    "get_started": "Başla",
+    "quick_links": "Hızlı Bağlantılar",
+    "loading": "Yükleniyor...",
+    "home": "Ana Sayfa",
+    "audit": "Denetim",
+    "whitepaper": "Teknik Döküman",
+    "faq": "Sıkça Sorulanlar",
+    "contact": "İletişim",
+    "privacy": "Gizlilik Politikası",
+    "terms": "Şartlar ve Koşullar",
+    "cookies": "Çerez Politikası",
+    "help": "Yardıma mı ihtiyacınız var?"
+  }
+}

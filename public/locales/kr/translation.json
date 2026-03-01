@@ -1,0 +1,221 @@
+{
+  "nav": {
+    "audit": "감사",
+    "memetreasury": "밈트레저리",
+    "how_to_buy": "구매 방법",
+    "referral": "추천 프로그램",
+    "whitepaper": "백서",
+    "contact": "문의",
+    "roadmap": "로드맵",
+    "tokenomics": "토큰노믹스"
+  },
+  "wallet": {
+    "connect": "지갑 연결",
+    "connecting": "연결 중",
+    "connect_to_get_link": "추천 링크를 받으려면 지갑을 연결하세요"
+  },
+  "hero": {
+    "presale_live": "프리세일 {{stage}}단계 진행 중",
+    "progress_complete": "{{progress}}% 완료",
+    "audited": "감사됨",
+    "secure": "안전함",
+    "holders": "{{count}}+ 홀더",
+    "total_raised": "총 모금액",
+    "current_price": "현재 가격",
+    "stage_bonus": "단계 보너스",
+    "earn_rewards": "보상 획득:",
+    "whitepaper_btn": "백서",
+    "join_community": "커뮤니티 참여"
+  },
+  "presale": {
+    "current_price": "현재 가격",
+    "next_stage": "다음 단계",
+    "stage_ends": "{{stage}}단계 종료까지:",
+    "extended_round": "(라운드 {{round}})",
+    "days": "일",
+    "hours": "시간",
+    "mins": "분",
+    "secs": "초",
+    "progress": "진행률",
+    "complete": "완료",
+    "tokens_left": "이 단계에 {{tokens}} MMV 남음",
+    "your_mmv": "내 $MMV",
+    "your_bonus": "내 보너스",
+    "you_pay": "지불 금액",
+    "you_receive": "받을 금액",
+    "bonus_info": "+{{amount}} 보너스 ({{percent}}%)",
+    "total_mmv": "총 $MMV:",
+    "max": "최대",
+    "buy_now": "$MMV 지금 구매",
+    "processing": "처리 중...",
+    "wallet_limit": "지갑 한도 도달",
+    "balance": "잔액:",
+    "referral_generating": "링크 생성 중...",
+    "help_links": {
+      "how_to_buy": "구매 방법?",
+      "referral": "추천",
+      "need_help": "도움이 필요하신가요?"
+    }
+  },
+  "how_to_buy": {
+    "badge": "빠르고 쉬움",
+    "title": "$MMV 구매 방법",
+    "subtitle": "5분 이내에 $MMV 토큰을 받으세요. 간단한 프로세스, 여러 결제 옵션, 즉시 보상. 복잡한 단계나 숨겨진 수수료가 없습니다.",
+    "stats": {
+      "steps": "간단한 단계",
+      "minutes": "분",
+      "available": "사용 가능"
+    },
+    "step_1": {
+      "title": "지갑 연결",
+      "description": "MetaMask, Trust Wallet 또는 모든 Web3 지갑을 사용하세요. 암호화폐가 처음이신가요? 문제없습니다 - 첫 지갑 설정을 안내해 드립니다.",
+      "time": "2분",
+      "tip_1": "MetaMask 권장",
+      "tip_2": "모바일 지갑 지원",
+      "tip_3": "초보자 친화적"
+    },
+    "step_2": {
+      "title": "구매 자금 충전",
+      "description": "ETH, USDT 또는 신용카드로 결제하세요. $MMV 구매를 최대한 간단하게 만들기 위해 여러 결제 옵션을 제공합니다.",
+      "time": "1분",
+      "tip_1": "신용카드 허용",
+      "tip_2": "암호화폐 결제",
+      "tip_3": "즉시 처리"
+    },
+    "step_3": {
+      "title": "구매 및 보상 획득",
+      "description": "$MMV 수량을 선택하고 구매를 완료하여 즉시 밈 보상을 받기 시작하세요. 토큰이 지갑에 나타납니다.",
+      "time": "30초",
+      "tip_1": "즉시 보상",
+      "tip_2": "안전한 거래",
+      "tip_3": "보너스 등급 제공"
+    },
+    "payment_methods": {
+      "title": "지원 결제 방법",
+      "credit_card": "신용카드",
+      "ethereum": "이더리움",
+      "usdt": "USDT",
+      "web3_wallets": "Web3 지갑"
+    },
+    "cta": {
+      "title": "시작할 준비가 되셨나요?",
+      "description": "$MMV로 이미 밈 보상을 받고 있는 수천 명의 투자자들과 함께하세요. 프로세스는 간단하고 안전하며 5분도 걸리지 않습니다.",
+      "complete_guide": "완전한 가이드",
+      "start_buying": "지금 구매 시작",
+      "secure": "안전 및 검증됨",
+      "instant": "즉시 처리",
+      "support": "24/7 지원"
+    }
+  },
+  "transaction_modal": {
+    "approving_title": "USDT 승인 중",
+    "approving_message": "프리세일 계약이 USDT를 사용할 수 있도록 지갑에서 승인 거래를 확인하세요.",
+    "approving_submessage": "이것은 일회성 승인입니다. 그 후 구매가 자동으로 처리됩니다.",
+    "processing_title_multi": "구매 처리 중",
+    "processing_title_single": "거래 처리 중",
+    "processing_message_multi": "USDT가 승인되었습니다! 이제 $MMV 토큰 구매를 처리하고 있습니다...",
+    "processing_message_single": "$MMV 토큰 구매가 진행되는 동안 페이지를 새로고침하지 마세요...",
+    "success_title": "구매 성공!",
+    "success_message": "$MMV 토큰이 성공적으로 구매되었습니다. 이제 밈트레저리에 잠가서 보상을 받기 시작할 수 있습니다!",
+    "error_title": "거래 실패",
+    "error_message": "거래 처리 중 문제가 발생했습니다",
+    "step_label": "단계 {{current}} / {{total}}",
+    "close_button": "닫기"
+  },
+  "what_is": {
+    "badge": "밈-투-언 프로토콜",
+    "title": "무엇인가",
+    "title_gradient": "MetaMemeVault?",
+    "lead": "MetaMemeVault ($MMV)는 토큰을 잠가서 최고의 밈코인을 획득할 수 있게 해줍니다. 프리세일에서 $MMV를 구매하고 밈트레저리에 잠가서 NEIRO, SHIB, PEPE, BONK 보상을 받으세요.",
+    "description": "우리의 밈트레저리 볼트는 $MMV를 잠근 사용자에게 NEIRO, SHIB, PEPE, BONK를 분배합니다. 스테이킹 풀 없음. 복잡한 DeFi 없음. 그냥 구매하고, 잠그고, 벌기만 하면 됩니다.",
+    "highlight_title": "프리세일 우위",
+    "highlight_text": "얼리 바이어는 최대 200% 보너스를 받습니다. 낮은 단계 = 더 큰 보상. DYOR, NFA.",
+    "feature_1_title": "최고의 밈코인 파밍",
+    "feature_1_desc": "블루칩 밈의 수동 소득",
+    "feature_2_title": "전략 선택",
+    "feature_2_desc": "원하는 것을 잠그고, 필요한 것을 벌기",
+    "read_docs": "문서 읽기",
+    "buy_mmv": "$MMV 구매"
+  },
+  "faq": {
+    "badge": "지식 베이스",
+    "title_1": "자주 묻는",
+    "title_2": "질문",
+    "subtitle": "$MMV 및 밈트레저리 생태계에 대해 알아야 할 모든 것",
+    "q1": {
+      "question": "$MMV가 다른 밈 토큰과 어떻게 다른가요?",
+      "answer": "$MMV는 단순한 밈 토큰이 아닙니다 - 밈-투-언 파워하우스입니다. $MMV를 밈트레저리에 잠그고 NEIRO, SHIB, PEPE, BONK와 같은 블루칩 밈코인을 획득하세요. 우리는 홀더가 약속이 아닌 실제 보상을 얻는 최초의 크로스체인 밈코인 생태계를 구축하고 있습니다.",
+      "highlight": "밈-투-언 플랫폼",
+      "stats": "4+ 최고 밈코인"
+    },
+    "q2": {
+      "question": "$MMV를 어떻게 얻을 수 있나요?",
+      "answer": "매우 쉽습니다! 지갑을 연결하고 (데스크톱은 MetaMask, 모바일은 Best Wallet) ETH, USDT 또는 신용카드로 구매하세요. 우리의 프리세일이 지금 진행 중이며 얼리버드에게 최대 200% 보너스를 제공합니다. 놓치지 마세요 - 프리세일 가격은 영원히 지속되지 않습니다.",
+      "highlight": "다양한 결제 옵션",
+      "stats": "최대 200% 보너스"
+    },
+    "q3": {
+      "question": "밈트레저리를 설명해 주세요",
+      "answer": "밈트레저리를 개인 밈 마이닝 리그로 생각하세요. $MMV 토큰을 잠그고 원하는 밈코인 보상을 선택하세요 - 디젠 플레이를 위한 NEIRO, OG를 위한 SHIB, 문화를 위한 PEPE, 솔라나 액션을 위한 BONK. 보상은 24/7 쌓이며 프리세일 후 3일에 청구 가능합니다. 수동 소득이 밈 마법을 만납니다.",
+      "highlight": "24/7 수동 수익",
+      "stats": "4가지 보상 옵션"
+    },
+    "q4": {
+      "question": "얼리 투자자 보너스는 무엇인가요?",
+      "answer": "얼리버드는 여기서 잔치를 벌입니다! 빨리 참여할수록 보너스가 커집니다. 구매 금액과 타이밍에 따라 최대 200%의 추가 $MMV 토큰을 받습니다. 1단계 투자자가 가장 큰 몫을 얻습니다 - 이러한 보너스는 각 단계마다 감소하므로 FOMO는 실제적이고 정당화됩니다.",
+      "highlight": "1단계 = 최대 보상",
+      "stats": "200% 보너스 잠재력"
+    },
+    "q5": {
+      "question": "언제 문? 언제 보상을 받을 수 있나요?",
+      "answer": "밈코인 보상 (NEIRO, SHIB, PEPE, BONK)은 프리세일 종료 후 3일에 잠금 해제됩니다 - 유동성을 설정하고 원활한 항해를 보장할 시간을 줍니다. $MMV 토큰은? 출시 시 즉시 당신의 것입니다. 잔치를 준비하세요.",
+      "highlight": "프리세일 후 T+3일",
+      "stats": "출시 시 즉시 $MMV"
+    },
+    "q6": {
+      "question": "$MMV가 실제로 가스 수수료를 지불할 수 있나요?",
+      "answer": "게임 체인저 알림! $MMV를 대체 가스 토큰으로 구현하고 있습니다. ETH를 가스로 태우지 않고 보상을 청구하고 밈트레저리와 상호 작용하는 것을 상상해 보세요. 이것은 단순한 편의성이 아닙니다 - 밈 토큰이 작동하는 방식의 완전한 변화입니다. $MMV는 당신의 전 애인보다 더 열심히 일합니다.",
+      "highlight": "가스 없는 상호작용",
+      "stats": "ETH 가스 100% 절약"
+    },
+    "q7": {
+      "question": "다른 밈코인은 무엇이 나오나요?",
+      "answer": "이제 시작일 뿐입니다! 로드맵에는 CATWIFHAT와 같은 솔라나 헤비웨이트, 베이스 체인 보석, 심지어 전설적인 $TRUMP 통합이 포함됩니다. 또한 커뮤니티가 새로운 추가에 대해 투표합니다. 우리는 밈코인의 UN을 구축하고 있으며, $MMV는 당신의 여권입니다.",
+      "highlight": "멀티체인 확장",
+      "stats": "10+ 밈코인 계획됨"
+    },
+    "q8": {
+      "question": "프리세일 후 $MMV는 어디로 가나요?",
+      "answer": "메이저 리그로 직행! 깊은 유동성 풀을 갖춘 최고급 DEX에서 출시합니다. CEX 상장이 협상 중입니다 (큰 선수들을 생각하세요). 마케팅 예산이 확보되어 대규모 출시 캠페인을 위해 준비되었습니다. 이것은 펌프가 아닙니다 - $MMV를 밈코인 인덱스로 확립하기 위한 지속적인 로켓 미션입니다.",
+      "highlight": "Tier-1 거래소 상장",
+      "stats": "5+ DEX/CEX 목표"
+    },
+    "cta": {
+      "title": "여전히 질문이 있으신가요?",
+      "description": "커뮤니티 매니저가 24/7 대기하여 성공을 도와드립니다",
+      "support_button": "지원 받기",
+      "telegram_button": "텔레그램 참여"
+    },
+    "badges": {
+      "audited": "감사됨",
+      "secure": "안전한 스마트 계약",
+      "community": "커뮤니티 주도"
+    }
+  },
+  "common": {
+    "buy_now": "지금 구매",
+    "learn_more": "더 알아보기",
+    "get_started": "시작하기",
+    "quick_links": "빠른 링크",
+    "loading": "로딩 중...",
+    "home": "홈",
+    "audit": "감사",
+    "whitepaper": "백서",
+    "faq": "자주 묻는 질문",
+    "contact": "문의하기",
+    "privacy": "개인정보 보호정책",
+    "terms": "이용 약관",
+    "cookies": "쿠키 정책",
+    "help": "도움이 필요하세요?"
+  }
+}

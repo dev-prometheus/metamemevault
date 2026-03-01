@@ -1,0 +1,221 @@
+{
+  "nav": {
+    "audit": "审计",
+    "memetreasury": "模因金库",
+    "how_to_buy": "如何购买",
+    "referral": "推荐计划",
+    "whitepaper": "白皮书",
+    "contact": "联系我们",
+    "roadmap": "路线图",
+    "tokenomics": "代币经济"
+  },
+  "wallet": {
+    "connect": "连接钱包",
+    "connecting": "连接中",
+    "connect_to_get_link": "连接钱包获取推荐链接"
+  },
+  "hero": {
+    "presale_live": "预售第{{stage}}阶段进行中",
+    "progress_complete": "已完成{{progress}}%",
+    "audited": "已审计",
+    "secure": "安全",
+    "holders": "{{count}}+ 持有者",
+    "total_raised": "总募资额",
+    "current_price": "当前价格",
+    "stage_bonus": "阶段奖励",
+    "earn_rewards": "赚取奖励：",
+    "whitepaper_btn": "白皮书",
+    "join_community": "加入社区"
+  },
+  "presale": {
+    "current_price": "当前价格",
+    "next_stage": "下一阶段",
+    "stage_ends": "第{{stage}}阶段结束时间：",
+    "extended_round": "（第{{round}}轮）",
+    "days": "天",
+    "hours": "时",
+    "mins": "分",
+    "secs": "秒",
+    "progress": "进度",
+    "complete": "完成",
+    "tokens_left": "本阶段剩余{{tokens}} MMV",
+    "your_mmv": "您的 $MMV",
+    "your_bonus": "您的奖励",
+    "you_pay": "您支付",
+    "you_receive": "您将获得",
+    "bonus_info": "+{{amount}} 奖励 ({{percent}}%)",
+    "total_mmv": "总计 $MMV：",
+    "max": "最大",
+    "buy_now": "立即购买 $MMV",
+    "processing": "处理中...",
+    "wallet_limit": "钱包限额已达",
+    "balance": "余额：",
+    "referral_generating": "生成链接中...",
+    "help_links": {
+      "how_to_buy": "如何购买？",
+      "referral": "推荐",
+      "need_help": "需要帮助？"
+    }
+  },
+  "how_to_buy": {
+    "badge": "快速简单",
+    "title": "如何购买 $MMV",
+    "subtitle": "5分钟内获得您的 $MMV 代币。简单流程，多种支付方式，即时奖励。无复杂步骤或隐藏费用。",
+    "stats": {
+      "steps": "简单步骤",
+      "minutes": "分钟",
+      "available": "可用"
+    },
+    "step_1": {
+      "title": "连接您的钱包",
+      "description": "使用 MetaMask、Trust Wallet 或任何 Web3 钱包。加密货币新手？没问题——我们将指导您设置第一个钱包。",
+      "time": "2分钟",
+      "tip_1": "推荐 MetaMask",
+      "tip_2": "支持移动钱包",
+      "tip_3": "新手友好"
+    },
+    "step_2": {
+      "title": "为购买充值",
+      "description": "使用 ETH、USDT 或信用卡支付。提供多种支付选项，让购买 $MMV 尽可能简单。",
+      "time": "1分钟",
+      "tip_1": "接受信用卡",
+      "tip_2": "加密货币支付",
+      "tip_3": "即时处理"
+    },
+    "step_3": {
+      "title": "购买并赚取奖励",
+      "description": "选择您的 $MMV 数量，完成购买，立即开始赚取模因币奖励。您的代币将出现在您的钱包中。",
+      "time": "30秒",
+      "tip_1": "即时奖励",
+      "tip_2": "安全交易",
+      "tip_3": "可用奖励等级"
+    },
+    "payment_methods": {
+      "title": "支持的支付方式",
+      "credit_card": "信用卡",
+      "ethereum": "以太坊",
+      "usdt": "USDT",
+      "web3_wallets": "Web3 钱包"
+    },
+    "cta": {
+      "title": "准备开始了吗？",
+      "description": "加入数千名已经通过 $MMV 赚取模因币奖励的投资者。流程简单、安全，仅需不到5分钟。",
+      "complete_guide": "完整指南",
+      "start_buying": "立即开始购买",
+      "secure": "安全可靠",
+      "instant": "即时处理",
+      "support": "24/7 支持"
+    }
+  },
+  "transaction_modal": {
+    "approving_title": "批准 USDT",
+    "approving_message": "请在钱包中确认批准交易，以允许预售合约使用您的 USDT。",
+    "approving_submessage": "这是一次性批准。之后，您的购买将自动处理。",
+    "processing_title_multi": "处理购买中",
+    "processing_title_single": "交易处理中",
+    "processing_message_multi": "您的 USDT 已获批准！现在正在处理您的 $MMV 代币购买...",
+    "processing_message_single": "请勿在 $MMV 代币购买进行期间重新加载页面...",
+    "success_title": "购买成功！",
+    "success_message": "您的 $MMV 代币已成功购买。您现在可以将它们锁定在模因金库中开始赚取奖励！",
+    "error_title": "交易失败",
+    "error_message": "处理您的交易时出现问题",
+    "step_label": "步骤 {{current}} / {{total}}",
+    "close_button": "关闭"
+  },
+  "what_is": {
+    "badge": "模因赚取协议",
+    "title": "什么是",
+    "title_gradient": "MetaMemeVault？",
+    "lead": "MetaMemeVault ($MMV) 让您通过锁定代币赚取顶级模因币。在预售中购买 $MMV，将其锁定在我们的模因金库中，赚取 NEIRO、SHIB、PEPE 和 BONK 奖励。",
+    "description": "我们的模因金库向锁定 $MMV 的用户分配 NEIRO、SHIB、PEPE 和 BONK。无需质押池。无复杂 DeFi。只需购买、锁定和赚取。",
+    "highlight_title": "预售优势",
+    "highlight_text": "早期买家可获得高达200%的奖励。阶段越低 = 奖励越大。请自行研究，非财务建议。",
+    "feature_1_title": "挖掘顶级模因币",
+    "feature_1_desc": "蓝筹模因币被动收入",
+    "feature_2_title": "选择您的策略",
+    "feature_2_desc": "锁定您想要的，赚取您需要的",
+    "read_docs": "阅读文档",
+    "buy_mmv": "购买 $MMV"
+  },
+  "faq": {
+    "badge": "知识库",
+    "title_1": "常见",
+    "title_2": "问题",
+    "subtitle": "关于 $MMV 和模因金库生态系统您需要了解的一切",
+    "q1": {
+      "question": "$MMV 与其他模因代币有何不同？",
+      "answer": "$MMV 不仅仅是另一个模因代币——它是一个模因赚取强力平台。将您的 $MMV 锁定在我们的模因金库中，赚取 NEIRO、SHIB、PEPE 和 BONK 等蓝筹模因币。我们正在构建第一个跨链模因币生态系统，持有者可以赚取真实奖励，而不仅仅是承诺。",
+      "highlight": "模因赚取平台",
+      "stats": "4+ 顶级模因币"
+    },
+    "q2": {
+      "question": "如何获得 $MMV？",
+      "answer": "超级简单！连接您的钱包（桌面推荐 MetaMask，移动端推荐 Best Wallet）并使用 ETH、USDT 甚至信用卡购买。我们的预售现在正在进行，早期投资者可获得高达200%的奖励。不要错过——预售价格不会永远持续。",
+      "highlight": "多种支付选项",
+      "stats": "高达200%奖励"
+    },
+    "q3": {
+      "question": "为我详细介绍模因金库",
+      "answer": "将模因金库想象成您的个人模因币挖矿设备。锁定您的 $MMV 代币并选择您想要的模因币奖励——NEIRO 用于高风险玩法，SHIB 给老玩家，PEPE 代表文化，BONK 代表 Solana 行动。您的奖励全天候累积，预售后3天可领取。这是被动收入遇上模因魔法。",
+      "highlight": "24/7 被动收益",
+      "stats": "4个奖励选项"
+    },
+    "q4": {
+      "question": "早期投资者奖励是怎么回事？",
+      "answer": "早起的鸟儿有虫吃！您越早投资，奖励越大。根据您的购买金额和时机，我们提供高达200%的额外 $MMV 代币。第1阶段投资者获得最大份额——这些奖励会随着每个阶段递减，因此 FOMO 是真实且合理的。",
+      "highlight": "第1阶段 = 最大奖励",
+      "stats": "200% 奖励潜力"
+    },
+    "q5": {
+      "question": "何时起飞？何时可以领取奖励？",
+      "answer": "您的模因币奖励（NEIRO、SHIB、PEPE、BONK）将在预售结束后3天解锁——让我们有时间设置流动性并确保顺利运行。您的 $MMV 代币？这些宝贝在启动时立即属于您。准备好享受盛宴吧。",
+      "highlight": "预售后T+3天",
+      "stats": "启动时即时获得 $MMV"
+    },
+    "q6": {
+      "question": "$MMV 真的可以支付gas费吗？",
+      "answer": "游戏规则改变者警报！我们正在实施 $MMV 作为替代gas代币。想象一下，在不燃烧 ETH 的情况下领取奖励并与模因金库互动。这不仅仅是便利——这是模因代币运作方式的彻底改变。您的 $MMV 比您的前任更努力工作。",
+      "highlight": "无gas交互",
+      "stats": "节省100% ETH Gas"
+    },
+    "q7": {
+      "question": "还会有哪些其他模因币？",
+      "answer": "我们才刚刚开始！路线图包括整合 Solana 重量级代币如 CATWIFHAT、Base 链宝石，甚至传奇的 $TRUMP。此外，我们的社区对新增内容进行投票。我们正在建立模因币的联合国，$MMV 是您的护照。",
+      "highlight": "多链扩展",
+      "stats": "计划10+模因币"
+    },
+    "q8": {
+      "question": "预售后 $MMV 将走向何方？",
+      "answer": "直奔大联盟！我们将在顶级 DEX 上启动，配备深度流动性池。CEX 上市正在谈判中（想想那些大玩家）。营销预算已锁定并准备好进行大规模启动活动。这不是泵——这是一个持续的火箭任务，将 $MMV 确立为模因币指数。",
+      "highlight": "一级交易所上市",
+      "stats": "5+ DEX/CEX 目标"
+    },
+    "cta": {
+      "title": "还有疑问？",
+      "description": "我们的社区经理24/7待命帮助您成功",
+      "support_button": "获取支持",
+      "telegram_button": "加入 Telegram"
+    },
+    "badges": {
+      "audited": "已审计",
+      "secure": "安全智能合约",
+      "community": "社区驱动"
+    }
+  },
+  "common": {
+    "buy_now": "立即购买",
+    "learn_more": "了解更多",
+    "get_started": "开始",
+    "quick_links": "快速链接",
+    "loading": "加载中...",
+    "home": "首页",
+    "audit": "审计",
+    "whitepaper": "白皮书",
+    "faq": "常见问题",
+    "contact": "联系我们",
+    "privacy": "隐私政策",
+    "terms": "条款与条件",
+    "cookies": "Cookie 政策",
+    "help": "需要帮助？"
+  }
+}

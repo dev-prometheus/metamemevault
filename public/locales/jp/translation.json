@@ -1,0 +1,221 @@
+{
+  "nav": {
+    "audit": "監査",
+    "memetreasury": "ミームトレジャリー",
+    "how_to_buy": "購入方法",
+    "referral": "紹介プログラム",
+    "whitepaper": "ホワイトペーパー",
+    "contact": "お問い合わせ",
+    "roadmap": "ロードマップ",
+    "tokenomics": "トークンノミクス"
+  },
+  "wallet": {
+    "connect": "ウォレットを接続",
+    "connecting": "接続中",
+    "connect_to_get_link": "紹介リンクを取得するにはウォレットを接続してください"
+  },
+  "hero": {
+    "presale_live": "プレセール ステージ{{stage}} 実施中",
+    "progress_complete": "{{progress}}% 完了",
+    "audited": "監査済み",
+    "secure": "安全",
+    "holders": "{{count}}+ 保有者",
+    "total_raised": "総調達額",
+    "current_price": "現在の価格",
+    "stage_bonus": "ステージボーナス",
+    "earn_rewards": "報酬を獲得:",
+    "whitepaper_btn": "ホワイトペーパー",
+    "join_community": "コミュニティに参加"
+  },
+  "presale": {
+    "current_price": "現在の価格",
+    "next_stage": "次のステージ",
+    "stage_ends": "ステージ{{stage}}終了まで:",
+    "extended_round": "(ラウンド{{round}})",
+    "days": "日",
+    "hours": "時間",
+    "mins": "分",
+    "secs": "秒",
+    "progress": "進捗",
+    "complete": "完了",
+    "tokens_left": "このステージに残り{{tokens}} MMV",
+    "your_mmv": "あなたの$MMV",
+    "your_bonus": "あなたのボーナス",
+    "you_pay": "支払い額",
+    "you_receive": "受取額",
+    "bonus_info": "+{{amount}} ボーナス ({{percent}}%)",
+    "total_mmv": "合計 $MMV:",
+    "max": "最大",
+    "buy_now": "$MMVを今すぐ購入",
+    "processing": "処理中...",
+    "wallet_limit": "ウォレット上限に達しました",
+    "balance": "残高:",
+    "referral_generating": "リンク生成中...",
+    "help_links": {
+      "how_to_buy": "購入方法は？",
+      "referral": "紹介",
+      "need_help": "ヘルプが必要ですか？"
+    }
+  },
+  "how_to_buy": {
+    "badge": "素早く簡単",
+    "title": "$MMVの購入方法",
+    "subtitle": "5分以内に$MMVトークンを取得できます。シンプルなプロセス、複数の支払いオプション、即時報酬。複雑な手順や隠れた手数料はありません。",
+    "stats": {
+      "steps": "簡単なステップ",
+      "minutes": "分",
+      "available": "利用可能"
+    },
+    "step_1": {
+      "title": "ウォレットを接続",
+      "description": "MetaMask、Trust Wallet、またはあらゆるWeb3ウォレットを使用します。暗号通貨が初めてですか？問題ありません - 最初のウォレットの設定をガイドします。",
+      "time": "2分",
+      "tip_1": "MetaMask推奨",
+      "tip_2": "モバイルウォレット対応",
+      "tip_3": "初心者に優しい"
+    },
+    "step_2": {
+      "title": "購入資金を用意",
+      "description": "ETH、USDT、またはクレジットカードで支払います。$MMVの購入を可能な限り簡単にするための複数の支払いオプションが利用可能です。",
+      "time": "1分",
+      "tip_1": "クレジットカード利用可",
+      "tip_2": "暗号通貨支払い",
+      "tip_3": "即時処理"
+    },
+    "step_3": {
+      "title": "購入して報酬を獲得",
+      "description": "$MMVの数量を選択し、購入を完了し、すぐにミーム報酬を獲得し始めます。トークンはウォレットに表示されます。",
+      "time": "30秒",
+      "tip_1": "即時報酬",
+      "tip_2": "安全な取引",
+      "tip_3": "ボーナス階層利用可能"
+    },
+    "payment_methods": {
+      "title": "対応する支払い方法",
+      "credit_card": "クレジットカード",
+      "ethereum": "イーサリアム",
+      "usdt": "USDT",
+      "web3_wallets": "Web3ウォレット"
+    },
+    "cta": {
+      "title": "始める準備はできましたか？",
+      "description": "$MMVでミーム報酬を獲得している数千人の投資家に参加しましょう。プロセスはシンプルで安全、5分もかかりません。",
+      "complete_guide": "完全ガイド",
+      "start_buying": "今すぐ購入を開始",
+      "secure": "安全で検証済み",
+      "instant": "即時処理",
+      "support": "24/7サポート"
+    }
+  },
+  "transaction_modal": {
+    "approving_title": "USDT承認中",
+    "approving_message": "プレセール契約がUSDTを使用できるようにするため、ウォレットで承認トランザクションを確認してください。",
+    "approving_submessage": "これは一度限りの承認です。その後、購入は自動的に処理されます。",
+    "processing_title_multi": "購入処理中",
+    "processing_title_single": "トランザクション処理中",
+    "processing_message_multi": "USDTが承認されました！ $MMVトークンの購入を処理しています...",
+    "processing_message_single": "$MMVトークンの購入が進行中はページを再読み込みしないでください...",
+    "success_title": "購入成功！",
+    "success_message": "$MMVトークンが正常に購入されました。ミームトレジャリーにロックして報酬の獲得を開始できます！",
+    "error_title": "トランザクション失敗",
+    "error_message": "トランザクションの処理中に問題が発生しました",
+    "step_label": "ステップ {{current}} / {{total}}",
+    "close_button": "閉じる"
+  },
+  "what_is": {
+    "badge": "ミーム・トゥ・アーンプロトコル",
+    "title": "とは",
+    "title_gradient": "MetaMemeVault?",
+    "lead": "MetaMemeVault ($MMV)では、トークンをロックすることでトップのミームコインを獲得できます。プレセールで$MMVを購入し、ミームトレジャリーにロックして、NEIRO、SHIB、PEPE、BONKの報酬を獲得します。",
+    "description": "当社のミームトレジャリーボールトは、$MMVをロックしたユーザーにNEIRO、SHIB、PEPE、BONKを配布します。ステーキングプールなし。複雑なDeFiなし。購入、ロック、獲得するだけです。",
+    "highlight_title": "プレセールの優位性",
+    "highlight_text": "早期購入者は最大200%のボーナスを獲得できます。低いステージ = より大きな報酬。DYOR、NFA。",
+    "feature_1_title": "トップミームコインをファーミング",
+    "feature_1_desc": "ブルーチップミームの受動的収入",
+    "feature_2_title": "戦略を選択",
+    "feature_2_desc": "欲しいものをロック、必要なものを獲得",
+    "read_docs": "ドキュメントを読む",
+    "buy_mmv": "$MMVを購入"
+  },
+  "faq": {
+    "badge": "ナレッジベース",
+    "title_1": "よくある",
+    "title_2": "質問",
+    "subtitle": "$MMVとミームトレジャリーエコシステムについて知っておくべきことすべて",
+    "q1": {
+      "question": "$MMVは他のミームトークンと何が違うのですか？",
+      "answer": "$MMVは単なる別のミームトークンではありません - ミーム・トゥ・アーンのパワーハウスです。$MMVをミームトレジャリーにロックして、NEIRO、SHIB、PEPE、BONKなどのブルーチップミームコインを獲得します。約束だけでなく実際の報酬を得られる最初のクロスチェーンミームコインエコシステムを構築しています。",
+      "highlight": "ミーム・トゥ・アーンプラットフォーム",
+      "stats": "4+トップミームコイン"
+    },
+    "q2": {
+      "question": "$MMVはどうやって手に入れられますか？",
+      "answer": "超簡単です！ウォレットを接続して（デスクトップの伝説にはMetaMask、モバイル戦士にはBest Wallet）、ETH、USDT、またはクレジットカードで購入します。プレセールは今実施中で、早期参加者には最大200%のボーナスがあります。寝てる場合じゃない - プレセール価格は永遠に続きません。",
+      "highlight": "複数の支払いオプション",
+      "stats": "最大200%ボーナス"
+    },
+    "q3": {
+      "question": "ミームトレジャリーについて詳しく教えてください",
+      "answer": "ミームトレジャリーを個人的なミームマイニングリグと考えてください。$MMVトークンをロックして、欲しいミームコイン報酬を選択します - デゲンプレイ用のNEIRO、OG用のSHIB、文化用のPEPE、Solanaアクション用のBONK。報酬は24時間365日積み重ねられ、プレセール後3日で請求可能です。パッシブインカムとミーム魔法の融合です。",
+      "highlight": "24/7パッシブ収入",
+      "stats": "4つの報酬オプション"
+    },
+    "q4": {
+      "question": "早期投資家ボーナスって何ですか？",
+      "answer": "早起きは三文の徳！早く参加するほど、ボーナスが大きくなります。購入金額とタイミングに基づいて最大200%の追加$MMVトークンを獲得できます。ステージ1の投資家が最大のスライスを獲得 - これらのボーナスは各ステージで減少するので、FOMOは現実的で正当化されます。",
+      "highlight": "ステージ1 = 最大報酬",
+      "stats": "200%ボーナスポテンシャル"
+    },
+    "q5": {
+      "question": "いつ月？報酬はいつ請求できますか？",
+      "answer": "ミームコイン報酬（NEIRO、SHIB、PEPE、BONK）はプレセール終了後3日でアンロックされます - 流動性を設定してスムーズな航海を確保する時間を与えます。$MMVトークンは？それらは起動時に即座にあなたのものです。ごちそうの準備をしてください。",
+      "highlight": "プレセール後T+3日",
+      "stats": "起動時に即座に$MMV"
+    },
+    "q6": {
+      "question": "$MMVは実際にガス料金を支払えますか？",
+      "answer": "ゲームチェンジャー警報！$MMVを代替ガストークンとして実装しています。ETHをガスで燃やすことなく報酬を請求し、ミームトレジャリーと対話することを想像してください。これは単なる利便性ではありません - ミームトークンの動作方法の完全な変化です。あなたの$MMVはあなたの元カレよりも一生懸命働きます。",
+      "highlight": "ガスフリーの相互作用",
+      "stats": "ETHガス100%節約"
+    },
+    "q7": {
+      "question": "他にどんなミームコインが来ますか？",
+      "answer": "これはまだ始まりに過ぎません！ロードマップには、CATWIFHATのようなSolanaヘビー級、Baseチェーンの宝石、さらには伝説的な$TRUMPの統合が含まれています。さらに、コミュニティが新しい追加について投票します。ミームコインの国連を構築しており、$MMVがあなたのパスポートです。",
+      "highlight": "マルチチェーン拡張",
+      "stats": "10+ミームコイン計画"
+    },
+    "q8": {
+      "question": "プレセール後$MMVはどこに向かいますか？",
+      "answer": "メジャーリーグに直行！深い流動性プールを持つトップティアDEXで起動します。CEXリスティングは交渉中（大物を考えてください）。マーケティング予算は確保され、大規模な起動キャンペーンの準備ができています。これはポンプではありません - $MMVをミームコインインデックスとして確立するための持続的なロケットミッションです。",
+      "highlight": "Tier-1取引所リスティング",
+      "stats": "5+ DEX/CEXターゲット"
+    },
+    "cta": {
+      "title": "まだ質問がありますか？",
+      "description": "コミュニティマネージャーが24時間365日待機して成功をサポートします",
+      "support_button": "サポートを受ける",
+      "telegram_button": "Telegramに参加"
+    },
+    "badges": {
+      "audited": "監査済み",
+      "secure": "安全なスマートコントラクト",
+      "community": "コミュニティ主導"
+    }
+  },
+  "common": {
+    "buy_now": "今すぐ購入",
+    "learn_more": "詳細を見る",
+    "get_started": "始める",
+    "quick_links": "クイックリンク",
+    "loading": "読み込み中...",
+    "home": "ホーム",
+    "audit": "監査",
+    "whitepaper": "ホワイトペーパー",
+    "faq": "よくある質問",
+    "contact": "お問い合わせ",
+    "privacy": "プライバシーポリシー",
+    "terms": "利用規約",
+    "cookies": "クッキーポリシー",
+    "help": "ヘルプが必要ですか？"
+  }
+}

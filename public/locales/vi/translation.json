@@ -1,0 +1,221 @@
+{
+  "nav": {
+    "audit": "Kiểm toán",
+    "memetreasury": "MemeTreasury",
+    "how_to_buy": "Cách mua",
+    "referral": "Chương trình giới thiệu",
+    "whitepaper": "Whitepaper",
+    "contact": "Liên hệ",
+    "roadmap": "Lộ trình",
+    "tokenomics": "Tokenomics"
+  },
+  "wallet": {
+    "connect": "Kết nối ví",
+    "connecting": "Đang kết nối",
+    "connect_to_get_link": "Kết nối ví để nhận link giới thiệu"
+  },
+  "hero": {
+    "presale_live": "Giai đoạn {{stage}} đang diễn ra",
+    "progress_complete": "Hoàn thành {{progress}}%",
+    "audited": "Đã kiểm toán",
+    "secure": "An toàn",
+    "holders": "{{count}}+ Người nắm giữ",
+    "total_raised": "Tổng vốn huy động",
+    "current_price": "Giá hiện tại",
+    "stage_bonus": "Thưởng giai đoạn",
+    "earn_rewards": "Kiếm phần thưởng:",
+    "whitepaper_btn": "Whitepaper",
+    "join_community": "Tham gia cộng đồng"
+  },
+  "presale": {
+    "current_price": "Giá hiện tại",
+    "next_stage": "Giai đoạn tiếp theo",
+    "stage_ends": "Giai đoạn {{stage}} kết thúc sau:",
+    "extended_round": "(Vòng {{round}})",
+    "days": "Ngày",
+    "hours": "Giờ",
+    "mins": "Phút",
+    "secs": "Giây",
+    "progress": "Tiến độ",
+    "complete": "Hoàn thành",
+    "tokens_left": "Còn lại {{tokens}} MMV trong giai đoạn này",
+    "your_mmv": "$MMV của bạn",
+    "your_bonus": "Thưởng của bạn",
+    "you_pay": "Bạn trả",
+    "you_receive": "Bạn nhận",
+    "bonus_info": "+{{amount}} Thưởng ({{percent}}%)",
+    "total_mmv": "Tổng $MMV:",
+    "max": "TỐI ĐA",
+    "buy_now": "Mua $MMV ngay",
+    "processing": "Đang xử lý...",
+    "wallet_limit": "Đã đạt giới hạn ví",
+    "balance": "Số dư:",
+    "referral_generating": "Đang tạo link...",
+    "help_links": {
+      "how_to_buy": "Cách mua?",
+      "referral": "Giới thiệu",
+      "need_help": "Cần trợ giúp?"
+    }
+  },
+  "how_to_buy": {
+    "badge": "Nhanh & Dễ",
+    "title": "Cách mua $MMV",
+    "subtitle": "Nhận token $MMV của bạn trong vòng 5 phút. Quy trình đơn giản, nhiều phương thức thanh toán, phần thưởng tức thì. Không có bước phức tạp hay phí ẩn.",
+    "stats": {
+      "steps": "Bước đơn giản",
+      "minutes": "Phút",
+      "available": "Có sẵn"
+    },
+    "step_1": {
+      "title": "Kết nối ví",
+      "description": "Sử dụng MetaMask, Trust Wallet hoặc bất kỳ ví Web3 nào. Mới làm quen với crypto? Không vấn đề gì - chúng tôi sẽ hướng dẫn bạn thiết lập ví đầu tiên.",
+      "time": "2 phút",
+      "tip_1": "Khuyến nghị MetaMask",
+      "tip_2": "Hỗ trợ ví di động",
+      "tip_3": "Thân thiện cho người mới"
+    },
+    "step_2": {
+      "title": "Nạp tiền mua",
+      "description": "Thanh toán bằng ETH, USDT hoặc thẻ tín dụng. Nhiều phương thức thanh toán có sẵn để việc mua $MMV trở nên đơn giản nhất có thể.",
+      "time": "1 phút",
+      "tip_1": "Chấp nhận thẻ tín dụng",
+      "tip_2": "Thanh toán crypto",
+      "tip_3": "Xử lý tức thì"
+    },
+    "step_3": {
+      "title": "Mua & Kiếm thưởng",
+      "description": "Chọn số lượng $MMV, hoàn tất mua hàng và bắt đầu kiếm phần thưởng meme ngay lập tức. Token của bạn sẽ xuất hiện trong ví.",
+      "time": "30 giây",
+      "tip_1": "Thưởng tức thì",
+      "tip_2": "Giao dịch an toàn",
+      "tip_3": "Các bậc thưởng có sẵn"
+    },
+    "payment_methods": {
+      "title": "Phương thức thanh toán được hỗ trợ",
+      "credit_card": "Thẻ tín dụng",
+      "ethereum": "Ethereum",
+      "usdt": "USDT",
+      "web3_wallets": "Ví Web3"
+    },
+    "cta": {
+      "title": "Sẵn sàng bắt đầu?",
+      "description": "Tham gia cùng hàng nghìn nhà đầu tư đã kiếm phần thưởng meme với $MMV. Quy trình đơn giản, an toàn và mất chưa đầy 5 phút.",
+      "complete_guide": "Hướng dẫn đầy đủ",
+      "start_buying": "Bắt đầu mua ngay",
+      "secure": "An toàn & Đã xác minh",
+      "instant": "Xử lý tức thì",
+      "support": "Hỗ trợ 24/7"
+    }
+  },
+  "transaction_modal": {
+    "approving_title": "Đang phê duyệt USDT",
+    "approving_message": "Vui lòng xác nhận giao dịch phê duyệt trong ví của bạn để cho phép hợp đồng presale sử dụng USDT của bạn.",
+    "approving_submessage": "Đây là phê duyệt một lần. Sau đó, việc mua hàng của bạn sẽ được xử lý tự động.",
+    "processing_title_multi": "Đang xử lý giao dịch mua",
+    "processing_title_single": "Đang xử lý giao dịch",
+    "processing_message_multi": "USDT của bạn đã được phê duyệt! Đang xử lý giao dịch mua token $MMV...",
+    "processing_message_single": "Vui lòng không tải lại trang trong khi giao dịch mua token $MMV đang diễn ra...",
+    "success_title": "Mua thành công!",
+    "success_message": "Token $MMV của bạn đã được mua thành công. Bây giờ bạn có thể khóa chúng trong MemeTreasury để bắt đầu kiếm phần thưởng!",
+    "error_title": "Giao dịch thất bại",
+    "error_message": "Đã xảy ra sự cố khi xử lý giao dịch của bạn",
+    "step_label": "Bước {{current}} / {{total}}",
+    "close_button": "Đóng"
+  },
+  "what_is": {
+    "badge": "GIAO THỨC MEME-ĐỂ-KIẾM",
+    "title": "Gì là",
+    "title_gradient": "MetaMemeVault?",
+    "lead": "MetaMemeVault ($MMV) cho phép bạn kiếm các memecoin hàng đầu bằng cách khóa token. Mua $MMV trong presale, khóa chúng trong MemeTreasury và kiếm phần thưởng NEIRO, SHIB, PEPE và BONK.",
+    "description": "Kho MemeTreasury của chúng tôi phân phối NEIRO, SHIB, PEPE và BONK cho người dùng khóa $MMV. Không có pool staking. Không có DeFi phức tạp. Chỉ cần mua, khóa và kiếm.",
+    "highlight_title": "Ưu thế Presale",
+    "highlight_text": "Người mua sớm nhận tới 200% thưởng. Giai đoạn thấp hơn = phần thưởng lớn hơn. DYOR, NFA.",
+    "feature_1_title": "Farm Memecoin hàng đầu",
+    "feature_1_desc": "Thu nhập thụ động từ meme blue-chip",
+    "feature_2_title": "Chọn chiến lược của bạn",
+    "feature_2_desc": "Khóa những gì bạn muốn, kiếm những gì bạn cần",
+    "read_docs": "Đọc tài liệu",
+    "buy_mmv": "Mua $MMV"
+  },
+  "faq": {
+    "badge": "Kho kiến thức",
+    "title_1": "Câu hỏi",
+    "title_2": "thường gặp",
+    "subtitle": "Mọi thứ bạn cần biết về $MMV và hệ sinh thái MemeTreasury",
+    "q1": {
+      "question": "$MMV khác gì với các token meme khác?",
+      "answer": "$MMV không chỉ là một token meme khác - đây là sức mạnh Meme-để-Kiếm. Khóa $MMV trong MemeTreasury và kiếm các memecoin blue-chip như NEIRO, SHIB, PEPE và BONK. Chúng tôi đang xây dựng hệ sinh thái memecoin cross-chain đầu tiên nơi người nắm giữ thực sự kiếm phần thưởng thực, không chỉ lời hứa.",
+      "highlight": "Nền tảng Meme-để-Kiếm",
+      "stats": "4+ Memecoin hàng đầu"
+    },
+    "q2": {
+      "question": "Làm thế nào để có được $MMV?",
+      "answer": "Siêu dễ! Kết nối ví (MetaMask cho desktop legends hoặc Best Wallet cho mobile warriors) và mua bằng ETH, USDT hoặc thậm chí thẻ tín dụng. Presale của chúng tôi đang diễn ra NGAY BÂY GIỜ với thưởng lên tới 200% cho người đăng ký sớm. Đừng ngủ quên - giá presale không kéo dài mãi mãi.",
+      "highlight": "Nhiều phương thức thanh toán",
+      "stats": "Lên tới 200% thưởng"
+    },
+    "q3": {
+      "question": "Giải thích về MemeTreasury",
+      "answer": "Hãy nghĩ về MemeTreasury như máy đào meme cá nhân của bạn. Khóa token $MMV và chọn phần thưởng memecoin bạn muốn - NEIRO cho các trò chơi degen, SHIB cho OG, PEPE cho văn hóa hoặc BONK cho hành động Solana. Phần thưởng của bạn tích lũy 24/7, có thể nhận 3 ngày sau presale. Đó là thu nhập thụ động gặp gỡ phép màu meme.",
+      "highlight": "Thu nhập thụ động 24/7",
+      "stats": "4 tùy chọn thưởng"
+    },
+    "q4": {
+      "question": "Thưởng nhà đầu tư sớm là gì?",
+      "answer": "Chim sớm có sâu ở đây! Bạn tham gia càng sớm, thưởng càng lớn. Chúng tôi nói về tới 200% token $MMV thêm dựa trên số tiền mua và thời điểm của bạn. Nhà đầu tư Giai đoạn 1 nhận phần lớn nhất - các thưởng này giảm mỗi giai đoạn, vì vậy FOMO là thực và được chứng minh.",
+      "highlight": "Giai đoạn 1 = Thưởng tối đa",
+      "stats": "Tiềm năng thưởng 200%"
+    },
+    "q5": {
+      "question": "Khi nào lên mặt trăng? Khi nào tôi có thể nhận thưởng?",
+      "answer": "Phần thưởng memecoin của bạn (NEIRO, SHIB, PEPE, BONK) mở khóa 3 ngày sau khi presale kết thúc - cho chúng tôi thời gian thiết lập thanh khoản và đảm bảo hoạt động trơn tru. Token $MMV của bạn? Những bad boy đó là của bạn ngay khi khởi chạy. Chuẩn bị cho bữa tiệc.",
+      "highlight": "T+3 ngày sau Presale",
+      "stats": "$MMV tức thì khi khởi chạy"
+    },
+    "q6": {
+      "question": "$MMV có thể thực sự trả phí gas không?",
+      "answer": "Cảnh báo thay đổi cuộc chơi! Chúng tôi đang triển khai $MMV làm token gas thay thế. Hãy tưởng tượng nhận thưởng và tương tác với MemeTreasury mà không đốt ETH cho gas. Đây không chỉ là tiện lợi - đây là sự thay đổi hoàn toàn trong cách token meme hoạt động. $MMV của bạn làm việc chăm chỉ hơn người yêu cũ của bạn.",
+      "highlight": "Tương tác không gas",
+      "stats": "Tiết kiệm 100% Gas ETH"
+    },
+    "q7": {
+      "question": "Còn memecoin nào khác sắp ra mắt?",
+      "answer": "Chúng tôi mới chỉ bắt đầu! Lộ trình bao gồm tích hợp các ông lớn Solana như CATWIFHAT, đá quý chuỗi Base và thậm chí $TRUMP huyền thoại. Thêm vào đó, cộng đồng bỏ phiếu về các bổ sung mới. Chúng tôi đang xây dựng Liên hợp quốc của memecoin và $MMV là hộ chiếu của bạn.",
+      "highlight": "Mở rộng Multi-Chain",
+      "stats": "10+ Memecoin được lên kế hoạch"
+    },
+    "q8": {
+      "question": "$MMV đi đâu sau presale?",
+      "answer": "Thẳng tới giải đấu lớn! Chúng tôi khởi chạy trên các DEX hàng đầu với pool thanh khoản sâu. Niêm yết CEX đang được đàm phán (nghĩ về những ông lớn). Ngân sách marketing được khóa và nạp sẵn cho chiến dịch khởi chạy lớn. Đây không phải pump - đây là nhiệm vụ tên lửa bền vững để thiết lập $MMV như chỉ số memecoin.",
+      "highlight": "Niêm yết sàn Tier-1",
+      "stats": "5+ mục tiêu DEX/CEX"
+    },
+    "cta": {
+      "title": "Vẫn còn câu hỏi?",
+      "description": "Các quản lý cộng đồng sẵn sàng giúp bạn thành công 24/7",
+      "support_button": "Nhận hỗ trợ",
+      "telegram_button": "Tham gia Telegram"
+    },
+    "badges": {
+      "audited": "Đã kiểm toán",
+      "secure": "Hợp đồng thông minh an toàn",
+      "community": "Điều hành bởi cộng đồng"
+    }
+  },
+  "common": {
+    "buy_now": "Mua ngay",
+    "learn_more": "Tìm hiểu thêm",
+    "get_started": "Bắt đầu",
+    "quick_links": "Link nhanh",
+    "loading": "Đang tải...",
+    "home": "Trang chủ",
+    "audit": "Kiểm toán",
+    "whitepaper": "Whitepaper",
+    "faq": "Câu hỏi thường gặp",
+    "contact": "Liên hệ",
+    "privacy": "Chính sách bảo mật",
+    "terms": "Điều khoản & Điều kiện",
+    "cookies": "Chính sách Cookie",
+    "help": "Cần trợ giúp?"
+  }
+}
