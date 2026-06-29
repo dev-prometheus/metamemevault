@@ -13,7 +13,7 @@ const EnhancedHero = ({ currentStage, stagePrice, bonusPercent, totalRaised, tot
     window.open("/audit", "_self");
   };
 
-  const STAGE_1_END_DATE = new Date('2026-03-30T23:59:59Z'); // Example: Jan 15, 2025 
+  const STAGE_1_END_DATE = new Date('2026-08-30T23:59:59Z'); // Example: Jan 15, 2025 
 
   const calculateDaysLeft = () => {
     const now = new Date();
