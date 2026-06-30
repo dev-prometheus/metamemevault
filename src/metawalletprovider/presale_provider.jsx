@@ -11,7 +11,7 @@ const CACHE_DURATION_MS = 60 * 1000; // 1 minutes
 const STAGE_DURATION_MS = 7 * 24 * 60 * 60 * 1000; // 7 days in milliseconds 
 
 // INITIAL STAGE START TIME - Only Stage 1 has a fixed start
-const PRESALE_START_TIME = new Date('2026-06-12T19:00:00Z').getTime();
+const PRESALE_START_TIME = new Date('2026-06-18T19:00:00Z').getTime();
 
 export const PresaleProvider = ({ children, walletProvider, chainId, isConnected }) => {
     const [presaleData, setPresaleData] = useState(() => {
