@@ -6,7 +6,7 @@ import { useCountdown } from '../hooks/use_countdown';
 
 const GiveawayTeaser = () => {
     
-    const timeLeft = useCountdown('2026-04-07T23:59:59Z', 60000);
+    const timeLeft = useCountdown('2026-09-07T23:59:59Z', 60000);
     
     return (
         <section className="giveaway-teaser">
