@@ -57,7 +57,7 @@ const GiveawayStats = ({ stats, loading }) => {
                         <Clock />
                     </div>
                     <div className="gw-stat-content">
-                        <div className="gw-stat-value">Apr 7</div>
+                        <div className="gw-stat-value">Sept 7</div>
                         <div className="gw-stat-label">Giveaway Ends</div>
                     </div>
                 </div>
