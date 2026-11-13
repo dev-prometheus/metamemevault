@@ -4,7 +4,7 @@ import { useCountdown } from "../hooks/use_countdown";
 
 const GiveawayHero = ({ isConnected, onConnect }) => {
 
-    const timeLeft = useCountdown('2026-09-07T23:59:59Z', 1000);
+    const timeLeft = useCountdown('2027-05-07T23:59:59Z', 1000);
 
     const scrollToEntry = () => {
         document.getElementById('gw-entry-section')?.scrollIntoView({
